@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문서지능 — 이용약관·개인정보 처리방침</title>
+<link rel="stylesheet" href="ui-tokens.css">
+<style>
+  /* 이용약관·처리방침 — 색·글꼴은 ui-tokens.css 토큰에서만(hex 0, app/admin 과 같은 언어). */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ai-color-bg); color: var(--ai-color-ink);
+    font: 15px/1.75 var(--ai-font-sans); }
+  header { background: color-mix(in srgb, var(--ai-color-bg) 88%, transparent);
+    backdrop-filter: blur(14px); border-bottom: 1px solid var(--ai-color-line);
+    padding: 0 clamp(20px, 5vw, 64px); height: var(--ai-topbar-h);
+    display: flex; align-items: center; gap: 11px; position: sticky; top: 0; z-index: 20; }
+  header .브랜드 { display: flex; align-items: center; gap: 11px; }
+  header .마크 { width: 36px; height: 36px; border-radius: 9px; display: block;
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--ai-color-ink) 18%, transparent); }
+  header .워드마크 { display: flex; flex-direction: column; line-height: 1.12; }
+  header .워드마크 b { font-family: var(--ai-font-heading); font-weight: 800; font-size: 16px; letter-spacing: -.3px; }
+  header .워드마크 small { font-size: 9px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ai-color-muted); font-weight: 700; }
+  header .틈 { flex: 1; }
+  header .곁단추 { border: 1.5px solid var(--ai-color-ink); color: var(--ai-color-ink);
+    background: transparent; border-radius: var(--ai-radius-sm); padding: 7px 14px;
+    font-family: var(--ai-font-heading); font-weight: 700; font-size: 13px; text-decoration: none; }
+
+  main { max-width: 760px; margin: 0 auto; padding: 40px clamp(20px, 5vw, 40px) 90px; }
+  h1 { font-family: var(--ai-font-heading); font-weight: 800; font-size: 28px; letter-spacing: -.03em;
+    margin: 0 0 6px; }
+  .머리흐림 { color: var(--ai-color-muted); font-size: 13px; margin: 0 0 24px; }
+  .베타 { background: var(--ai-color-signal-tint); border-left: 3px solid var(--ai-color-signal);
+    border-radius: 0 var(--ai-radius-sm) var(--ai-radius-sm) 0; padding: 14px 16px; margin: 0 0 32px;
+    font-size: 14px; line-height: 1.7; color: var(--ai-color-ink-soft); }
+  .베타 b { color: var(--ai-color-ink); }
+  h2 { font-family: var(--ai-font-heading); font-weight: 800; font-size: 19px; margin: 34px 0 14px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--ai-color-line); }
+  .조 { margin: 0 0 16px; }
+  .조 > b { font-family: var(--ai-font-heading); font-weight: 800; font-size: 14.5px; color: var(--ai-color-ink); }
+  .조 p { margin: 4px 0 0; font-size: 14px; color: var(--ai-color-ink-soft); }
+  .조 ul { margin: 8px 0 0; padding-left: 18px; }
+  .조 li { font-size: 14px; color: var(--ai-color-ink-soft); margin: 2px 0; }
+  .조 em { color: var(--ai-color-review-ink); font-style: normal; font-weight: 700; }
+  .개정 { margin-top: 36px; font-size: 12.5px; color: var(--ai-color-muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="브랜드">
+    <img class="마크" src="brand/brand-mark.png" alt="">
+    <span class="워드마크"><b>문서지능</b><small>Artifact Intelligence</small></span>
+  </div>
+  <span class="틈"></span>
+  <a class="곁단추" href="/workspace/app.html">앱으로</a>
+</header>
+
+<main>
+  <h1>이용약관 · 개인정보 처리방침</h1>
+  <p class="머리흐림">쉽게 읽히도록 간단히 적었습니다. 정식 서비스가 되면 더 자세한 문서로 갱신됩니다.</p>
+
+  <div class="베타">
+    <b>문서지능은 공공부문 AX(AI 전환)를 넓히려는 MVP(시범) 프로젝트입니다.</b>
+    정식 서비스가 아니라 기능을 시험하는 단계라, 아래 내용도 그 범위에서 적용되며
+    예고 없이 바뀌거나 멈출 수 있습니다.
+  </div>
+
+  <h2>이용약관</h2>
+  <div class="조"><b>1. 어떤 서비스인가요</b>
+    <p>의도와 자료를 주시면 공공기관 문서 초안을 만들어 드립니다. 시범 단계라 ‘있는 그대로’ 제공합니다.</p></div>
+  <div class="조"><b>2. 만든 문서의 책임</b>
+    <p>나온 문서는 초안입니다. 사실·형식을 확인하고 제출하는 일, 그리고 그 결과의 책임은
+       쓰시는 분께 있습니다. 이 서비스는 법률·행정 자문이 아닙니다.</p></div>
+  <div class="조"><b>3. 하지 말아 주세요</b>
+    <p>남의 권리를 침해하거나 법을 어기는 자료는 넣지 마세요.</p></div>
+  <div class="조"><b>4. 책임의 한계</b>
+    <p>시범 서비스라 정확성이나 계속 이용을 보장하지 않습니다. 이용하다 생긴 손해에 대해서는
+       법이 허용하는 범위에서 책임지지 않습니다.</p></div>
+
+  <h2>개인정보 처리방침</h2>
+  <div class="조"><b>1. 무엇을 받나요</b>
+    <p>문서를 만들 자료를 받습니다 — 그 안에 개인정보가 들어 있을 수 있습니다.</p>
+    <p>AI 모델은 기본으로 저희가 제공하니 따로 준비하지 않으셔도 됩니다. 다만 <b>기본 모델 처리가
+       꺼려지거나 쓰시던 모델의 API 를 이용하고 싶으시면, 직접 API 키를 넣으실 수 있습니다.</b>
+       넣으신 키는 브라우저에만 두고 서버에 저장하지 않습니다.</p></div>
+  <div class="조"><b>2. 어떻게 쓰고 언제 지우나요</b>
+    <p>문서 초안을 만드는 데만 씁니다. 문서 한 건이 한 세션이고, 세션이 끝나면(10분 무동작 또는
+       내려받기) 자료와 초안을 자동으로 지웁니다.</p>
+    <p><b>기본 모델을 쓰셔도 저희 서버는 프롬프트를 저장하거나 들여다보지 않습니다</b> — 세션이
+       끝나면 함께 지워집니다. 초안을 만들 때 그 내용이 모델 제공자(Featherless)에게 전달되지만,
+       <b>Featherless 도 프롬프트를 로그·저장하지 않고 실시간으로 처리한 뒤 폐기한다고 밝히고 있습니다</b>
+       (제공자 정책, <a href="https://featherless.ai/docs/privacy-and-logging" target="_blank" rel="noopener">문서</a>).</p></div>
+  <div class="조"><b>3. 해외로 넘어가는 정보 (국외 이전)</b>
+    <p>초안을 만들 때 넣으신 내용이 아래 업체로 전달됩니다.</p>
+    <ul>
+      <li>받는 곳: Featherless AI (미국)</li>
+      <li>목적: AI 초안 생성</li>
+      <li>시점: 초안을 요청하실 때</li>
+      <li>방법: 암호화해 전송</li>
+    </ul>
+    <p>본인 API 키를 쓰시면 브라우저가 직접 호출해 이 경로를 거치지 않습니다.</p></div>
+  <div class="조"><b>4. 남기는 정보</b>
+    <p>다듬으신 내용이 규칙을 개선하는 데 도움이 될 만하면, 동의하신 경우에만 이름·연락처를
+       지운 익명으로 남깁니다.</p></div>
+  <div class="조"><b>5. 문의</b>
+    <p>시범 단계라 계정이 없고, 세션이 끝나면 자료가 사라져 따로 삭제 요청이 필요 없습니다.</p>
+    <p>쓰시다 불편하거나 문의할 점이 있으면
+       <a href="https://github.com/Kminer2053/Artifact-Intelligence/issues" target="_blank" rel="noopener">GitHub 이슈</a>에
+       남겨 주세요. 시범 단계라 이슈로 받은 의견이 개선에 큰 도움이 됩니다.</p></div>
+
+  <p class="개정">시행일 <em>(배포일을 넣어 주세요)</em> · 베타(MVP) 기준</p>
+</main>
+</body>
+</html>

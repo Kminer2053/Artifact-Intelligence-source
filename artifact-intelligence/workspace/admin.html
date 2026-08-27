@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문서지능 — 관리자 설정</title>
+<link rel="stylesheet" href="ui-tokens.css">
+<style>
+  /* WP-S5 관리자 면 — 브랜드킷 화이트 테마(F1 디자인 언어). 색·글꼴·radius·간격은
+     전부 ui-tokens.css 의 --ai-* 토큰에서만 가져온다. hex 를 여기 직접 적으면
+     build/verify_all.py 의 check_app_no_raw_hex 가 선다(admin.html 도 그 대상이다).
+     app.html 의 카드 문법(.단계/.머리/.속)을 그대로 쓴다 — 앱과 같은 언어. */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ai-color-bg); color: var(--ai-color-ink);
+    font: 15px/1.65 var(--ai-font-sans); }
+  header { background: color-mix(in srgb, var(--ai-color-bg) 90%, transparent);
+    backdrop-filter: blur(14px); color: var(--ai-color-ink);
+    border-bottom: 1px solid var(--ai-color-line); padding: 0 20px; height: var(--ai-topbar-h);
+    display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 20; }
+  header .브랜드 { display: flex; align-items: center; gap: 11px; }
+  header .마크 { width: 36px; height: 36px; flex: none; border-radius: 9px; display: block;
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--ai-color-ink) 18%, transparent); }
+  header .워드마크 { display: flex; flex-direction: column; line-height: 1.12; }
+  header .워드마크 b { font-family: var(--ai-font-heading); font-weight: 800; font-size: 16px; letter-spacing: -.3px; }
+  header .워드마크 b span { color: var(--ai-color-signal); }
+  header .워드마크 small { font-size: 9px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ai-color-muted); font-weight: 700; }
+  header .틈 { flex: 1; }
+  header .키상태 { font-size: 13px; color: var(--ai-color-muted); font-weight: 500; }
+  header .곁단추 { background: transparent; color: var(--ai-color-ink); border: 1.5px solid var(--ai-color-ink);
+    border-radius: var(--ai-radius-sm); padding: 7px 12px; font-family: var(--ai-font-heading);
+    font-size: 13px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block;
+    transition: background var(--ai-motion-fast); }
+  header .곁단추:hover { background: var(--ai-color-signal-tint); }
+
+  .소개 { padding: 40px 20px 4px; }
+  .소개 .속 { max-width: 900px; margin: 0 auto; }
+  .eyebrow { display: flex; align-items: center; gap: 10px; font-family: var(--ai-font-heading);
+    font-weight: 800; font-size: 11px; letter-spacing: .18em; color: var(--ai-color-signal);
+    text-transform: uppercase; }
+  .eyebrow .tick { width: 28px; height: 3px; background: var(--ai-color-agent); flex: none; }
+  .소개 h1 { font-family: var(--ai-font-heading); font-weight: 800; font-size: 26px; margin: 12px 0 0;
+    letter-spacing: -.03em; line-height: 1.32; }
+  .소개 p { margin: 12px 0 0; color: var(--ai-color-muted-hero); font-size: 15px; font-weight: 500;
+    max-width: 660px; line-height: 1.6; }
+
+  main { max-width: 900px; margin: 0 auto; padding: 20px 20px 70px; }
+  .단계 { background: var(--ai-color-white); border: 1px solid var(--ai-color-line);
+    border-radius: var(--ai-radius-lg); margin-bottom: 14px; overflow: hidden;
+    box-shadow: var(--ai-shadow-card); }
+  .머리 { display: flex; align-items: center; gap: 11px; padding: 16px 20px; }
+  .번호 { width: 26px; height: 26px; border-radius: var(--ai-radius-sm); background: var(--ai-color-signal-tint);
+    color: var(--ai-color-signal); font-family: var(--ai-font-heading); font-weight: 800; font-size: 13px;
+    display: grid; place-items: center; flex: none; }
+  .아이콘칸 { width: 26px; height: 26px; border-radius: var(--ai-radius-sm); background: var(--ai-color-status-bg);
+    color: var(--ai-color-status-fg); display: grid; place-items: center; flex: none; }
+  .머리 h2 { font-family: var(--ai-font-heading); font-weight: 800; font-size: 16px; margin: 0; letter-spacing: -.1px; }
+  .머리 .요약 { color: var(--ai-color-muted); font-size: 13.5px; margin-left: auto; text-align: right; }
+  .속 { padding: 0 20px 20px; }
+
+  label.밭 { display: block; margin: 12px 0 4px; font-size: 13.5px; font-weight: 600; color: var(--ai-color-ink-soft); }
+  label.밭 .뜻 { display: block; font-weight: 400; color: var(--ai-color-muted); font-size: 12.5px; margin-top: 1px; }
+  input[type=text], input[type=password], input[type=number], select {
+    width: 100%; border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-sm);
+    padding: 11px 13px; font: inherit; color: inherit; background: var(--ai-color-white); }
+  .줄 { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+  .주단추 { background: var(--ai-color-ink); color: var(--ai-color-white); border: 0;
+    border-radius: var(--ai-radius-sm); padding: 10px 20px; font-family: var(--ai-font-heading);
+    font-size: 14px; font-weight: 700; cursor: pointer; transition: background var(--ai-motion-fast); }
+  .주단추:hover { background: var(--ai-color-ink-hover); }
+  .주단추:disabled { background: var(--ai-color-muted); cursor: default; }
+  .곁단추 { background: transparent; color: var(--ai-color-ink); border: 1.5px solid var(--ai-color-ink);
+    border-radius: var(--ai-radius-sm); padding: 7px 12px; font-family: var(--ai-font-heading);
+    font-size: 13px; font-weight: 700; cursor: pointer; transition: background var(--ai-motion-fast); }
+  .곁단추:hover { background: var(--ai-color-signal-tint); }
+  .곁단추.채택 { border-color: var(--ai-color-signal); color: var(--ai-color-signal); }
+  .곁단추.채택:hover { background: var(--ai-color-signal-tint); }
+  .곁단추.기각 { border-color: var(--ai-color-issue-line); color: var(--ai-color-issue-ink); }
+  .곁단추.기각:hover { background: var(--ai-color-issue-tint); }
+
+  .알림 { padding: 11px 13px; border-radius: var(--ai-radius-sm); font-size: 14px; margin-top: 11px;
+    white-space: pre-wrap; display: none; }
+  .알림.보임 { display: block; }
+  .알림.좋음 { background: var(--ai-color-signal-tint); color: var(--ai-color-signal); }
+  .알림.나쁨 { background: var(--ai-color-issue-tint); color: var(--ai-color-issue); }
+  .알림.보통 { background: var(--ai-color-signal-tint); color: var(--ai-color-ink-soft); }
+  .흐림 { color: var(--ai-color-muted); font-size: 13px; }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--ai-color-line); font-size: 14px; }
+  th { color: var(--ai-color-muted); font-weight: 600; font-size: 12.5px; }
+  td.수 { text-align: right; font-variant-numeric: tabular-nums; }
+  .꼬리표 { display: inline-block; background: var(--ai-color-signal-tint); color: var(--ai-color-signal);
+    border-radius: 999px; padding: 1px 9px; font-size: 12px; }
+
+  /* 지표 타일 — 관측 요약의 큰 숫자들 */
+  .타일줄 { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-top: 12px; }
+  .타일 { border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md);
+    padding: 12px 14px; background: var(--ai-color-agent-panel); }
+  .타일 b { display: block; font-family: var(--ai-font-heading); font-weight: 800; font-size: 22px;
+    color: var(--ai-color-signal); line-height: 1.1; }
+  .타일 span { display: block; font-size: 12px; color: var(--ai-color-muted); margin-top: 3px; }
+
+  /* 후보 카드 — 익명 원장 후보 하나 */
+  .후보 { border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md);
+    padding: 13px 15px; margin-bottom: 10px; background: var(--ai-color-white); }
+  .후보 .머릿줄 { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .후보 .머릿줄 b { font-size: 14px; }
+  .후보 .때 { color: var(--ai-color-muted); font-size: 12.5px; }
+  .후보 .조작 { margin-left: auto; display: flex; gap: 8px; }
+  .후보 .규칙줄 { margin-top: 8px; font-size: 13px; color: var(--ai-color-ink-soft); }
+  .후보 textarea { width: 100%; box-sizing: border-box; margin-top: 8px; min-height: 46px;
+    font: inherit; font-size: 13px; padding: 7px 9px; border: 1px solid var(--ai-color-line);
+    border-radius: var(--ai-radius-md); background: var(--ai-color-bg); color: var(--ai-color-ink);
+    resize: vertical; }
+  .후보 textarea:focus { outline: none; border-color: var(--ai-color-signal); }
+  .후보 .규칙줄 .절 { display: inline-block; background: var(--ai-color-signal-tint); color: var(--ai-color-signal);
+    border-radius: 6px; padding: 2px 8px; margin: 2px 4px 2px 0; font-size: 12.5px; }
+
+  .막음 { border-left: 3px solid var(--ai-color-review); background: var(--ai-color-review-tint);
+    color: var(--ai-color-review-ink); border-radius: 0 var(--ai-radius-sm) var(--ai-radius-sm) 0;
+    padding: 12px 14px; font-size: 13.5px; }
+  .아이콘 { width: 1em; height: 1em; display: inline-block; vertical-align: -.15em;
+    fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  header .마크 .상표선 { stroke: var(--ai-color-signal); }
+</style>
+</head>
+<body>
+<header>
+  <div class="브랜드">
+    <img class="마크" src="brand/brand-mark.png" alt="">
+    <span class="워드마크"><b>문서지능 <span>관리자</span></b><small>Artifact Intelligence</small></span>
+  </div>
+  <span class="키상태" id="키상태"></span>
+  <span class="틈"></span>
+  <a class="곁단추" href="/workspace/app.html">앱으로</a>
+  <button class="곁단추" id="로그아웃" hidden>로그아웃</button>
+</header>
+
+<div class="소개"><div class="속">
+  <div class="eyebrow"><span class="tick"></span>Admin · Settings · Ledger · Observe</div>
+  <h1>관리자 설정</h1>
+  <p>LLM·세션·사용량을 여기서 관리하고, 익명 원장 후보를 검토합니다.<br>
+     정본(온톨로지)은 여기서 바꾸지 않습니다 — 후보를 채택하거나 기각할 뿐입니다.</p>
+</div></div>
+
+<main>
+  <!-- 관리자 열쇠가 없거나 틀리면(401) 이 카드만 뜬다. 열쇠를 넣으면 나머지가 열린다. -->
+  <div class="단계" id="열쇠카드" hidden>
+    <div class="머리"><span class="번호">!</span><h2>관리자 열쇠</h2>
+      <span class="요약">환경변수 문서지능_관리자열쇠 로 정한 값</span></div>
+    <div class="속">
+      <p class="흐림">열쇠는 이 탭에만 잠시 담깁니다 — 탭을 닫으면 사라집니다.<br>
+         서버 로그·응답·화면 어디에도 남기지 않습니다.</p>
+      <label class="밭" for="열쇠입력">관리자 열쇠</label>
+      <input type="password" id="열쇠입력" autocomplete="off" placeholder="관리자 열쇠를 넣으세요">
+      <div class="줄"><button class="주단추" id="열쇠확인">들어가기</button></div>
+      <div class="알림" id="열쇠알림"></div>
+    </div>
+  </div>
+
+  <div id="면" hidden>
+    <!-- 1. LLM 설정 -->
+    <div class="단계">
+      <div class="머리"><span class="번호">1</span><h2>LLM 설정</h2>
+        <span class="요약" id="설정요약"></span></div>
+      <div class="속">
+        <p class="흐림">키를 안 넣는 사용자를 <b>서버가 대신</b> 모델에 연결할 때 쓰는 설정입니다.<br>
+           사용자가 브라우저에 넣는 개인 키와는 다른 <b>서버 키</b>라, 설정 파일에만 저장하고<br>
+           화면·응답·로그에는 <b>끝 4자리만</b> 보여줍니다.</p>
+        <label class="밭" for="제공자">제공자
+          <span class="뜻">대부분 OpenAI 호환입니다. 다른 서비스는 직접 입력을 고르세요.</span></label>
+        <select id="제공자">
+          <option value="openai호환">OpenAI 호환 (Featherless · OpenAI 등)</option>
+          <option value="anthropic">Anthropic (Claude)</option>
+          <option value="ollama">Ollama (로컬)</option>
+          <option value="custom">직접 입력 (다른 서비스)</option>
+        </select>
+        <div id="서버묶음">
+          <label class="밭" for="서버">서버 주소 (API 엔드포인트)
+            <span class="뜻">비우면 Featherless 기본값. https 만 됩니다(로컬 Ollama 예외).</span></label>
+          <input type="text" id="서버" placeholder="https://api.featherless.ai/v1">
+        </div>
+        <label class="밭" for="모델">모델
+          <span class="뜻">제공자 카탈로그의 정확한 모델 id 를 그대로 넣으세요.</span></label>
+        <input type="text" id="모델" placeholder="gemma-4-e4b">
+        <label class="밭" for="표시">기본 모델 안내 문구
+          <span class="뜻">키 없이 진행할 때 웹앱 상단에 뜨는 문구입니다. 비우면 기본 문구로 돌아갑니다.</span></label>
+        <input type="text" id="표시" maxlength="80" placeholder="예: 키 없이 기본 모델(Gemini Flash)로 진행">
+        <div id="키묶음">
+          <label class="밭" for="현재키">현재 API 키
+            <span class="뜻">저장된 값은 끝 4자리만 보입니다. 새 값을 안 넣으면 그대로 둡니다.</span></label>
+          <input type="text" id="현재키" disabled>
+          <label class="밭" for="새키">새 API 키 (바꿀 때만)</label>
+          <input type="password" id="새키" autocomplete="off" placeholder="비워 두면 안 바뀝니다">
+        </div>
+        <label class="밭">장르별 한 번 호출 최대 토큰 (max_tokens)
+          <span class="뜻">비우면 코드 기본값 사용 · 값을 넣으면 그 장르만 고정(비용 상한). 풀버전은 JSON 이 커서 넉넉히 필요합니다.</span></label>
+        <div id="장르토큰밭" style="display:grid;gap:6px;margin:4px 0 4px">
+          <div style="display:flex;align-items:center;gap:10px"><span style="flex:0 0 140px;font-size:13px;color:var(--ai-color-muted)">풀버전 보고서</span><input type="number" min="1" data-genre="fullreport" placeholder="기본 16000" style="flex:1"></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="flex:0 0 140px;font-size:13px;color:var(--ai-color-muted)">1페이지 보고서</span><input type="number" min="1" data-genre="samples" placeholder="기본 6000" style="flex:1"></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="flex:0 0 140px;font-size:13px;color:var(--ai-color-muted)">시행문</span><input type="number" min="1" data-genre="gongmun" placeholder="기본 8000" style="flex:1"></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="flex:0 0 140px;font-size:13px;color:var(--ai-color-muted)">규정</span><input type="number" min="1" data-genre="regulation" placeholder="기본 12000" style="flex:1"></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="flex:0 0 140px;font-size:13px;color:var(--ai-color-muted)">보도자료</span><input type="number" min="1" data-genre="press" placeholder="기본 6000" style="flex:1"></div>
+          <div style="display:flex;align-items:center;gap:10px"><span style="flex:0 0 140px;font-size:13px;color:var(--ai-color-muted)">발표 슬라이드</span><input type="number" min="1" data-genre="slides" placeholder="기본 6000" style="flex:1"></div>
+        </div>
+        <label class="밭" for="하루총량">하루 총량 (토큰)
+          <span class="뜻">하루에 쓸 수 있는 총 토큰 예산</span></label>
+        <input type="number" id="하루총량" min="1" placeholder="예: 200000">
+        <div class="줄"><button class="주단추" id="설정저장">LLM 설정 저장</button></div>
+        <div class="알림" id="설정알림"></div>
+      </div>
+    </div>
+
+    <!-- 2. 세션 무반응 시간 -->
+    <div class="단계">
+      <div class="머리"><span class="번호">2</span><h2>세션 무반응 시간</h2>
+        <span class="요약" id="만료요약"></span></div>
+      <div class="속">
+        <p class="흐림">이 시간 동안 아무 요청이 없으면 세션이 끝나고 문서 내용이 지워집니다.<br>
+           익명 원장 후보만 남고, 세션이 실제로 읽는 값과 같습니다.</p>
+        <label class="밭" for="세션만료초">무반응 초 (세션만료초)</label>
+        <input type="number" id="세션만료초" min="1" placeholder="기본 600 (10분)">
+        <div class="줄"><button class="주단추" id="만료저장">무반응 시간 저장</button></div>
+        <div class="알림" id="만료알림"></div>
+      </div>
+    </div>
+
+    <!-- 3. 원장 후보 검토 -->
+    <div class="단계">
+      <div class="머리">
+        <span class="아이콘칸"><svg class="아이콘" aria-hidden="true"><use href="icons.svg#archive"></use></svg></span>
+        <h2>원장 후보 검토</h2><span class="요약" id="후보요약"></span></div>
+      <div class="속">
+        <p class="흐림">세션이 남긴 익명 후보입니다 — 문서 이름·본문은 없고, 어느 규칙이 몇 번
+           울렸는지만 담깁니다.<br>채택은 "개발 흐름에서 반영하기로 함" 표시일 뿐,
+           정본은 여기서 바꾸지 않습니다(1-7).</p>
+        <div class="줄"><button class="곁단추" id="후보새로">새로 고침</button></div>
+        <div id="후보목록"></div>
+        <div class="알림" id="후보알림"></div>
+      </div>
+    </div>
+
+    <!-- 4. 관측 -->
+    <div class="단계">
+      <div class="머리">
+        <span class="아이콘칸"><svg class="아이콘" aria-hidden="true"><use href="icons.svg#evidence"></use></svg></span>
+        <h2>관측</h2><span class="요약">얼마나 쓰였나 · 어디서 걸렸나</span></div>
+      <div class="속">
+        <p class="흐림">지나간 세션 통계입니다(익명 후보에서 집계 — 이것이 살아남는 유일한 기록).</p>
+        <div class="줄"><button class="곁단추" id="관측새로">새로 고침</button></div>
+        <div id="관측몸"></div>
+        <div class="알림" id="관측알림"></div>
+      </div>
+    </div>
+
+    <!-- 5. 동의 코퍼스 검토 (WP-S10 2차-B) -->
+    <div class="단계">
+      <div class="머리">
+        <span class="아이콘칸"><svg class="아이콘" aria-hidden="true"><use href="icons.svg#review"></use></svg></span>
+        <h2>동의 코퍼스 검토</h2><span class="요약" id="코퍼스요약"></span></div>
+      <div class="속">
+        <p class="흐림">사용자가 동의하고 남긴 예시입니다 — <b>무엇을</b>(문체·구성·디자인 중 어느 것을)
+           <b>어떻게 바꿨는지</b>, 적었다면 <b>왜 바꿨는지</b>까지 보여줍니다.<br>
+           저장 전에 이름·숫자·기관·메일·링크는 &lt;이름&gt;·&lt;수&gt;·&lt;기관&gt;·&lt;메일&gt;·&lt;링크&gt; 로
+           가려 남깁니다 — <b>여기는 보여주기까지만</b> 합니다.<br>
+           규칙 승격(온톨로지 반영)은 정본 판정이라 이 화면이 하지 않습니다(1-7, 원장 후보 검토와 같은 원칙).</p>
+        <div class="줄"><button class="곁단추" id="코퍼스새로">새로 고침</button></div>
+        <div id="코퍼스몸"></div>
+        <div class="알림" id="코퍼스알림"></div>
+
+        <!-- 8단계 활용 ② — AI 규칙개선 시사점(온디맨드). AI 가 취합을 읽어 방향을 뽑고,
+             관리자가 커멘트해 정본을 직접 고친다(자동 반영 없음, 사람+AI 협업). -->
+        <div class="줄" style="margin-top:20px; align-items:baseline; gap:10px">
+          <button class="주단추" id="시사점뽑기">AI 규칙개선 시사점 뽑기</button>
+          <span class="흐림" style="font-size:11.5px">쌓인 코퍼스를 AI 가 규칙별로 읽어 개선 방향을 뽑습니다(온디맨드). 규칙 수정은 관리자가 직접.</span>
+        </div>
+        <div id="시사점몸"></div>
+        <div class="알림" id="시사점알림"></div>
+      </div>
+    </div>
+
+    <!-- 정책 토큰 (WP-S6) — 플러그인 위임 채널 발급/관리 -->
+    <div class="단계">
+      <div class="머리"><span class="번호">7</span><h2>정책 토큰</h2>
+        <span class="요약" id="토큰요약"></span></div>
+      <div class="속">
+        <p class="흐림">플러그인(MCP·스킬)을 설치하면 <b>설치본이 자기 토큰을 자동으로 하나 받아 갑니다</b>(즉시 활성).
+           아래 목록이 그렇게 등록된 토큰들입니다 — 웹앱은 토큰 없이 누구나 쓰고, 토큰은 <b>플러그인 위임 채널</b>에만
+           걸립니다. 남용하는 토큰은 <b>비활성</b>으로 즉시 끊고, 이상사용(분당 상한 반복)은 자동으로 잠깁니다.
+           특정 설치자에게 <b>손으로</b> 하나 만들어 전할 때만 아래 발급 폼을 쓰세요(원문은 발급 순간 딱 한 번만 — 원장엔 해시만).</p>
+        <div class="줄" style="gap:10px; flex-wrap:wrap; align-items:flex-end">
+          <label class="밭" for="토큰이름" style="flex:1; min-width:170px">설치자 이름·용도
+            <input type="text" id="토큰이름" placeholder="예: ○○기관 김주무관" autocomplete="off"></label>
+          <label class="밭" for="토큰메모" style="flex:2; min-width:200px">메모 (선택)
+            <input type="text" id="토큰메모" placeholder="예: 2026-08-18 설치요청" autocomplete="off"></label>
+          <button class="주단추" id="토큰발급단추">발급</button>
+        </div>
+        <div id="토큰발급결과" hidden
+             style="margin-top:12px; padding:12px 14px; border:1px solid var(--ai-color-signal);
+                    background:var(--ai-color-signal-tint); border-radius:8px">
+          <div class="흐림" style="font-size:11.5px; margin-bottom:6px">
+            이 토큰을 <b>지금</b> 복사해 설치자에게 전하세요 — 다시 볼 수 없습니다.</div>
+          <div class="줄" style="gap:8px">
+            <input type="text" id="토큰원문" readonly onclick="this.select()"
+                   style="flex:1; font-family:ui-monospace,monospace">
+            <button class="곁단추" id="토큰복사단추">복사</button>
+          </div>
+        </div>
+        <div class="줄" style="margin-top:16px"><button class="곁단추" id="토큰새로">새로 고침</button></div>
+        <div id="토큰몸"></div>
+        <div class="알림" id="토큰알림"></div>
+      </div>
+    </div>
+
+    <!-- 6. 정본 수정은 하지 않는다 (출시계획 1-7) -->
+    <div class="단계">
+      <div class="머리"><span class="번호">6</span><h2>정본 수정 없음</h2></div>
+      <div class="속">
+        <div class="막음">이 화면에는 정본(온톨로지·규칙) 수정 기능이 <b>없습니다</b>(출시계획 1-7).
+          관리자는 후보를 채택/기각까지만 하고, 실제 규칙 수정은 verify_all 이 지키는 개발 흐름에서 합니다.
+          웹에서 규칙을 고치면 조립기·린터·게이트 검사가 안 돌기 때문입니다.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+// 관리자 열쇠는 이 탭에만 잠시 담는다(sessionStorage — 탭 닫으면 사라짐). localStorage 를
+// 안 쓰는 까닭은 세션 사용자 키와 같다(출시계획 1-3): 공용 PC 에 남지 않게. 이 값은
+// X-Admin-Key 헤더로만 나가고 화면에 다시 그리지 않는다.
+const 열쇠칸 = 'ai-admin-key';
+const 잠금 = s => String(s === undefined || s === null ? '' : s)
+  .replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;',
+                               '"': '&quot;', "'": '&#39;' }[c]));
+const 알림 = (id, 글, 종류) => {
+  const el = $(id); el.textContent = 글; el.className = '알림 보임 ' + (종류 || '보통');
+};
+
+function 열쇠헤더() {
+  const k = sessionStorage.getItem(열쇠칸);
+  return k ? { 'X-Admin-Key': k } : {};
+}
+
+// 관리자 API 부르기. 읽기는 GET, 쓰기는 POST. 열쇠는 X-Admin-Key 로 실어 보낸다.
+// 화면을 처음 열 때는(Basic Auth 로 이미 들어왔을 수 있어) 열쇠 없이 먼저 시도하고,
+// 401 이면 열쇠 카드를 띄운다.
+async function 부르기(이름, 인자, 쓰기) {
+  const 옵션 = 쓰기
+    ? { method: 'POST', headers: { 'Content-Type': 'application/json', ...열쇠헤더() },
+        body: JSON.stringify(인자 || {}) }
+    : { headers: 열쇠헤더() };
+  const r = await fetch('/api/' + 이름, 옵션);
+  if (r.status === 401) { 열쇠요구(); throw new Error('401'); }
+  return r.json();
+}
+
+function 열쇠요구() {
+  $('#면').hidden = true;
+  $('#열쇠카드').hidden = false;
+  $('#로그아웃').hidden = true;
+  $('#열쇠입력').focus();
+}
+
+$('#열쇠확인').onclick = () => {
+  const v = $('#열쇠입력').value.trim();
+  if (!v) { 알림('#열쇠알림', '열쇠를 넣으세요', '나쁨'); return; }
+  sessionStorage.setItem(열쇠칸, v);
+  $('#열쇠입력').value = '';
+  시작();
+};
+$('#열쇠입력').addEventListener('keydown', e => { if (e.key === 'Enter') $('#열쇠확인').onclick(); });
+// 로그아웃 — 이 탭의 열쇠를 지우고 새로고침(→ 열쇠 카드 다시 뜸). 서버엔 세션이 없다(열쇠뿐).
+$('#로그아웃').onclick = () => { sessionStorage.removeItem(열쇠칸); location.reload(); };
+
+// ── 설정 그리기 ──────────────────────────────────────────────────────────
+let 마지막설정 = null;
+// 제공자에 따라 입력칸을 켜고 끈다 — 앤트로픽은 엔드포인트 고정(서버칸 없음), 로컬 Ollama 는 키 불필요.
+function 제공자바뀜() {
+  const p = $('#제공자').value;
+  $('#서버묶음').hidden = (p === 'anthropic');
+  $('#키묶음').hidden = (p === 'ollama');
+  const ph = { 'openai호환': 'https://api.featherless.ai/v1',
+               'ollama': 'http://localhost:11434/v1', 'custom': 'https://…/v1' };
+  if (ph[p]) $('#서버').placeholder = ph[p];
+}
+$('#제공자').onchange = 제공자바뀜;
+function 설정그리기(v) {
+  마지막설정 = v;
+  const llm = v.llm || {};
+  $('#제공자').value = llm['제공자'] || 'openai호환';
+  $('#서버').value = llm['베이스'] || '';
+  제공자바뀜();
+  $('#현재키').value = llm['키있음'] ? (llm['키가림'] || '(설정됨)') : '(없음)';
+  $('#모델').value = llm['모델'] || '';
+  $('#표시').value = llm['표시'] || '';
+  const gt = llm['장르토큰'] || {};
+  document.querySelectorAll('#장르토큰밭 input[data-genre]').forEach(inp => {
+    inp.value = (gt[inp.dataset.genre] == null) ? '' : gt[inp.dataset.genre];
+  });
+  $('#하루총량').value = (llm['하루총량'] == null) ? '' : llm['하루총량'];
+  $('#세션만료초').value = (v['세션만료초'] == null) ? '' : v['세션만료초'];
+  $('#설정요약').textContent = llm['키있음'] ? ('키 ' + (llm['키가림'] || '설정됨')) : '키 없음';
+  $('#만료요약').textContent = '실효 ' + v['실효만료초'] + '초'
+    + (v['세션만료초'] == null ? ' (기본값)' : '');
+  $('#키상태').textContent = llm['키있음'] ? 'LLM 키 등록됨' : 'LLM 키 없음';
+  if (v['설정깨짐']) 알림('#설정알림', '설정.json 이 깨져 있습니다 — 파일을 확인하세요', '나쁨');
+}
+
+$('#설정저장').onclick = async () => {
+  const 인자 = {};
+  const 새키 = $('#새키').value.trim();
+  if (새키) 인자['llm키'] = 새키;
+  const m = $('#모델').value.trim(); if (m) 인자['모델'] = m;
+  인자['표시'] = $('#표시').value.trim();          // 빈 값도 보낸다(안내 문구 지우기 = 기본 문구로)
+  인자['제공자'] = $('#제공자').value;
+  // 앤트로픽은 엔드포인트 고정 — 서버칸을 안 보내고 비운다(빈 값이면 서버가 기본값 폴백).
+  인자['베이스'] = ($('#제공자').value === 'anthropic') ? '' : $('#서버').value.trim();
+  const gt = {};
+  document.querySelectorAll('#장르토큰밭 input[data-genre]').forEach(inp => {
+    gt[inp.dataset.genre] = inp.value.trim();   // 빈 값도 보낸다(그 장르 상한 해제 = 기본값으로)
+  });
+  인자['장르토큰'] = gt;
+  const d = $('#하루총량').value.trim(); if (d) 인자['하루총량'] = d;
+  try {
+    const j = await 부르기('관리자설정저장', 인자, true);
+    if (!j.ok) { 알림('#설정알림', j['로그'] || '저장 실패', '나쁨'); return; }
+    $('#새키').value = '';
+    설정그리기(j['값']['설정']);
+    알림('#설정알림', j['로그'] || '저장했습니다', '좋음');
+  } catch (e) { if (e.message !== '401') 알림('#설정알림', String(e.message), '나쁨'); }
+};
+
+$('#만료저장').onclick = async () => {
+  const v = $('#세션만료초').value.trim();
+  if (!v) { 알림('#만료알림', '무반응 초를 넣으세요', '나쁨'); return; }
+  try {
+    const j = await 부르기('관리자설정저장', { 세션만료초: v }, true);
+    if (!j.ok) { 알림('#만료알림', j['로그'] || '저장 실패', '나쁨'); return; }
+    설정그리기(j['값']['설정']);
+    알림('#만료알림', j['로그'] || '저장했습니다', '좋음');
+  } catch (e) { if (e.message !== '401') 알림('#만료알림', String(e.message), '나쁨'); }
+};
+
+// ── 후보 검토 ────────────────────────────────────────────────────────────
+async function 후보그리기() {
+  let j;
+  try { j = await 부르기('관리자후보목록'); }
+  catch (e) { return; }
+  if (!j.ok) { 알림('#후보알림', j['로그'] || '후보를 못 읽었습니다', '나쁨'); return; }
+  const 후보들 = j['값']['후보들'] || [];
+  $('#후보요약').textContent = '대기 ' + j['값']['대기수'] + '건';
+  const 몸 = $('#후보목록');
+  몸.innerHTML = '';
+  if (!후보들.length) {
+    몸.innerHTML = '<p class="흐림">검토 대기 중인 후보가 없습니다.</p>';
+    return;
+  }
+  for (const c of 후보들) {
+    const 칩 = (c['후보'] || []).map(x =>
+      `<span class="절">${잠금(x['출처'])} · ${잠금(x['규칙'])} ×${잠금(x['횟수'])}</span>`).join('');
+    const el = document.createElement('div');
+    el.className = '후보';
+    el.innerHTML = `
+      <div class="머릿줄">
+        <b>${잠금(c['익명id'])}</b>
+        <span class="꼬리표">${잠금(c['사유'])}</span>
+        <span class="때">${잠금(c['때'])} · 산 ${잠금(c['산것초'])}초 · 규칙 ${잠금(c['후보수'])}건</span>
+        <span class="조작">
+          <button class="곁단추 채택" data-f="${잠금(c['파일'])}" data-d="채택">채택</button>
+          <button class="곁단추 기각" data-f="${잠금(c['파일'])}" data-d="기각">기각</button>
+        </span>
+      </div>
+      ${칩 ? `<div class="규칙줄">${칩}</div>` : '<div class="규칙줄 흐림">울린 규칙 없음</div>'}`;
+    몸.appendChild(el);
+  }
+}
+
+$('#후보목록').onclick = async e => {
+  const b = e.target.closest('button[data-d]');
+  if (!b) return;
+  b.disabled = true;
+  try {
+    const j = await 부르기('관리자후보처리', { 파일: b.dataset.f, 결정: b.dataset.d }, true);
+    if (!j.ok) { 알림('#후보알림', j['로그'] || '처리 실패', '나쁨'); b.disabled = false; return; }
+    알림('#후보알림', j['로그'], '좋음');
+    await 후보그리기();
+    await 관측그리기();     // 처리분포가 바뀌므로 관측도 새로 그린다
+  } catch (err) { if (err.message !== '401') { 알림('#후보알림', String(err.message), '나쁨'); b.disabled = false; } }
+};
+$('#후보새로').onclick = 후보그리기;
+
+// ── 관측 요약 ────────────────────────────────────────────────────────────
+async function 관측그리기() {
+  let j;
+  try { j = await 부르기('관리자관측요약'); }
+  catch (e) { return; }
+  if (!j.ok) { 알림('#관측알림', j['로그'] || '관측을 못 읽었습니다', '나쁨'); return; }
+  const v = j['값'];
+  const p = v['처리분포'] || {}, s = v['산것초'] || {};
+  const 타일 = [
+    ['세션수', v['세션수']],
+    ['대기', p['대기']], ['채택', p['채택']], ['기각', p['기각']],
+    ['평균 산것초', s['평균'] == null ? '—' : s['평균'] + '초'],
+    ['규칙 종수', v['규칙종수']],
+  ].map(([이름, 값]) => `<div class="타일"><b>${잠금(값 == null ? '—' : 값)}</b><span>${잠금(이름)}</span></div>`).join('');
+  const 사유 = Object.entries(v['사유분포'] || {})
+    .map(([k, n]) => `${잠금(k)} ${잠금(n)}`).join(' · ') || '없음';
+  const 규칙 = (v['규칙상위'] || []).map(r =>
+    `<tr><td>${잠금(r['출처'])}</td><td>${잠금(r['규칙'])}</td><td class="수">${잠금(r['횟수'])}</td></tr>`).join('');
+  $('#관측몸').innerHTML = `
+    <div class="타일줄">${타일}</div>
+    <p class="흐림" style="margin-top:12px">사유 분포 — ${사유}</p>
+    ${규칙 ? `<table><thead><tr><th>출처</th><th>규칙</th><th style="text-align:right">횟수</th></tr></thead>
+      <tbody>${규칙}</tbody></table>`
+      : '<p class="흐림">아직 울린 규칙이 없습니다.</p>'}`;
+}
+$('#관측새로').onclick = 관측그리기;
+
+// ── 동의 코퍼스 검토 (WP-S10 2차-B) ────────────────────────────────────────
+// 델타 모양은 차원마다 다르다(feedback/corpus.py) — 문체={구간,전,후}·디자인={추천,고른}·
+// 구성={유형,목차,배치}(각 갈래가 {제안,채택} 쌍, 배치는 그 쌍이 한 겹 더 중첩). 손목록
+// 없이 "제안/채택 쌍"이라는 모양 하나로 다 읽는다 — 새 갈래가 늘어도 이 함수는 안 바뀐다.
+function 델타표시(차원, 델타) {
+  델타 = 델타 || {};
+  if (차원 === '문체')
+    return `"${델타['전'] ?? ''}" → "${델타['후'] ?? ''}"` + (델타['구간'] ? ` (${델타['구간']})` : '');
+  if (차원 === '디자인')
+    return `"${델타['추천'] ?? ''}" → "${델타['고른'] ?? ''}"`;
+  const 쌍글 = v => `${JSON.stringify(v['제안'])} → ${JSON.stringify(v['채택'])}`;
+  const 줄 = [];
+  for (const [k, v] of Object.entries(델타)) {
+    if (!v || typeof v !== 'object') continue;
+    if ('제안' in v || '채택' in v) { 줄.push(`${k}: ${쌍글(v)}`); continue; }
+    for (const [k2, v2] of Object.entries(v)) {
+      if (v2 && typeof v2 === 'object' && ('제안' in v2 || '채택' in v2)) 줄.push(`${k}.${k2}: ${쌍글(v2)}`);
+    }
+  }
+  return 줄.join(' · ') || '(빈 델타)';
+}
+async function 코퍼스그리기() {
+  let j;
+  try { j = await 부르기('관리자코퍼스목록'); }
+  catch (e) { return; }
+  if (!j.ok) { 알림('#코퍼스알림', j['로그'] || '코퍼스를 못 읽었습니다', '나쁨'); return; }
+  const v = j['값'];
+  $('#코퍼스요약').textContent = `전체 ${v['전체수']}건`;
+  const 몸 = $('#코퍼스몸');
+  if (!v['전체수']) { 몸.innerHTML = '<p class="흐림">아직 동의받은 코퍼스 항목이 없습니다.</p>'; return; }
+  const 몸글 = ['문체', '구성', '디자인'].map(차 => {
+    const 항목들 = (v['차원별'] || {})[차] || [];
+    if (!항목들.length) return '';
+    return `<h3 style="margin:14px 0 4px;font-size:13px;color:var(--ai-color-muted)">
+        ${잠금(차)} <span class="꼬리표">${항목들.length}건</span></h3>` +
+      항목들.map(it => `
+        <div class="후보">
+          <div class="머릿줄">
+            <b>${잠금(델타표시(차, it['델타']))}</b>
+            <span class="때">${잠금(it['동의시각'] || '')}</span>
+          </div>
+          ${it['지시'] ? `<div class="규칙줄">왜: ${잠금(it['지시'])}</div>` : ''}
+          ${it['규칙맥락'] ? `<div class="규칙줄 흐림">맥락 — ${잠금(it['규칙맥락'])}</div>` : ''}
+        </div>`).join('');
+  }).join('');
+  몸.innerHTML = 몸글 || '<p class="흐림">아직 동의받은 코퍼스 항목이 없습니다.</p>';
+}
+$('#코퍼스새로').onclick = 코퍼스그리기;
+
+// ── 8단계 활용 ② — AI 규칙개선 시사점(온디맨드) ──────────────────────────────
+// 버튼을 눌러야 뽑는다(LLM 비용·볼 때 최신). 서버가 코퍼스를 규칙별로 취합해 AI 에 넣고
+// 시사점을 돌려주면(규칙시사점), 관리자가 커멘트해 정본을 직접 고친다 — 자동 반영 없음.
+async function 시사점그리기() {
+  const 몸 = $('#시사점몸'); 몸.innerHTML = '<p class="흐림">AI 가 뽑는 중… (온디맨드라 잠시 걸립니다)</p>';
+  $('#시사점알림').className = '알림';
+  let j;
+  try { j = await 부르기('규칙시사점'); }
+  catch (e) { 몸.innerHTML = ''; return; }
+  if (!j.ok) { 알림('#시사점알림', j['로그'] || '시사점을 못 뽑았습니다', '나쁨'); 몸.innerHTML = ''; return; }
+  const v = j['값'] || {}, 취 = v['취합'] || {}, 시 = v['시사점'];
+  let html = '';
+  if (v['안내']) html += `<p class="흐림">${잠금(v['안내'])}</p>`;
+  const 규칙별 = 취['규칙별'] || [];
+  if (규칙별.length) {
+    html += `<h3 style="margin:14px 0 4px;font-size:13px;color:var(--ai-color-muted)">취합 <span class="꼬리표">${규칙별.length}갈래</span></h3>`;
+    html += 규칙별.map(r => `<div class="후보"><div class="머릿줄"><b>[${잠금(r['차원'])}] ${잠금(r['규칙맥락'])}</b><span class="때">${(+r['건수'] || 0)}건</span></div></div>`).join('');
+  }
+  const 목 = (시 && Array.isArray(시['시사점'])) ? 시['시사점'] : [];
+  if (목.length) {
+    html += `<h3 style="margin:16px 0 4px;font-size:13px;color:var(--ai-color-agent)">AI 시사점 <span class="꼬리표">${목.length}</span></h3>`;
+    html += 목.map(s => `
+      <div class="후보">
+        <div class="머릿줄"><b>[${잠금(s['차원'] || '')}] ${잠금(s['규칙'] || '')}</b><span class="때">근거 ${(+s['근거건수'] || 0)}건</span></div>
+        <div class="규칙줄">관찰 — ${잠금(s['관찰'] || '')}</div>
+        <div class="규칙줄">방향 — ${잠금(s['방향'] || '')}</div>
+        <textarea placeholder="관리자 커멘트 — 이 규칙을 어떻게 다듬을지 메모(정본은 직접 수정)"></textarea>
+      </div>`).join('');
+    if (시['환경시사점']) html += `<div class="후보"><div class="규칙줄 흐림">환경 — ${잠금(시['환경시사점'])}</div></div>`;
+  }
+  몸.innerHTML = html || '<p class="흐림">아직 시사점이 없습니다.</p>';
+}
+$('#시사점뽑기').onclick = 시사점그리기;
+
+// ── 정책 토큰 (WP-S6) ────────────────────────────────────────────────────
+async function 토큰그리기() {
+  let j;
+  try { j = await 부르기('토큰목록'); }
+  catch (e) { return; }                     // 401 이면 부르기() 가 열쇠 카드를 띄웠다
+  if (!j.ok) { 알림('#토큰알림', j['로그'] || '토큰을 못 읽었습니다', '나쁨'); return; }
+  const 목 = j['값'] || [];
+  const 활성수 = 목.filter(t => t['활성']).length;
+  $('#토큰요약').textContent = '발급 ' + 목.length + ' · 활성 ' + 활성수;
+  const 몸 = $('#토큰몸');
+  if (!목.length) { 몸.innerHTML = '<p class="흐림">발급된 토큰이 없습니다.</p>'; return; }
+  const 행 = 목.map(t => {
+    const 켜짐 = !!t['활성'];
+    const 상태 = 켜짐
+      ? '<span style="color:var(--ai-color-signal); font-weight:600">활성</span>'
+      : '<span style="color:var(--ai-color-review); font-weight:600">비활성</span>';
+    const 이상칸 = t['이상']
+      ? `<td class="수" style="color:var(--ai-color-review)">${잠금(t['이상'])}</td>`
+      : '<td class="수">0</td>';
+    return `<tr${켜짐 ? '' : ' style="opacity:.55"'}>
+      <td><code>${잠금(t['지문'])}</code></td>
+      <td>${잠금(t['이름']) || '<span class="흐림">—</span>'}</td>
+      <td>${상태}</td>
+      <td class="수">${잠금(t['누적'])}</td>
+      <td class="흐림" style="font-size:12px">${잠금(t['마지막']) || '—'}</td>
+      ${이상칸}
+      <td><button class="곁단추" data-fp="${잠금(t['지문'])}" data-on="${켜짐 ? '0' : '1'}">${켜짐 ? '비활성' : '활성'}</button></td>
+    </tr>`;
+  }).join('');
+  몸.innerHTML = `<table><thead><tr>
+    <th>지문</th><th>이름·용도</th><th>상태</th><th style="text-align:right">누적</th>
+    <th>마지막</th><th style="text-align:right">이상</th><th></th></tr></thead>
+    <tbody>${행}</tbody></table>`;
+}
+
+$('#토큰발급단추').onclick = async () => {
+  const 이름 = $('#토큰이름').value.trim();
+  if (!이름) { 알림('#토큰알림', '설치자 이름·용도를 넣으세요', '나쁨'); return; }
+  const b = $('#토큰발급단추'); b.disabled = true;
+  try {
+    const j = await 부르기('토큰발급', { 이름, 메모: $('#토큰메모').value.trim() }, true);
+    if (!j.ok) { 알림('#토큰알림', j['로그'] || '발급 실패', '나쁨'); b.disabled = false; return; }
+    $('#토큰원문').value = j['값']['토큰'];
+    $('#토큰발급결과').hidden = false;
+    $('#토큰이름').value = ''; $('#토큰메모').value = '';
+    알림('#토큰알림', j['로그'] || '발급했습니다', '좋음');
+    await 토큰그리기();
+  } catch (err) { if (err.message !== '401') 알림('#토큰알림', String(err.message), '나쁨'); }
+  b.disabled = false;
+};
+
+$('#토큰복사단추').onclick = async () => {
+  const v = $('#토큰원문').value;
+  try { await navigator.clipboard.writeText(v); 알림('#토큰알림', '복사했습니다', '좋음'); }
+  catch (e) { $('#토큰원문').select(); try { document.execCommand('copy'); 알림('#토큰알림', '복사했습니다', '좋음'); }
+              catch (_) { 알림('#토큰알림', '수동으로 복사하세요', '나쁨'); } }
+};
+
+$('#토큰몸').onclick = async e => {
+  const b = e.target.closest('button[data-fp]');
+  if (!b) return;
+  b.disabled = true;
+  try {
+    const 켜기 = b.dataset.on === '1';
+    const j = await 부르기('토큰활성', { 지문: b.dataset.fp, 켜기 }, true);
+    if (!j.ok) { 알림('#토큰알림', j['로그'] || '변경 실패', '나쁨'); b.disabled = false; return; }
+    알림('#토큰알림', (켜기 ? '활성화' : '비활성화') + '했습니다', '좋음');
+    await 토큰그리기();
+  } catch (err) { if (err.message !== '401') { 알림('#토큰알림', String(err.message), '나쁨'); b.disabled = false; } }
+};
+$('#토큰새로').onclick = 토큰그리기;
+
+// ── 시작 ────────────────────────────────────────────────────────────────
+async function 시작() {
+  let j;
+  try { j = await 부르기('관리자설정보기'); }
+  catch (e) { return; }        // 401 이면 부르기() 가 이미 열쇠 카드를 띄웠다
+  if (!j.ok) { 열쇠요구(); return; }
+  $('#열쇠카드').hidden = true;
+  $('#면').hidden = false;
+  $('#로그아웃').hidden = false;
+  설정그리기(j['값']);
+  await 후보그리기();
+  await 관측그리기();
+  await 코퍼스그리기();
+  await 토큰그리기();
+}
+시작();
+</script>
+</body>
+</html>
