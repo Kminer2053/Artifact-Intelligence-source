@@ -1,98 +1,109 @@
 <div align="center">
 
-# 문서지능 · Artifact Intelligence
+# 문서지능 · Artifact Intelligence — 소스
 
-**무엇을·누구에게·왜 보고할지와 사실·수치만 넘기면, 결재에 올릴 수 있는 문서 초안이 나옵니다.**  
-목차 잡기·개조식 변환·한 장 맞춤·한글(HWPX) 변환은 규칙이 알아서 합니다. 사람은 맞는지 보고 고칠 데만 짚습니다.
+**대한민국 공공기관 문서를 사람과 함께 만드는 파이프라인의 전체 소스입니다.**
+웹앱 · Claude Code 플러그인 · MCP 서버를 한 리포에 담았습니다.
 
-먼저 써 보기 — 설치 없이 **https://artifact-intelligence.app**
+먼저 써 보기(설치 없이) — **https://artifact-intelligence.app**
 
+![구성](https://img.shields.io/badge/구성-웹앱·플러그인·MCP-1E67F0)
 ![산출](https://img.shields.io/badge/산출-6종%20문서-101B33)
-![쓰는곳](https://img.shields.io/badge/쓰는곳-웹앱·MCP·스킬-1E67F0)
 ![출력](https://img.shields.io/badge/출력-HTML·PDF·HWPX·PPTX-267A68)
-![검증](https://img.shields.io/badge/검증-문체·조판·사실-E75757)
 
 </div>
 
 ---
 
-<!-- DEMO-VIDEO -->
-### 시연 영상
+## 이 리포는 무엇인가
 
-의도와 자료만 넣으면 → AI가 문서 구조를 설계하고 → 완성 문서를 → 도식·문구까지 항목별로 손쉽게 편집하고 → 한글(HWPX)로 내려받습니다.
+문서지능은 의도(무엇을·누구에게·왜)와 자료(사실·수치)만 받아, 결재에 올릴 수 있는 공공기관 문서 초안을 만드는 도구입니다. 목차 설계·개조식 변환·한 장 맞춤·한글(HWPX) 변환을 규칙이 처리하고, 사람은 확인하고 고칠 데만 짚습니다. 만드는 문서는 여섯 가지 — **1페이지 보고서 · 풀버전 보고서 · 시행문 · 규정 · 보도자료 · 발표 슬라이드(PPTX)** 입니다.
 
-[![문서지능 시연 영상](docs/promo/preview.gif)](docs/promo/promo.mp4)
+이 리포는 그 파이프라인의 **소스 전체**를 공유용으로 담은 것입니다. 세 가지 표면(웹앱·플러그인·MCP)의 코드가 모두 들어 있습니다.
 
-▶ **[전체 영상 보기 (41초)](docs/promo/promo.mp4)** · 설치 없이 먼저 써 보기 — **https://artifact-intelligence.app**
+> **온톨로지 지식 정본(`ontology.json`)은 이 리포에 없습니다.** 개체×3요소 규칙·목차 논리 같은 지식 정본은 정책 서버(artifact-intelligence.app)에만 두고, 실행 중 필요한 조각만 그때그때 받아옵니다. 그 밖의 처리 코드(조립·검사·변환·판정 규칙)는 사용자 문서를 다루므로 — 자료를 서버로 보내지 않으려고 — 설치본에서 로컬로 돌고, 이 리포에 함께 있습니다.
 
----
+## 세 표면, 하나의 코어
 
-## 일하는 방식을 바꿉니다
+세 표면이 같은 코어([`workspace/api.py`](artifact-intelligence/workspace/api.py))를 공유합니다. 작업 목록을 한 곳에 적고 셋이 읽으므로, 어느 표면에서 만들든 규칙이 갈라지지 않습니다.
 
-워드·한글은 빈 화면을 주고 사람이 다 채웁니다. 문서지능은 AI와 사람이 함께 일하도록 방식을 바꿉니다 — AI가 읽고 세우고 만들고 검사하면, 사람은 판단합니다. 실무자 한 명이 옆에 붙은 것에 가깝습니다.
-
-- **의도와 맥락만 주면 됩니다.** "무엇을·누구에게·왜"와 사실·수치만 넘기면 결재에 올릴 초안이 나옵니다. 서식·목차·문체를 미리 정해 줄 필요가 없습니다.
-- **설계를 먼저 보여 드립니다.** 어떤 유형으로 보고 목차를 어떻게 잡을지 초안을 만들기 전에 보여 드리고, 승인하면 그제서야 씁니다. "이건 검토보고가 아니라 결과보고였네"를 내용 쓰기 전에 바로잡습니다.
-- **AI가 만들고, 사람이 검증합니다.** 백지에서 시작하지 않으니 빠르고, 규칙이 품질을 받쳐 주니 흔들리지 않습니다.
-- **결과물은 HTML로, 최종본은 한글(HWPX)로.** 표·도식·삽화로 살아 있는 문서를 만들고, 그대로 한글 파일로 옮깁니다.
-- **쓸수록 좋아집니다.** 사람이 고친 곳을 규칙이 배웁니다. 실무자의 손길이 쌓일수록 다음 문서가 더 정확해집니다.
-
-품질을 **구성·문체·디자인** 세 가지로 봅니다 — 정보 흐름과 목차, 개조식 명사형 종결과 번역투 금지, 마커와 시각 위계. 실물 보고서 1만 6천여 건에서 뽑은 작성 규칙으로 이 셋을 맞추고, 서술식 종결·한 장 초과·없는 수치를 검증 게이트가 막습니다. 걸리면 스스로 고쳐 다시 냅니다.
-
-## 결재에 올리는 문서, 여섯 가지
-
-| 문서 | 용도 | 출력 |
+| 표면 | 무엇 | 어디서 도나 |
 |---|---|---|
-| **1페이지 보고서** | 의사결정자에게 한 장으로 | HTML·PDF·HWPX |
-| **풀버전 보고서** | 표지·목차·본문을 갖춘 여러 장 | HTML·PDF·HWPX |
-| **시행문** | 외부 기관·국민 대상 공문 | HTML·PDF·HWPX |
-| **규정** | 제정·개정 조문 | HTML·PDF·HWPX |
-| **보도자료** | 언론 배포 | HTML·PDF·HWPX |
-| **발표 슬라이드** | 정책보고·브리핑(16:9) | HTML·PDF·PPTX |
+| **웹앱** | 브라우저에서 바로, 설치 없이 | 정책 서버(artifact-intelligence.app) |
+| **스킬** | Claude Code 플러그인 | 설치한 컴퓨터(로컬) |
+| **MCP** | Codex 등 에이전트가 도구로 호출 | 설치한 컴퓨터(로컬) |
 
-문서마다 정해진 서식이 있어, 같은 내용은 어느 환경에서든 글꼴까지 똑같이 나옵니다.
+- **온톨로지 지식**은 정책 서버에만 있고, `지식()`이 필요한 조각만 조회합니다.
+- **문서 처리**(판정·조립·검사·조판·한글 변환)는 사용자 자료를 받으므로 로컬에서 돕니다 — 문서 내용은 설치한 컴퓨터를 벗어나지 않습니다(웹앱으로 쓰면 서버가 처리).
 
-## 문서는 이 컴퓨터를 떠나지 않습니다
+## 디렉터리 구조
 
-판정·작성·조립·검사·한글 변환까지, 문서를 만드는 일은 전부 설치한 컴퓨터에서 처리합니다. 넘긴 자료도, 만든 초안도, 완성한 문서도 서버로 올라가지 않습니다. 서버에서 받아 오는 것은 작성 규칙 조각뿐이고, 그마저 작업에 필요한 만큼만 그때그때 받습니다.
+```
+Artifact-Intelligence-source/
+├─ .claude-plugin/marketplace.json   Claude Code 마켓플레이스 등록 정보
+├─ docs/promo/                       시연 영상·포스터
+└─ artifact-intelligence/            ── 본체 (웹앱 + 플러그인 + MCP 가 공유) ──
+   ├─ SKILL.md                       스킬 진입 지침(Claude Code 가 읽는 사용설명)
+   ├─ README.md                      플러그인 설치·사용 안내
+   ├─ .claude-plugin/plugin.json     플러그인 메타
+   ├─ .cursor/                       Cursor 용 슬래시 명령·룰
+   ├─ commands/문서지능.md            슬래시 명령 정의
+   ├─ bin/bootstrap.sh               첫 기동 — 정책 토큰 발급·의존성 설치
+   │
+   ├─ workspace/                     ── 웹앱 · 편집기 · 공용 코어 ──
+   │  ├─ api.py                      작업 목록(스킬·MCP·웹앱이 다 읽는 단일 코어)
+   │  ├─ serve.py                    HTTP 서버(웹앱·편집기 구동)
+   │  ├─ app.html                    웹앱 화면
+   │  ├─ admin.html                  관리자 콘솔
+   │  ├─ render_editor_any.py        리터칭 편집기 생성
+   │  ├─ apply_edit_any.py           편집 반영·재조립
+   │  └─ ui-tokens.css · icons.svg   디자인 토큰·아이콘
+   │
+   ├─ build/                         ── 조립·검사·변환 엔진 (py 33 · json 11 · css 7) ──
+   │  ├─ assemble*.py                장르별 조립기(1p·풀버전·시행문·규정·보도자료·슬라이드)
+   │  ├─ stylelint.py                문체 게이트(개조식·번역투 검사)
+   │  ├─ 지어냈나.py                  사실 검증(없는 수치·이름 탐지)
+   │  ├─ 판별로직.py                  장르 판정 규칙(가중치·문턱)
+   │  ├─ tohwpx.py · topptx.py · tomd.py   한글(HWPX) · PPTX · Markdown 변환
+   │  ├─ 화면읽기.py · 카탈로그.py     조판 측정·전이 카탈로그 생성
+   │  └─ *.css                       장르별 인쇄 CSS(정본 규격)
+   │
+   ├─ buildplan/                     빌드플랜 설계·승인·되돌리기
+   ├─ feedback/                      리터칭 역추적·동의 코퍼스
+   ├─ history/                       버전·이력·diff
+   ├─ personalization/               개인·부서 프로파일
+   ├─ ontology/                      editor-profiles.json(편집기 프로파일)
+   │                                 ※ 지식 정본 ontology.json 은 정책 서버에만 — 이 리포에 없음
+   ├─ mcp/                           MCP 서버(server.py · run.sh)
+   ├─ hooks/                         플러그인 훅
+   └─ fonts/                         본문 폰트(Noto Serif KR · Pretendard)
+```
 
-## 설치
+## 파이프라인 한눈에
 
-> **진입은 클라이언트마다 자리가 다릅니다**(스킬·MCP 노출 방식이 달라서 — 고장이 아닙니다). 어디서든 **"문서지능 도와줘"** 라고 치면 됩니다. `/` 로 부르려면: Claude Code = `/문서지능`, Codex = `/skills` → artifact-intelligence, Cursor = `/문서지능`(아래 `.cursor/commands/` 복사 후).
+의도·자료 → **판별로직**이 유형·장르 판정 → **빌드플랜**(사람이 승인) → **assemble**가 3층 인스턴스로 조립 → **stylelint·지어냈나**가 문체·사실 검사 → **편집기**에서 사람이 리터칭 → **tohwpx/topptx**로 한글·발표 파일 내보내기. 사람이 고친 곳은 **feedback**이 정본에 역추적해 다음 문서에 반영합니다.
 
-**Claude Code** — 마켓플레이스로:
+## 실행
+
+**웹앱·편집기를 로컬에서 띄우기**
+```bash
+python3 artifact-intelligence/workspace/serve.py        # 기본 127.0.0.1:8642
+```
+온톨로지가 필요한 작업은 정책 서버 연결이 있어야 합니다(`artifact-intelligence/정책서버.conf` 또는 env `문서지능_정책서버`). 첫 기동 스크립트는 [`bin/bootstrap.sh`](artifact-intelligence/bin/bootstrap.sh)가 처리합니다(정책 토큰 발급·의존성 설치).
+
+**Claude Code 플러그인으로 설치**
 ```
 /plugin marketplace add Kminer2053/Artifact-Intelligence-public
 /plugin install artifact-intelligence@artifact-intelligence
 ```
-진입: `/문서지능` 또는 "문서지능 도와줘".
 
-**Codex** — 플러그인 마켓플레이스로(클론 불필요):
+**Codex 등에서 MCP로 붙이기**
 ```bash
-codex plugin marketplace add Kminer2053/Artifact-Intelligence-public
-codex plugin add artifact-intelligence@artifact-intelligence
+codex mcp add artifact-intelligence -- "$(pwd)/artifact-intelligence/mcp/run.sh"
 ```
-Python 3.10+ 필요. 한글(HWPX)·업로드·규칙 조회까지 쓰려면 설치된 플러그인 폴더(`codex plugin list` 로 경로 확인)에서 `bash bin/bootstrap.sh` 를 한 번 실행하세요. 진입: **새 세션**에서 `/skills` → artifact-intelligence(설치 직후엔 스킬 목록 갱신에 새 세션이 필요), 또는 "문서지능 도와줘". (Codex `/` 상단 메뉴는 `/plugins`·`/skills`·`/mcp` 내장 명령만 보입니다.)
 
-**Cursor** — MCP 서버 + 규칙으로 붙입니다:
-```bash
-git clone https://github.com/Kminer2053/Artifact-Intelligence-public
-cd Artifact-Intelligence-public/artifact-intelligence
-bash bin/bootstrap.sh
-mkdir -p ~/.cursor/rules ~/.cursor/commands
-cp .cursor/rules/artifact-intelligence.mdc ~/.cursor/rules/   # 작업 안내 규칙(자동 적용)
-cp .cursor/commands/문서지능.md ~/.cursor/commands/           # /문서지능 슬래시 명령(Cursor 1.6+)
-```
-그다음 `~/.cursor/mcp.json` 의 `mcpServers` 에 아래를 추가하고 Cursor를 재시작하세요(`<경로>` 는 위 폴더의 절대경로):
-```json
-"artifact-intelligence": { "command": "<경로>/mcp/run.sh" }
-```
-Cursor는 MCP **도구**(판정·조립·게이트·내보내기)로 동작합니다. **진입**: `/` 를 치면 `/문서지능` 명령이 뜨거나(위 `.cursor/commands/` 복사 후, Cursor 1.6+), 그냥 **"문서지능 도와줘"** 라고 쳐도 됩니다 — 이후 규칙이 단계별 절차를 안내합니다.
+필요 환경: 파이썬 3.10 이상. 자세한 사용법은 [`artifact-intelligence/README.md`](artifact-intelligence/README.md)와 [`artifact-intelligence/SKILL.md`](artifact-intelligence/SKILL.md)를 보세요.
 
-**웹앱** — 설치 없이 https://artifact-intelligence.app 에서 바로 씁니다.
+## 문의
 
-설치하면 첫 기동 때 규칙 조회용 토큰을 자동으로 받고, 한글(HWPX)·업로드 처리에 필요한 것도 한 번에 준비합니다. 파이썬 3.10 이상이 필요합니다.
-
----
-
-<div align="center"><sub>공공기관 보고서 작성을 도구로 열어 둡니다. 문의: park2053@gmail.com</sub></div>
+문서지능 · park2053@gmail.com
