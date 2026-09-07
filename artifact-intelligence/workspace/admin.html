@@ -123,6 +123,18 @@
   .아이콘 { width: 1em; height: 1em; display: inline-block; vertical-align: -.15em;
     fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   header .마크 .상표선 { stroke: var(--ai-color-signal); }
+
+  /* 탭 — 관리 항목을 갈래로 나눠 세로 길이를 줄인다(스크롤 대신 탭 전환). */
+  .탭바 { display: flex; gap: 4px; flex-wrap: wrap; margin: 2px 0 18px;
+    border-bottom: 1px solid var(--ai-color-line); }
+  .탭 { background: transparent; border: 0; border-bottom: 2px solid transparent;
+    color: var(--ai-color-muted); font-family: var(--ai-font-heading); font-weight: 700;
+    font-size: 14px; padding: 10px 15px; cursor: pointer; margin-bottom: -1px;
+    transition: color var(--ai-motion-fast), border-color var(--ai-motion-fast); }
+  .탭:hover { color: var(--ai-color-ink); }
+  .탭.켜짐 { color: var(--ai-color-signal); border-bottom-color: var(--ai-color-signal); }
+  .탭패널 { display: none; }
+  .탭패널.켜짐 { display: block; }
 </style>
 </head>
 <body>
@@ -160,6 +172,15 @@
   </div>
 
   <div id="면" hidden>
+    <div class="탭바" id="탭바">
+      <button class="탭 켜짐" data-탭="설정">모델·세션</button>
+      <button class="탭" data-탭="접속통계">접속통계</button>
+      <button class="탭" data-탭="관측">원장·관측</button>
+      <button class="탭" data-탭="코퍼스">동의 코퍼스</button>
+      <button class="탭" data-탭="토큰">정책 토큰</button>
+    </div>
+
+    <div class="탭패널 켜짐" data-패널="설정">
     <!-- 1. LLM 설정 -->
     <div class="단계">
       <div class="머리"><span class="번호">1</span><h2>LLM 설정</h2>
@@ -226,6 +247,25 @@
       </div>
     </div>
 
+    </div><!-- /설정 -->
+
+    <div class="탭패널" data-패널="접속통계">
+    <!-- 접속통계 (신규) — 방문·문서생성·내보내기 일자별 집계 -->
+    <div class="단계">
+      <div class="머리">
+        <span class="아이콘칸"><svg class="아이콘" aria-hidden="true"><use href="icons.svg#evidence"></use></svg></span>
+        <h2>접속통계</h2><span class="요약" id="접속요약"></span></div>
+      <div class="속">
+        <p class="흐림">서비스가 얼마나 쓰였는지 일자별로 셉니다 — 앱 화면 방문, 문서 생성(조립), 내보내기.<br>
+           개인정보는 없고 숫자만 남습니다. 재시작·재배포에도 보존됩니다(관측=원장 집계와 별개).</p>
+        <div class="줄"><button class="곁단추" id="접속새로">새로 고침</button></div>
+        <div id="접속몸"></div>
+        <div class="알림" id="접속알림"></div>
+      </div>
+    </div>
+    </div><!-- /접속통계 -->
+
+    <div class="탭패널" data-패널="관측">
     <!-- 3. 원장 후보 검토 -->
     <div class="단계">
       <div class="머리">
@@ -254,6 +294,9 @@
       </div>
     </div>
 
+    </div><!-- /관측 -->
+
+    <div class="탭패널" data-패널="코퍼스">
     <!-- 5. 동의 코퍼스 검토 (WP-S10 2차-B) -->
     <div class="단계">
       <div class="머리">
@@ -280,6 +323,9 @@
       </div>
     </div>
 
+    </div><!-- /코퍼스 -->
+
+    <div class="탭패널" data-패널="토큰">
     <!-- 정책 토큰 (WP-S6) — 플러그인 위임 채널 발급/관리 -->
     <div class="단계">
       <div class="머리"><span class="번호">7</span><h2>정책 토큰</h2>
@@ -313,6 +359,9 @@
       </div>
     </div>
 
+    </div><!-- /토큰 -->
+
+    <!-- 정본 수정 없음 — 탭 밖 상시 안내 -->
     <!-- 6. 정본 수정은 하지 않는다 (출시계획 1-7) -->
     <div class="단계">
       <div class="머리"><span class="번호">6</span><h2>정본 수정 없음</h2></div>
@@ -673,6 +722,37 @@ $('#토큰몸').onclick = async e => {
 };
 $('#토큰새로').onclick = 토큰그리기;
 
+// ── 탭 전환 ──────────────────────────────────────────────────────────────
+$('#탭바').onclick = e => {
+  const b = e.target.closest('button[data-탭]');
+  if (!b) return;
+  const 이름 = b.dataset.탭;
+  document.querySelectorAll('#탭바 .탭').forEach(t => t.classList.toggle('켜짐', t === b));
+  document.querySelectorAll('.탭패널').forEach(p => p.classList.toggle('켜짐', p.dataset.패널 === 이름));
+  try { sessionStorage.setItem('ai-admin-tab', 이름); } catch (_) {}
+};
+
+// ── 접속통계 그리기 ───────────────────────────────────────────────────────
+async function 접속그리기() {
+  let j;
+  try { j = await 부르기('관리자접속통계'); }
+  catch (e) { return; }
+  if (!j.ok) { 알림('#접속알림', j['로그'] || '접속통계를 못 읽었습니다', '나쁨'); return; }
+  const v = j['값'] || {}, 합 = v['합계'] || {}, 일 = v['일자별'] || [];
+  const 타일 = [['방문', 합['방문']], ['문서 생성', 합['생성']], ['내보내기', 합['내보내기']]]
+    .map(([이름, 값]) => `<div class="타일"><b>${잠금(값 == null ? 0 : 값)}</b><span>${잠금(이름)} 누적</span></div>`).join('');
+  const 행 = 일.map(d =>
+    `<tr><td>${잠금(d['날'])}</td><td class="수">${잠금(d['방문'] || 0)}</td>`
+    + `<td class="수">${잠금(d['생성'] || 0)}</td><td class="수">${잠금(d['내보내기'] || 0)}</td></tr>`).join('');
+  $('#접속요약').textContent = '누적 방문 ' + (합['방문'] || 0) + '건';
+  $('#접속몸').innerHTML = `<div class="타일줄">${타일}</div>`
+    + (행 ? `<table><thead><tr><th>날짜</th><th style="text-align:right">방문</th>`
+        + `<th style="text-align:right">생성</th><th style="text-align:right">내보내기</th></tr></thead>`
+        + `<tbody>${행}</tbody></table>`
+      : '<p class="흐림">아직 집계된 접속이 없습니다.</p>');
+}
+$('#접속새로').onclick = 접속그리기;
+
 // ── 시작 ────────────────────────────────────────────────────────────────
 async function 시작() {
   let j;
@@ -687,6 +767,12 @@ async function 시작() {
   await 관측그리기();
   await 코퍼스그리기();
   await 토큰그리기();
+  await 접속그리기();
+  // 마지막으로 본 탭 복원(없으면 첫 탭 유지).
+  try {
+    const t = sessionStorage.getItem('ai-admin-tab');
+    if (t) { const b = document.querySelector(`#탭바 .탭[data-탭="${t}"]`); if (b) b.click(); }
+  } catch (_) {}
 }
 시작();
 </script>
