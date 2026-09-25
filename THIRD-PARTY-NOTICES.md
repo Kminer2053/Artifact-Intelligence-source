@@ -48,4 +48,4 @@ Apache-2.0 전문: https://www.apache.org/licenses/LICENSE-2.0
 
 ---
 
-*온톨로지 지식 정본(`ontology.json`)은 이 저장소에 포함되지 않으며 정책 서버에만 있습니다.*
+*작성 규칙 원본(`ontology.json`)도 이 저장소에 함께 공개합니다. 사람이 읽기 쉽게 풀어 쓴 규칙 카드는 규칙마당(https://rules.artifact-intelligence.app)에서 볼 수 있습니다.*

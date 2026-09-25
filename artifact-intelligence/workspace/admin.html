@@ -117,6 +117,17 @@
   .후보 .규칙줄 .절 { display: inline-block; background: var(--ai-color-signal-tint); color: var(--ai-color-signal);
     border-radius: 6px; padding: 2px 8px; margin: 2px 4px 2px 0; font-size: 12.5px; }
 
+  /* 규칙마당 검토 — 공개 게시판 글 하나(후보 카드 문법 재사용) */
+  .마당조작 { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+  .마당조작 select { width: auto; min-width: 150px; padding: 8px 10px; }
+  .마당조작 label { display: flex; gap: 6px; align-items: center; font-size: 13px; color: var(--ai-color-ink-soft); }
+  .마당조작 .틈 { flex: 1; }
+  .꼬리표.숨김표 { background: var(--ai-color-issue-tint); color: var(--ai-color-issue-ink); }
+  .꼬리표.반영표 { background: var(--ai-color-status-bg); color: var(--ai-color-status-fg); }
+  .마당글 .본문 { margin-top: 8px; font-size: 14px; line-height: 1.6; color: var(--ai-color-ink); overflow-wrap: anywhere; }
+  .마당글 .본문 .덧 { display: block; font-size: 13px; color: var(--ai-color-muted); margin-top: 3px; }
+  .마당글 a { color: var(--ai-color-signal); font-weight: 700; text-decoration: none; font-size: 12.5px; }
+  .마당글.숨김됨 { opacity: .62; }
   .막음 { border-left: 3px solid var(--ai-color-review); background: var(--ai-color-review-tint);
     color: var(--ai-color-review-ink); border-radius: 0 var(--ai-radius-sm) var(--ai-radius-sm) 0;
     padding: 12px 14px; font-size: 13.5px; }
@@ -135,6 +146,32 @@
   .탭.켜짐 { color: var(--ai-color-signal); border-bottom-color: var(--ai-color-signal); }
   .탭패널 { display: none; }
   .탭패널.켜짐 { display: block; }
+
+  /* 사용 현황 대시보드 — 인라인 SVG 차트(외부 라이브러리 없음, 서버 CSP 가 외부를 막는다). */
+  .대시머리 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .대시머리 .틈 { flex: 1; }
+  .큰타일줄 { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 14px; }
+  .큰타일 { border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md);
+    padding: 15px 16px; background: var(--ai-color-agent-panel); }
+  .큰타일 b { display: block; font-family: var(--ai-font-heading); font-weight: 800; font-size: 30px;
+    color: var(--ai-color-ink); line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .큰타일 span { display: block; font-size: 12.5px; color: var(--ai-color-muted); margin-top: 5px; }
+  .차트묶음 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
+  @media (max-width: 680px) { .차트묶음 { grid-template-columns: 1fr; } }
+  .차트칸 { border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md);
+    padding: 14px 16px; background: var(--ai-color-white); min-width: 0; }
+  .차트칸 h3 { font-family: var(--ai-font-heading); font-weight: 800; font-size: 14px; margin: 0 0 2px;
+    letter-spacing: -.1px; }
+  .차트칸 .메모 { font-size: 11.5px; color: var(--ai-color-muted); margin: 0 0 6px; }
+  .넓 { grid-column: 1 / -1; }
+  .차트 { width: 100%; height: auto; display: block; margin-top: 4px; overflow: visible; }
+  .차트 .막대 { fill: var(--ai-color-signal); }
+  .차트 .막대.민트 { fill: var(--ai-color-agent); }
+  .차트 .축글 { fill: var(--ai-color-muted); font-size: 10px; font-family: var(--ai-font-sans); }
+  .차트 .값글 { fill: var(--ai-color-ink-soft); font-size: 10px; font-family: var(--ai-font-sans);
+    font-variant-numeric: tabular-nums; }
+  .차트 .바닥선 { stroke: var(--ai-color-line); stroke-width: 1; }
+  .차트빈 { color: var(--ai-color-muted); font-size: 13px; padding: 18px 0; text-align: center; }
 </style>
 </head>
 <body>
@@ -172,11 +209,30 @@
   </div>
 
   <div id="면" hidden>
+    <!-- 사용 현황 대시보드 (WP-S5, 항상 상단) — 방문·생성·자격증명·코퍼스를 한눈에.
+         차트는 인라인 SVG 로 직접 그린다(외부 CDN·스크립트 금지 — 서버 CSP). -->
+    <div class="단계" id="대시">
+      <div class="머리">
+        <span class="아이콘칸"><svg class="아이콘" aria-hidden="true"><use href="icons.svg#evidence"></use></svg></span>
+        <h2>사용 현황</h2><span class="요약" id="대시요약"></span></div>
+      <div class="속">
+        <div class="대시머리">
+          <p class="흐림" style="margin:0">서비스가 얼마나 쓰였는지 한눈에 봅니다 — 방문·문서 생성·플러그인 자격증명·동의 코퍼스.<br>
+             자세한 표·검토는 아래 탭에서 봅니다. 재시작·재배포에도 보존됩니다.</p>
+          <span class="틈"></span>
+          <button class="곁단추" id="대시새로">새로 고침</button>
+        </div>
+        <div id="대시몸"></div>
+        <div class="알림" id="대시알림"></div>
+      </div>
+    </div>
+
     <div class="탭바" id="탭바">
       <button class="탭 켜짐" data-탭="설정">모델·세션</button>
       <button class="탭" data-탭="접속통계">접속통계</button>
       <button class="탭" data-탭="관측">원장·관측</button>
       <button class="탭" data-탭="코퍼스">동의 코퍼스</button>
+      <button class="탭" data-탭="규칙마당">규칙마당</button>
       <button class="탭" data-탭="토큰">정책 토큰</button>
     </div>
 
@@ -324,6 +380,35 @@
     </div>
 
     </div><!-- /코퍼스 -->
+
+    <div class="탭패널" data-패널="규칙마당">
+    <!-- 규칙마당 검토·반영 -->
+    <div class="단계">
+      <div class="머리">
+        <span class="아이콘칸"><svg class="아이콘" aria-hidden="true"><use href="icons.svg#archive"></use></svg></span>
+        <h2>규칙마당 검토·반영</h2><span class="요약" id="마당요약"></span></div>
+      <div class="속">
+        <p class="흐림"><a href="/rules/index.html" target="_blank" rel="noopener">규칙마당</a>에 올라온 카드 의견과 노하우 제안입니다.
+           정하신 상태와 답변은 규칙마당에 그대로 공개됩니다. 노하우 제안은 ‘반영 예정’이나 ‘반영 완료’로 바꾸면
+           해당 문서·부분 안에 ‘현장 노하우’로 바로 게시됩니다.</p>
+        <div class="타일줄" id="마당타일"></div>
+        <div class="줄">
+          <select id="마당거름" aria-label="처리 상태로 거르기" style="width:auto">
+            <option value="처리 안 함">처리 안 한 글</option><option value="반영 예정">반영 예정</option>
+            <option value="전체">전체</option><option value="숨김">숨긴 글</option></select>
+          <select id="마당종류" aria-label="글 종류로 거르기" style="width:auto">
+            <option value="전체">의견과 제안</option><option value="제안">노하우 제안만</option><option value="의견">카드 의견만</option></select>
+          <button class="곁단추" id="마당새로">새로 고침</button>
+          <button class="곁단추 채택" id="마당내보내기">반영 예정 내보내기(JSON)</button>
+        </div>
+        <div id="마당목록" style="margin-top:14px"></div>
+        <div class="알림" id="마당알림"></div>
+        <div class="막음" style="margin-top:14px">규칙 원문(온톨로지)은 이 화면에서 고치지 않습니다(출시계획 1-7).
+          ‘반영 예정’으로 표시한 글을 내보내기로 모아 개발 흐름에서 온톨로지와 규칙 카드를 고치고, 검사를 통과해 배포한 뒤
+          ‘반영 완료’로 바꿉니다. 웹앱은 온톨로지가 바뀐 뒤에야 새 규칙대로 문서를 만듭니다.</div>
+      </div>
+    </div>
+    </div><!-- /규칙마당 -->
 
     <div class="탭패널" data-패널="토큰">
     <!-- 정책 토큰 (WP-S6) — 플러그인 위임 채널 발급/관리 -->
@@ -753,7 +838,202 @@ async function 접속그리기() {
 }
 $('#접속새로').onclick = 접속그리기;
 
+// ── 사용 현황 대시보드 (WP-S5) ────────────────────────────────────────────
+// 차트는 전부 인라인 SVG 로 손으로 그린다 — 외부 CDN·스크립트·폰트는 서버 CSP 가 막는다.
+// 값은 숫자만 두고, 라벨·날짜는 잠금()으로 감싼다(다른 그리기와 같은 XSS 규율).
+const _수 = v => (v == null || isNaN(v)) ? 0 : +v;
+
+// 세로 막대 차트 — 데이터=[{날, 값}], 시계열용(방문·생성 추이). 민트=생성 구분색.
+function 세로막대(데이터, 민트) {
+  const n = 데이터.length;
+  if (!n) return '<div class="차트빈">아직 기록 없음</div>';
+  const W = 680, H = 168, L = 8, R = 8, T = 16, B = 24;
+  const iw = W - L - R, ih = H - T - B;
+  const 최대 = Math.max(1, ...데이터.map(d => _수(d.값)));
+  const 칸 = iw / n, bw = Math.max(1, Math.min(칸 * 0.68, 34));
+  const 값보임 = n <= 16, 걸음 = Math.max(1, Math.ceil(n / 8)), 바닥 = T + ih;
+  let 막대 = '', 축 = '', 값 = '';
+  데이터.forEach((d, i) => {
+    const v = _수(d.값), h = 최대 ? (v / 최대) * ih : 0;
+    const x = L + 칸 * i + (칸 - bw) / 2, y = T + (ih - h);
+    막대 += `<rect class="막대${민트 ? ' 민트' : ''}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" `
+      + `width="${bw.toFixed(1)}" height="${Math.max(0, h).toFixed(1)}" rx="2">`
+      + `<title>${잠금(d.날)} · ${v}</title></rect>`;
+    if (값보임 && v) 값 += `<text class="값글" x="${(x + bw / 2).toFixed(1)}" y="${(y - 3).toFixed(1)}" text-anchor="middle">${v}</text>`;
+    if (i % 걸음 === 0 || i === n - 1)
+      축 += `<text class="축글" x="${(x + bw / 2).toFixed(1)}" y="${H - 8}" text-anchor="middle">${잠금(String(d.날 || '').slice(5))}</text>`;
+  });
+  return `<svg class="차트" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img">`
+    + `<line class="바닥선" x1="${L}" y1="${바닥}" x2="${W - R}" y2="${바닥}"/>${막대}${값}${축}</svg>`;
+}
+
+// 가로 막대 차트 — 데이터=[{라벨, 값}], 순위용(규칙 발동 상위 등).
+function 가로막대(데이터) {
+  const n = 데이터.length;
+  if (!n) return '<div class="차트빈">아직 기록 없음</div>';
+  const W = 680, 행h = 26, T = 6, B = 6, 라벨폭 = 250;
+  const H = T + B + n * 행h, iw = W - 라벨폭 - 44;
+  const 최대 = Math.max(1, ...데이터.map(d => _수(d.값)));
+  let rows = '';
+  데이터.forEach((d, i) => {
+    const v = _수(d.값), y = T + i * 행h, bw = 최대 ? (v / 최대) * iw : 0;
+    const 라 = String(d.라벨 || ''), 라짧 = 라.length > 34 ? 라.slice(0, 33) + '…' : 라;
+    rows += `<text class="축글" x="0" y="${y + 행h / 2 + 3}">${잠금(라짧)}<title>${잠금(라)}</title></text>`;
+    rows += `<rect class="막대" x="${라벨폭}" y="${y + 4}" width="${Math.max(0, bw).toFixed(1)}" height="${행h - 10}" rx="2"/>`;
+    rows += `<text class="값글" x="${(라벨폭 + bw + 6).toFixed(1)}" y="${y + 행h / 2 + 3}">${v}</text>`;
+  });
+  return `<svg class="차트" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMinYMin meet" role="img">${rows}</svg>`;
+}
+
+async function 대시보드그리기() {
+  const 몸 = $('#대시몸');
+  let acc, gen, tok, obs, cor;
+  try {
+    [acc, gen, tok, obs, cor] = await Promise.all([
+      부르기('관리자접속통계'), 부르기('관리자생성통계'), 부르기('토큰목록'),
+      부르기('관리자관측요약'), 부르기('관리자코퍼스목록'),
+    ]);
+  } catch (e) { return; }        // 401 이면 부르기() 가 이미 열쇠 카드를 띄웠다
+  // 조각 하나가 실패해도 나머지는 그린다(각 응답을 독립적으로 빈 값으로 접는다).
+  const a = (acc && acc.ok && acc['값']) || {}, g = (gen && gen.ok && gen['값']) || {};
+  const t = (tok && tok.ok && Array.isArray(tok['값'])) ? tok['값'] : [];
+  const o = (obs && obs.ok && obs['값']) || {}, c = (cor && cor.ok && cor['값']) || {};
+  const 합 = a['합계'] || {};
+  const 방문누적 = _수(합['방문']), 생성누적 = _수(g['합계']);
+  const 자격활성 = t.filter(x => x['활성']).length, 코퍼스수 = _수(c['전체수']);
+  $('#대시요약').textContent = '누적 방문 ' + 방문누적 + '건';
+
+  const kpi = [
+    ['누적 방문', 방문누적, '실사용자 근사치'],
+    ['생성 세션(누적)', 생성누적, '테스트·자동 실행 포함'],
+    ['플러그인 자격증명', t.length, 자격활성 + '개 활성'],
+    ['동의 코퍼스', 코퍼스수, '검토 대기'],
+  ].map(([이름, 값, 보조]) => `<div class="큰타일"><b>${잠금(값)}</b><span>${잠금(이름)}</span>`
+    + `<span>${잠금(보조)}</span></div>`).join('');
+
+  // 방문 추이 — adminaccess 일자별은 내림차순이라 오름차순으로 되돌린다.
+  const 방문일 = (a['일자별'] || []).slice().sort((x, y) => (x['날'] < y['날'] ? -1 : 1))
+    .map(d => ({ 날: d['날'], 값: d['방문'] }));
+  // 생성 추이 — admingen 일자별은 이미 오름차순.
+  const 생성일 = (g['일자별'] || []).map(d => ({ 날: d['날'], 값: d['건수'] }));
+
+  const 자격행 = t.slice(0, 12).map(x => `<tr${x['활성'] ? '' : ' style="opacity:.55"'}>`
+    + `<td>${잠금(x['이름']) || '<span class="흐림">—</span>'}</td>`
+    + `<td class="흐림" style="font-size:12px">${잠금(x['발급']) || '—'}</td>`
+    + `<td>${x['활성'] ? '<span style="color:var(--ai-color-signal);font-weight:600">활성</span>'
+                      : '<span style="color:var(--ai-color-review);font-weight:600">비활성</span>'}</td></tr>`).join('');
+  const 자격표 = t.length
+    ? `<p class="메모">전체 ${t.length} · 활성 ${자격활성} · 비활성 ${t.length - 자격활성}`
+        + `${t.length > 12 ? ' (최근 12건 표시)' : ''}</p>`
+      + `<table><thead><tr><th>이름·용도</th><th>발급</th><th>상태</th></tr></thead><tbody>${자격행}</tbody></table>`
+    : '<div class="차트빈">발급된 자격증명 없음</div>';
+
+  const p = o['처리분포'] || {};
+  const 관측타일 = [['세션수', o['세션수']], ['대기', p['대기']], ['채택', p['채택']], ['기각', p['기각']]]
+    .map(([이름, 값]) => `<div class="타일"><b>${잠금(값 == null ? 0 : 값)}</b><span>${잠금(이름)}</span></div>`).join('');
+  const 규칙 = (o['규칙상위'] || []).slice(0, 8)
+    .map(r => ({ 라벨: (r['출처'] ? r['출처'] + ' · ' : '') + r['규칙'], 값: r['횟수'] }));
+
+  몸.innerHTML = `<div class="큰타일줄">${kpi}</div>
+    <div class="차트묶음">
+      <div class="차트칸"><h3>방문 추이</h3><p class="메모">앱 화면 방문 · 실사용자 근사치</p>${세로막대(방문일, false)}</div>
+      <div class="차트칸"><h3>생성 추이</h3><p class="메모">문서 생성 세션 · 테스트·자동 실행 포함(실사용자 아님)</p>${세로막대(생성일, true)}</div>
+      <div class="차트칸 넓"><h3>플러그인 자격증명 발급 현황</h3>${자격표}</div>
+      <div class="차트칸 넓"><h3>관측 요약</h3><p class="메모">지나간 세션 통계(익명 후보에서 집계)</p>
+        <div class="타일줄">${관측타일}</div>
+        <h3 style="margin-top:14px;font-size:13px">규칙 발동 상위</h3>${가로막대(규칙)}</div>
+    </div>`;
+}
+$('#대시새로').onclick = 대시보드그리기;
+
 // ── 시작 ────────────────────────────────────────────────────────────────
+
+// ── 규칙마당 검토·반영 ──────────────────────────────────────────────────────
+// 규칙마당(/rules/) 공개 게시판의 글을 보고 상태·공개 답변·숨김을 정한다. 정본(온톨로지)은 안 고친다(1-7).
+let 마당자료 = null;
+const 마당판정말 = { '동의': '동의', '조건부': '조건부', '반대': '현장은 다릅니다' };
+async function 마당그리기() {
+  let j;
+  try { j = await 부르기('규칙마당관리'); }
+  catch (e) { return; }
+  if (!j.ok) { 알림('#마당알림', j['로그'] || '규칙마당 글을 못 읽었습니다', '나쁨'); return; }
+  마당자료 = j['값'];
+  const 셈 = 마당자료['셈'];
+  $('#마당요약').textContent = '처리 안 함 ' + 셈['처리 안 함'] + '건 · 반영 예정 ' + 셈['반영 예정'] + '건';
+  $('#마당타일').innerHTML = ['전체', '처리 안 함', '반영 예정', '반영 완료', '숨김']
+    .map(k => `<div class="타일"><b>${잠금(셈[k])}</b><span>${잠금(k)}</span></div>`).join('');
+  마당목록그리기();
+}
+function 마당고름(x) {
+  const 거름 = $('#마당거름').value, 종류 = $('#마당종류').value;
+  if (종류 !== '전체' && x['종류'] !== 종류) return false;
+  if (거름 === '처리 안 함') return !x['숨김'] && x['상태'] === '수집';
+  if (거름 === '반영 예정') return !x['숨김'] && x['상태'] === '반영 예정';
+  if (거름 === '숨김') return !!x['숨김'];
+  return true;
+}
+function 마당목록그리기() {
+  const 몸 = $('#마당목록');
+  const 글 = ((마당자료 && 마당자료['글']) || []).filter(마당고름);
+  if (!글.length) { 몸.innerHTML = '<p class="흐림">조건에 맞는 글이 없습니다.</p>'; return; }
+  const 상태들 = 마당자료['상태들'] || [];
+  몸.innerHTML = 글.map(x => {
+    const 제안 = x['종류'] === '제안';
+    const 제목 = 제안 ? (잠금(x['문서']) + ' · ' + 잠금(x['부분']) + (x['상황'] ? ' · ' + 잠금(x['상황']) : ''))
+                    : 잠금(x['카드제목'] || x['카드']);
+    const 본문 = 제안
+      ? `${잠금(x['요령'])}${x['왜'] ? `<span class="덧">왜 — ${잠금(x['왜'])}</span>` : ''}${(x['전'] || x['후']) ? `<span class="덧">전 — ${잠금(x['전'] || '—')} / 후 — ${잠금(x['후'] || '—')}</span>` : ''}`
+      : `${잠금(x['사유'])}`;
+    const 판 = 제안 ? '' : `<span class="꼬리표">${잠금(마당판정말[x['판정']] || x['판정'])}</span>`;
+    const 표 = x['숨김'] ? '<span class="꼬리표 숨김표">숨김</span>'
+      : (x['상태'] !== '수집' ? `<span class="꼬리표 반영표">${잠금(x['상태'])}</span>` : '');
+    return `<div class="후보 마당글${x['숨김'] ? ' 숨김됨' : ''}" data-id="${잠금(x['id'])}">
+      <div class="머릿줄"><span class="꼬리표">${제안 ? '노하우 제안' : '카드 의견'}</span><b>${제목}</b>${판}${표}
+        <span class="때">${잠금(x['이름'] || '익명')}${x['소속'] ? ' · ' + 잠금(x['소속']) : ''} · ${잠금(x['날짜'])}${x['처리일'] ? ' · 처리 ' + 잠금(x['처리일']) : ''}</span></div>
+      <div class="본문">${본문}</div>
+      ${제안 ? '' : `<div class="규칙줄"><a href="/rules/index.html#card-${encodeURIComponent(x['카드'])}" target="_blank" rel="noopener">규칙마당에서 이 카드 보기 ↗</a></div>`}
+      <div class="마당조작">
+        <select data-k="상태" aria-label="처리 상태">${상태들.map(v => `<option${v === x['상태'] ? ' selected' : ''}>${잠금(v)}</option>`).join('')}</select>
+        <label><input type="checkbox" data-k="숨김"${x['숨김'] ? ' checked' : ''}> 공개 목록에서 숨기기</label>
+        <span class="틈"></span>
+        <button class="곁단추 채택" data-마당저장>저장</button>
+      </div>
+      <textarea data-k="답변" maxlength="300" aria-label="공개 답변" placeholder="공개 답변(선택) — 규칙마당에 ‘운영자 답변’으로 그대로 보입니다">${잠금(x['답변'] || '')}</textarea>
+    </div>`;
+  }).join('');
+}
+$('#마당거름').onchange = 마당목록그리기;
+$('#마당종류').onchange = 마당목록그리기;
+$('#마당새로').onclick = 마당그리기;
+$('#마당목록').onclick = async e => {
+  const b = e.target.closest('button[data-마당저장]');
+  if (!b) return;
+  const 칸 = b.closest('.마당글');
+  const 항목 = { id: 칸.dataset.id, 상태: 칸.querySelector('[data-k="상태"]').value,
+               답변: 칸.querySelector('[data-k="답변"]').value.trim(), 숨김: 칸.querySelector('[data-k="숨김"]').checked };
+  b.disabled = true;
+  try {
+    const j = await 부르기('규칙마당처리', { 항목 }, true);
+    if (!j.ok) { 알림('#마당알림', j['로그'] || '처리 실패', '나쁨'); b.disabled = false; return; }
+    알림('#마당알림', j['로그'], '좋음');
+    await 마당그리기();
+  } catch (err) { if (err.message !== '401') { 알림('#마당알림', String(err.message), '나쁨'); b.disabled = false; } }
+};
+// 반영 예정 내보내기 — 개발 흐름(온톨로지 수정)에 넘길 묶음. 카드 의견에는 그 카드의 현재 규칙·온톨로지 경로를 붙인다.
+$('#마당내보내기').onclick = async () => {
+  const 글 = ((마당자료 && 마당자료['글']) || []).filter(x => !x['숨김'] && x['상태'] === '반영 예정');
+  if (!글.length) { 알림('#마당알림', '반영 예정으로 표시한 글이 없습니다', '보통'); return; }
+  let 카드 = {};
+  try { (await (await fetch('/rules/cards.json')).json()).forEach(c => { 카드[c.card_id] = c; }); } catch (_) {}
+  const 묶음 = { 내보낸날: new Date().toISOString().slice(0, 10), 건수: 글.length,
+    글: 글.map(x => x['종류'] === '의견' && 카드[x['카드']]
+      ? { ...x, 카드규칙: 카드[x['카드']].rule, 온톨로지경로: 카드[x['카드']].ontology_paths } : x) };
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(묶음, null, 1)], { type: 'application/json' }));
+  a.download = '규칙마당-반영예정-' + 묶음['내보낸날'] + '.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  알림('#마당알림', '반영 예정 ' + 글.length + '건을 내보냈습니다 — 개발 흐름에서 온톨로지에 옮긴 뒤 ‘반영 완료’로 바꿔 주세요', '좋음');
+};
 async function 시작() {
   let j;
   try { j = await 부르기('관리자설정보기'); }
@@ -763,9 +1043,11 @@ async function 시작() {
   $('#면').hidden = false;
   $('#로그아웃').hidden = false;
   설정그리기(j['값']);
+  await 대시보드그리기();
   await 후보그리기();
   await 관측그리기();
   await 코퍼스그리기();
+  await 마당그리기();
   await 토큰그리기();
   await 접속그리기();
   // 마지막으로 본 탭 복원(없으면 첫 탭 유지).

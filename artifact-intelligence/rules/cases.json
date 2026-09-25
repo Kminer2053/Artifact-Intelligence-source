@@ -1,0 +1,340 @@
+[
+ {
+  "case_id": "C01",
+  "question": "결재 올릴 보고서 항목에 '신규 지침을 마련하였습니다'처럼 문장으로 끝내도 되나요?",
+  "doc_type": "한 장 보고서",
+  "part": "문장 표현",
+  "situations": [
+   "결재 상신"
+  ],
+  "answer": "안 됩니다 — 본문 항목은 하십시오체(~습니다)로 끝내지 않고 '~마련'처럼 명사형으로 종결합니다.",
+  "before": "신규 지침을 마련하였습니다",
+  "after": "신규 지침 마련",
+  "source": "skill/artifact-intelligence/test/style-golden.json#G01,G02; skill/artifact-intelligence/references/writing-rules.md §1-1",
+  "related_paths": [
+   "entities.본문.문체.종결",
+   "writing_profiles.gongmun-gaejosik.종결"
+  ]
+ },
+ {
+  "case_id": "C02",
+  "question": "예산 검토 내용을 '예산에 대해 면밀히 검토'라고 적어도 되나요?",
+  "doc_type": "한 장 보고서",
+  "part": "문장 표현",
+  "situations": [
+   "예산 요구"
+  ],
+  "answer": "안 됩니다 — '~에 대해'는 번역투라 삭제하고 명사에 조사를 바로 붙입니다.",
+  "before": "예산에 대해 면밀히 검토",
+  "after": "예산 검토",
+  "source": "skill/artifact-intelligence/test/style-golden.json#G24,G25; skill/artifact-intelligence/references/writing-rules.md §2-1",
+  "related_paths": [
+   "entities.본문.문체.치환사전_ref",
+   "writing_profiles.gongmun-gaejosik.금지.번역투"
+  ]
+ },
+ {
+  "case_id": "C03",
+  "question": "상급기관에 낼 보고서에 '민원 처리 기간이 단축될 것으로 보여지며'처럼 써도 되나요?",
+  "doc_type": "한 장 보고서",
+  "part": "문장 표현",
+  "situations": [
+   "상급기관 보고"
+  ],
+  "answer": "안 됩니다 — '보여지며'는 이중피동이라 단일피동·단정형으로 고칩니다.",
+  "before": "민원 처리 기간이 단축될 것으로 보여지며 만족도 개선 예상",
+  "after": "이번 조치로 민원 처리 기간 단축, 만족도 개선 예상",
+  "source": "skill/artifact-intelligence/test/style-golden.json#G33,G34; skill/artifact-intelligence/references/writing-rules.md §3-1",
+  "related_paths": [
+   "entities.본문.문체.치환사전_ref",
+   "writing_profiles.gongmun-gaejosik.금지.번역투"
+  ]
+ },
+ {
+  "case_id": "C04",
+  "question": "국감 답변자료 항목이 '이번 사업의 예산 집행 실태에 대해 면밀히 검토한 결과 다수의 문제점이 있는 것으로 확인되었음'처럼 길어졌는데 어떻게 줄이나요?",
+  "doc_type": "한 장 보고서",
+  "part": "문장 표현",
+  "situations": [
+   "국감·감사 대응"
+  ],
+  "answer": "「적/의/것/들」 삭제 → 번역투·조사구 치환 순서로 압축하면 45자 안에 들어옵니다(52자→24자).",
+  "before": "이번 사업의 예산 집행 실태에 대해 면밀히 검토한 결과 다수의 문제점이 있는 것으로 확인되었음",
+  "after": "예산 집행 실태 검토 결과 문제점 다수 확인",
+  "source": "skill/artifact-intelligence/test/style-golden.json#G16,G17; skill/artifact-intelligence/references/writing-rules.md §2-2,§2-3",
+  "related_paths": [
+   "entities.본문.문체.길이",
+   "entities.본문.문체.분리우선순위"
+  ]
+ },
+ {
+  "case_id": "C05",
+  "question": "보고서 요약박스를 '최근 3개월간 예산 집행 현황을 점검한 결과 ... 이번 보고를 드리고자 함'처럼 경위부터 써도 되나요?",
+  "doc_type": "한 장 보고서",
+  "part": "요약(두괄)",
+  "situations": [
+   "결재 상신"
+  ],
+  "answer": "안 됩니다 — 요약박스는 배경을 앞세우지 않고 결론(무엇을 하겠다는지)을 첫머리에 두는 두괄식 60~80자로 씁니다.",
+  "before": "최근 3개월간 예산 집행 현황을 점검한 결과 다수의 집행 지연 사례가 발견되어 이에 대한 원인을 분석하고 개선 방안을 마련하고자 이번 보고를 드리고자 함",
+  "after": "예산 집행 지연 해소를 위해 배정 방식을 전면 개편, 상반기 중 신규 지침 마련·하반기 집행률 95% 달성을 추진하고자 보고드림",
+  "source": "skill/artifact-intelligence/test/style-golden.json#G51; skill/artifact-intelligence/references/writing-rules.md §4",
+  "related_paths": [
+   "entities.요약박스.구성.두괄식",
+   "entities.요약박스.문체"
+  ]
+ },
+ {
+  "case_id": "C06",
+  "question": "성과를 강조하려고 '획기적 비용 절감 방안 마련'처럼 써도 되나요?",
+  "doc_type": "공통",
+  "part": "문장 표현",
+  "situations": [
+   "보도·홍보"
+  ],
+  "answer": "안 됩니다 — '획기적·혁신적·게임체인저·역대급' 같은 hype 어휘는 판단 근거 없는 과장이라 장르를 불문하고 금지입니다.",
+  "before": "획기적 비용 절감 방안 마련",
+  "after": "비용 절감 방안 마련",
+  "source": "skill/artifact-intelligence/test/style-golden.json#G20; skill/artifact-intelligence/references/writing-rules.md §5",
+  "related_paths": [
+   "writing_profiles.gongmun-gaejosik.금지.hype"
+  ]
+ },
+ {
+  "case_id": "C07",
+  "question": "공사 완료를 보고하며 '설치 공사 완료 ✅'처럼 체크 이모지를 넣어도 되나요?",
+  "doc_type": "공통",
+  "part": "문장 표현",
+  "situations": [
+   "결재 상신"
+  ],
+  "answer": "안 됩니다 — 이모지는 공문서 격식 위반이라 장르를 불문하고 금지입니다.",
+  "before": "설치 공사 완료 ✅",
+  "after": "설치 공사 완료",
+  "source": "skill/artifact-intelligence/test/style-golden.json#G40; skill/artifact-intelligence/references/writing-rules.md §5",
+  "related_paths": [
+   "writing_profiles.gongmun-gaejosik.금지.기타"
+  ]
+ },
+ {
+  "case_id": "C08",
+  "question": "풀버전 보고서에서 장이 시작할 때 그 장의 결론을 강조 글상자로 먼저 보여주고 싶은데 어떤 모양이 정석인가요?",
+  "doc_type": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "situations": [
+   "상급기관 보고",
+   "국감·감사 대응"
+  ],
+  "answer": "정해진 색상은 없고, 실물 문서가 가장 많이 쓰는(36%) 테두리 없는 회색 음영 상자(무테음영_회색)가 기본값입니다.",
+  "before": "",
+  "after": "",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → shared.박스_카탈로그",
+  "related_paths": [
+   "shared.박스_카탈로그.생김새_카탈로그",
+   "shared.박스_카탈로그.종류.핵심메시지"
+  ]
+ },
+ {
+  "case_id": "C09",
+  "question": "1안·2안의 구축비용·기간을 비교할 때 본문에 ○ 불릿으로 나란히 적어도 되나요?",
+  "doc_type": "풀버전 보고서",
+  "part": "표",
+  "situations": [
+   "예산 요구"
+  ],
+  "answer": "안 됩니다 — 비용·기간처럼 비교 가능한 속성은 표의 행으로 모으고, 본문 ○ 항목은 대안의 존재·방식 개요까지만 씁니다.",
+  "before": "구축비용을 ○ 불릿으로 1안·2안과 동일 레벨 처리",
+  "after": "표의 세부항목으로 넣어 1안·2안 비교",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → data_elements.표.본문_표_배분 (실무자 검수 FB-018)",
+  "related_paths": [
+   "data_elements.표.본문_표_배분"
+  ]
+ },
+ {
+  "case_id": "C10",
+  "question": "붙임 자료 부수를 안 적고 그냥 '붙임 세부계획'이라고만 써도 되나요?",
+  "doc_type": "풀버전 보고서",
+  "part": "붙임·별첨",
+  "situations": [
+   "결재 상신"
+  ],
+  "answer": "부수(N부) 표기가 필수이며, 빠뜨리면 조립기가 1부로 자동 채웁니다. 자료가 없는데 붙임을 지어내는 것도 금지입니다.",
+  "before": "붙임 세부계획",
+  "after": "붙임  세부계획 1부.",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → entities.붙임.문체.규칙",
+  "related_paths": [
+   "entities.붙임.문체.규칙",
+   "entities.붙임.문체.형식"
+  ]
+ },
+ {
+  "case_id": "C11",
+  "question": "대외 공문에 붙임 서류가 있으면 '끝.' 표시는 어디에 붙이나요?",
+  "doc_type": "시행문(공문)",
+  "part": "붙임·별첨",
+  "situations": [
+   "대외 공문"
+  ],
+  "answer": "붙임 표시문 다음에 2타 띄우고 '끝.'을 붙입니다 — 시행문은 붙임 유무와 무관하게 종결 표기가 규범상 필수입니다(1p 내부 보고서는 선택 사항인 것과 다릅니다).",
+  "before": "붙임  ○○사업 추진계획 1부.",
+  "after": "붙임  ○○사업 추진계획 1부.  끝.",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → entities.붙임.문체.종결표기_옵션",
+  "related_paths": [
+   "entities.붙임.문체.종결표기_옵션"
+  ]
+ },
+ {
+  "case_id": "C12",
+  "question": "민원인에게 회신하는 공문에도 '검토 필요'처럼 명사형으로 끝내도 되나요?",
+  "doc_type": "시행문(공문)",
+  "part": "문장 표현",
+  "situations": [
+   "민원 회신",
+   "대외 공문"
+  ],
+  "answer": "안 됩니다 — 시행문 본문은 1p 보고서와 정반대로 하십시오체 완결이 규범이라, 명사형 종결을 쓰면 오히려 격식 위반입니다.",
+  "before": "민원 회신 내용 검토 필요",
+  "after": "민원 회신 내용을 검토하여 주시기 바랍니다",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → writing_profiles.gongmun-gyeoksik.종결",
+  "related_paths": [
+   "writing_profiles.gongmun-gyeoksik.종결",
+   "writing_profiles.gongmun-gyeoksik.장르가드"
+  ]
+ },
+ {
+  "case_id": "C13",
+  "question": "규정(내규)을 제정하면서 조항을 '신규 지침 마련'처럼 개조식 명사형으로 써도 되나요?",
+  "doc_type": "규정·내규",
+  "part": "문장 표현",
+  "situations": [
+   "결재 상신"
+  ],
+  "answer": "안 됩니다 — 규정은 보고서가 아니라 규범이므로 '~한다'체 평서 현재형으로 씁니다(개조식 명사형은 규정에서 거의 쓰이지 않아 사실상 금지).",
+  "before": "신규 지침 마련",
+  "after": "신규 지침을 마련한다",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → writing_profiles.jomun.종결 (대조: test/style-golden.json#G02)",
+  "related_paths": [
+   "writing_profiles.jomun.종결",
+   "writing_profiles.jomun.장르가드"
+  ]
+ },
+ {
+  "case_id": "C14",
+  "question": "규정 조문은 전부 '~한다'로 단정해야 하나요, 재량 조항도 그렇게 쓰나요?",
+  "doc_type": "규정·내규",
+  "part": "판정·유형",
+  "situations": [
+   "결재 상신"
+  ],
+  "answer": "아닙니다 — 사실 규정은 '~한다', 의무는 '~하여야 한다', 재량은 '~할 수 있다'로 구분해 쓰고, 명사형·합니다체만 금지합니다.",
+  "before": "",
+  "after": "",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → writing_profiles.jomun.종결",
+  "related_paths": [
+   "writing_profiles.jomun.종결"
+  ]
+ },
+ {
+  "case_id": "C15",
+  "question": "보도자료 본문도 보고서처럼 '설비 교체 완료' 같은 개조식 명사형으로 통일해야 하나요?",
+  "doc_type": "보도자료",
+  "part": "문장 표현",
+  "situations": [
+   "보도·홍보"
+  ],
+  "answer": "아닙니다 — 보도자료 몸통은 서술식(했다·한다·이다)으로 읽히게 쓰고, 붙임·요약 항목만 명사형으로 압축합니다.",
+  "before": "설비 교체 완료",
+  "after": "설비 교체를 완료했다",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → writing_profiles.bodo.핵심,종결",
+  "related_paths": [
+   "writing_profiles.bodo.종결",
+   "writing_profiles.bodo.핵심"
+  ]
+ },
+ {
+  "case_id": "C16",
+  "question": "보도자료에 장관 발언을 넣을 때 어떤 형식으로 인용하나요?",
+  "doc_type": "보도자료",
+  "part": "문장 표현",
+  "situations": [
+   "보도·홍보"
+  ],
+  "answer": "'○○○ 장관은 \"…\"라고 말했다'처럼 직접 인용+했다체로 씁니다.",
+  "before": "",
+  "after": "",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → writing_profiles.bodo.서술.인용",
+  "related_paths": [
+   "writing_profiles.bodo.서술"
+  ]
+ },
+ {
+  "case_id": "C17",
+  "question": "발표 슬라이드 헤드메시지 글자 크기는 몇 pt로 하나요?",
+  "doc_type": "발표 슬라이드",
+  "part": "글꼴·크기",
+  "situations": [
+   "발표·브리핑"
+  ],
+  "answer": "30pt 굵게가 기본이고(본문은 18pt), 실물 부처 덱 실측 분포는 22~36pt(p25~p75) 사이입니다.",
+  "before": "",
+  "after": "",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → document_types.slides.디자인.타이포_사다리; document_types.slides._실측.헤드_pt",
+  "related_paths": [
+   "document_types.slides.디자인.타이포_사다리",
+   "document_types.slides._실측.헤드_pt"
+  ]
+ },
+ {
+  "case_id": "C18",
+  "question": "슬라이드 헤드메시지가 길어지면 몇 자까지 봐주나요?",
+  "doc_type": "발표 슬라이드",
+  "part": "문장 표현",
+  "situations": [
+   "발표·브리핑"
+  ],
+  "answer": "40자를 넘으면 경고(soft), 50자를 넘으면 게이트에서 막습니다 — 실물 덱들의 최대 헤드도 90분위가 43자입니다.",
+  "before": "",
+  "after": "",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → document_types.slides.게이트; document_types.slides.분량예산.헤드메시지; document_types.slides._실측.헤드_글자수",
+  "related_paths": [
+   "document_types.slides.게이트",
+   "document_types.slides.분량예산.헤드메시지",
+   "document_types.slides._실측.헤드_글자수"
+  ]
+ },
+ {
+  "case_id": "C19",
+  "question": "부처 업무보고 슬라이드는 보통 몇 장으로 만드나요?",
+  "doc_type": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "situations": [
+   "발표·브리핑"
+  ],
+  "answer": "기본 10±6장(4~16장)이 원칙이고, 실물 부처 덱은 12~20장(p25~p75) 구간에 가장 몰려 있습니다.",
+  "before": "",
+  "after": "",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → document_types.slides.분량예산.장수; document_types.slides._실측.장수_분위",
+  "related_paths": [
+   "document_types.slides.분량예산",
+   "document_types.slides._실측.장수_분위"
+  ]
+ },
+ {
+  "case_id": "C20",
+  "question": "예산·품의 승인을 구하는 슬라이드도 '현황 분석'처럼 주제어형 제목을 써도 되나요?",
+  "doc_type": "발표 슬라이드",
+  "part": "판정·유형",
+  "situations": [
+   "발표·브리핑",
+   "상급기관 보고"
+  ],
+  "answer": "안 됩니다 — 결정·승인·예산·협조를 구하는 설득·제안형 덱은 헤드메시지를 완결된 주장 문장으로 쓰고, 주제어형 제목은 현황·결과를 알리는 보고형 덱에만 허용됩니다.",
+  "before": "",
+  "after": "",
+  "source": "skill/artifact-intelligence/ontology/ontology.json → document_types.slides.문체.헤드_목적별",
+  "related_paths": [
+   "document_types.slides.문체.헤드_목적별",
+   "document_types.slides.문체.헤드메시지"
+  ]
+ }
+]

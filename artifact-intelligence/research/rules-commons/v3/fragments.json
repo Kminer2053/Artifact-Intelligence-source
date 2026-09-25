@@ -1,0 +1,9441 @@
+{
+ "data_elements-01": {
+  "card_id": "data_elements-01",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-02": {
+  "card_id": "data_elements-02",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-03": {
+  "card_id": "data_elements-03",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-04": {
+  "card_id": "data_elements-04",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-05": {
+  "card_id": "data_elements-05",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-06": {
+  "card_id": "data_elements-06",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-07": {
+  "card_id": "data_elements-07",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-08": {
+  "card_id": "data_elements-08",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-09": {
+  "card_id": "data_elements-09",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "구축비용을 ○ 불릿으로 1안·2안과 동일 레벨 처리",
+  "after": "표의 세부항목으로 넣어 비교되도록"
+ },
+ "data_elements-10": {
+  "card_id": "data_elements-10",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-11": {
+  "card_id": "data_elements-11",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "data_elements-12": {
+  "card_id": "data_elements-12",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-13": {
+  "card_id": "data_elements-13",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-14": {
+  "card_id": "data_elements-14",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-15": {
+  "card_id": "data_elements-15",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-16": {
+  "card_id": "data_elements-16",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-17": {
+  "card_id": "data_elements-17",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-18": {
+  "card_id": "data_elements-18",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-19": {
+  "card_id": "data_elements-19",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-20": {
+  "card_id": "data_elements-20",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-21": {
+  "card_id": "data_elements-21",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "data_elements-22": {
+  "card_id": "data_elements-22",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-23": {
+  "card_id": "data_elements-23",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-24": {
+  "card_id": "data_elements-24",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-25": {
+  "card_id": "data_elements-25",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-26": {
+  "card_id": "data_elements-26",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-27": {
+  "card_id": "data_elements-27",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "data_elements-28": {
+  "card_id": "data_elements-28",
+  "genre": "한 장 보고서",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "detect-01": {
+  "card_id": "detect-01",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "detect-02": {
+  "card_id": "detect-02",
+  "genre": "시행문(공문)",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   }
+  ]
+ },
+ "detect-03": {
+  "card_id": "detect-03",
+  "genre": "규정·내규",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정"
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "제1조(목적)"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 2
+   }
+  ]
+ },
+ "detect-04": {
+  "card_id": "detect-04",
+  "genre": "보도자료",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "headline",
+    "role": "headline",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다"
+   },
+   {
+    "id": "subhead",
+    "role": "subhead",
+    "text": "- ○○공사, 문서 작성 지원 서비스 9월 개시… 연간 4만 시간 절감 기대 -"
+   },
+   {
+    "id": "lead",
+    "role": "lead",
+    "text": "○○공사는 보고서·공문 초안을 자동으로 만들어 주는 문서 작성 지원 서비스를 9월 1일부터 전 부서에 개시한다고 3일 밝혔다. 담당자가 요지만 입력하면 기관 서식에 맞춘 초안이 나오고, 사람은 사실 확인과 다듬기에만 집중하는 방식이다."
+   }
+  ]
+ },
+ "detect-05": {
+  "card_id": "detect-05",
+  "genre": "발표 슬라이드",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cover_title",
+    "role": "cover_title",
+    "text": "전기차 충전소 확충 추진계획"
+   },
+   {
+    "id": "cover_sub",
+    "role": "cover_sub",
+    "text": "주민 대기시간 해소를 위한 2단계 증설"
+   },
+   {
+    "id": "sl1",
+    "role": "step",
+    "text": "픽토그램: 충전 민원은 세 갈래에서 나온다",
+    "n": 1
+   },
+   {
+    "id": "sl2",
+    "role": "step",
+    "text": "본문: 충전소 민원 3건 중 2건은 대기시간과 접근거리에서 …",
+    "n": 2
+   },
+   {
+    "id": "sl3",
+    "role": "step",
+    "text": "표: 기존 주차장 전환이 신규 매입보다 조성비를 절반으로 …",
+    "n": 3
+   },
+   {
+    "id": "sl4",
+    "role": "step",
+    "text": "도식: 증설은 2단계로 나눠 대기와 공백을 함께 푼다",
+    "n": 4
+   },
+   {
+    "id": "sl5",
+    "role": "step",
+    "text": "본문: 급속 12기를 증설하면 피크 대기시간이 18분에서 7…",
+    "n": 5
+   }
+  ]
+ },
+ "detect-06": {
+  "card_id": "detect-06",
+  "genre": "풀버전 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cover_title",
+    "role": "cover_title",
+    "text": "청사 에너지 절감 3개년 추진계획"
+   },
+   {
+    "id": "cover_sub",
+    "role": "cover_sub",
+    "text": "탄소중립 청사 운영"
+   },
+   {
+    "id": "ch1",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 1
+   },
+   {
+    "id": "ch2",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 2
+   },
+   {
+    "id": "ch3",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 3
+   },
+   {
+    "id": "ch4",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 4
+   },
+   {
+    "id": "ch5",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 5
+   }
+  ]
+ },
+ "detect-07": {
+  "card_id": "detect-07",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "entities-01": {
+  "card_id": "entities-01",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "entities-02": {
+  "card_id": "entities-02",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "entities-03": {
+  "card_id": "entities-03",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "entities-04": {
+  "card_id": "entities-04",
+  "genre": "풀버전 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cover_sub",
+    "role": "cover_sub",
+    "text": "탄소중립 청사 운영"
+   },
+   {
+    "id": "cover_title",
+    "role": "cover_title",
+    "text": "청사 에너지 절감 3개년 추진계획"
+   },
+   {
+    "id": "cover_info",
+    "role": "cover_info",
+    "text": "2026. 6. 10. · ○○공사 · 시설관리처"
+   }
+  ]
+ },
+ "entities-05": {
+  "card_id": "entities-05",
+  "genre": "한 장 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "faded": true
+   }
+  ]
+ },
+ "entities-06": {
+  "card_id": "entities-06",
+  "genre": "한 장 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "faded": true
+   }
+  ]
+ },
+ "entities-07": {
+  "card_id": "entities-07",
+  "genre": "한 장 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "faded": true
+   }
+  ]
+ },
+ "entities-08": {
+  "card_id": "entities-08",
+  "genre": "한 장 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "faded": true
+   }
+  ]
+ },
+ "entities-09": {
+  "card_id": "entities-09",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "entities-10": {
+  "card_id": "entities-10",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "entities-11": {
+  "card_id": "entities-11",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "entities-12": {
+  "card_id": "entities-12",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "entities-13": {
+  "card_id": "entities-13",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "entities-14": {
+  "card_id": "entities-14",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "entities-15": {
+  "card_id": "entities-15",
+  "genre": "한 장 보고서",
+  "part": "여백·판면",
+  "mode": "규칙 요약",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "위 여백",
+    "side": "top",
+    "mm": null
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "아래 여백",
+    "side": "bottom",
+    "mm": null
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "왼 여백",
+    "side": "left",
+    "mm": null
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "오른 여백",
+    "side": "right",
+    "mm": null
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "entities-16": {
+  "card_id": "entities-16",
+  "genre": "시행문(공문)",
+  "part": "붙임·별첨",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "last",
+    "role": "item1",
+    "text": "문의: 시설관리처 에너지 담당",
+    "faded": true,
+    "level": 1
+   },
+   {
+    "id": "at1",
+    "role": "attach",
+    "text": "붙임 1. 하절기 청사 냉방·조명 운영 기준 1부."
+   },
+   {
+    "id": "at2",
+    "role": "attach",
+    "text": "2. 부서별 에너지 절약 실천계획 양식 1부."
+   },
+   {
+    "id": "end",
+    "role": "endmark",
+    "text": "끝."
+   }
+  ]
+ },
+ "entities-17": {
+  "card_id": "entities-17",
+  "genre": "시행문(공문)",
+  "part": "붙임·별첨",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "last",
+    "role": "item1",
+    "text": "문의: 시설관리처 에너지 담당",
+    "faded": true,
+    "level": 1
+   },
+   {
+    "id": "at1",
+    "role": "attach",
+    "text": "붙임 1. 하절기 청사 냉방·조명 운영 기준 1부."
+   },
+   {
+    "id": "at2",
+    "role": "attach",
+    "text": "2. 부서별 에너지 절약 실천계획 양식 1부."
+   },
+   {
+    "id": "end",
+    "role": "endmark",
+    "text": "끝."
+   }
+  ]
+ },
+ "fullreport-01": {
+  "card_id": "fullreport-01",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-02": {
+  "card_id": "fullreport-02",
+  "genre": "풀버전 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cover_sub",
+    "role": "cover_sub",
+    "text": "탄소중립 청사 운영"
+   },
+   {
+    "id": "cover_title",
+    "role": "cover_title",
+    "text": "청사 에너지 절감 3개년 추진계획"
+   },
+   {
+    "id": "cover_info",
+    "role": "cover_info",
+    "text": "2026. 6. 10. · ○○공사 · 시설관리처"
+   }
+  ]
+ },
+ "fullreport-03": {
+  "card_id": "fullreport-03",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-04": {
+  "card_id": "fullreport-04",
+  "genre": "풀버전 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "추진 배경"
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "청사 전력 사용량이 3년 연속 늘어 '25년 연간 412만kWh, 전기요금 6.2억 원 지출",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "공공기관 에너지이용 합리화 추진에 관한 규정에 따른 감축 목표 이행 필요",
+    "level": 2
+   }
+  ]
+ },
+ "fullreport-05": {
+  "card_id": "fullreport-05",
+  "genre": "풀버전 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "청사 에너지 절감 3개년 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "청사 전력 사용량이 3년 연속 늘어 '25년 연간 412만kWh, 전기요금 6.2억 원 지출",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "냉방·조명이 전체 사용량의 61%를 차지하는 구조",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item1",
+    "text": "공공기관 에너지이용 합리화 추진에 관한 규정에 따른 감축 목표 이행 필요",
+    "level": 1
+   }
+  ]
+ },
+ "fullreport-06": {
+  "card_id": "fullreport-06",
+  "genre": "풀버전 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "청사 에너지 절감 3개년 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "청사 전력 사용량이 3년 연속 늘어 '25년 연간 412만kWh, 전기요금 6.2억 원 지출",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "냉방·조명이 전체 사용량의 61%를 차지하는 구조",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item1",
+    "text": "공공기관 에너지이용 합리화 추진에 관한 규정에 따른 감축 목표 이행 필요",
+    "level": 1
+   }
+  ]
+ },
+ "fullreport-07": {
+  "card_id": "fullreport-07",
+  "genre": "풀버전 보고서",
+  "part": "붙임·별첨",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": "시행문(공문)",
+  "elements": [
+   {
+    "id": "last",
+    "role": "item1",
+    "text": "문의: 시설관리처 에너지 담당",
+    "faded": true,
+    "level": 1
+   },
+   {
+    "id": "at1",
+    "role": "attach",
+    "text": "붙임 1. 하절기 청사 냉방·조명 운영 기준 1부."
+   },
+   {
+    "id": "at2",
+    "role": "attach",
+    "text": "2. 부서별 에너지 절약 실천계획 양식 1부."
+   },
+   {
+    "id": "end",
+    "role": "endmark",
+    "text": "끝."
+   }
+  ]
+ },
+ "fullreport-08": {
+  "card_id": "fullreport-08",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-09": {
+  "card_id": "fullreport-09",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-10": {
+  "card_id": "fullreport-10",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-11": {
+  "card_id": "fullreport-11",
+  "genre": "풀버전 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cover_title",
+    "role": "cover_title",
+    "text": "청사 에너지 절감 3개년 추진계획"
+   },
+   {
+    "id": "cover_sub",
+    "role": "cover_sub",
+    "text": "탄소중립 청사 운영"
+   },
+   {
+    "id": "ch1",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 1
+   },
+   {
+    "id": "ch2",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 2
+   },
+   {
+    "id": "ch3",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 3
+   },
+   {
+    "id": "ch4",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 4
+   },
+   {
+    "id": "ch5",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 5
+   }
+  ]
+ },
+ "fullreport-12": {
+  "card_id": "fullreport-12",
+  "genre": "풀버전 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "청사 에너지 절감 3개년 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "청사 전력 사용량이 3년 연속 늘어 '25년 연간 412만kWh, 전기요금 6.2억 원 지출",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "냉방·조명이 전체 사용량의 61%를 차지하는 구조",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item1",
+    "text": "공공기관 에너지이용 합리화 추진에 관한 규정에 따른 감축 목표 이행 필요",
+    "level": 1
+   }
+  ]
+ },
+ "fullreport-13": {
+  "card_id": "fullreport-13",
+  "genre": "풀버전 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cover_sub",
+    "role": "cover_sub",
+    "text": "탄소중립 청사 운영"
+   },
+   {
+    "id": "cover_title",
+    "role": "cover_title",
+    "text": "청사 에너지 절감 3개년 추진계획"
+   },
+   {
+    "id": "cover_info",
+    "role": "cover_info",
+    "text": "2026. 6. 10. · ○○공사 · 시설관리처"
+   }
+  ]
+ },
+ "fullreport-14": {
+  "card_id": "fullreport-14",
+  "genre": "풀버전 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "청사 에너지 절감 3개년 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "청사 전력 사용량이 3년 연속 늘어 '25년 연간 412만kWh, 전기요금 6.2억 원 지출",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "냉방·조명이 전체 사용량의 61%를 차지하는 구조",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item1",
+    "text": "공공기관 에너지이용 합리화 추진에 관한 규정에 따른 감축 목표 이행 필요",
+    "level": 1
+   }
+  ]
+ },
+ "fullreport-15": {
+  "card_id": "fullreport-15",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-16": {
+  "card_id": "fullreport-16",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-17": {
+  "card_id": "fullreport-17",
+  "genre": "풀버전 보고서",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "상 25mm",
+    "side": "top",
+    "mm": 25.0
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "하 25mm",
+    "side": "bottom",
+    "mm": 25.0
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "좌 20mm",
+    "side": "left",
+    "mm": 20.0
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "우 20mm",
+    "side": "right",
+    "mm": 20.0
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "fullreport-18": {
+  "card_id": "fullreport-18",
+  "genre": "풀버전 보고서",
+  "part": "여백·판면",
+  "mode": "규칙 요약",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "위 여백",
+    "side": "top",
+    "mm": null
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "아래 여백",
+    "side": "bottom",
+    "mm": null
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "왼 여백",
+    "side": "left",
+    "mm": null
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "오른 여백",
+    "side": "right",
+    "mm": null
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "fullreport-19": {
+  "card_id": "fullreport-19",
+  "genre": "풀버전 보고서",
+  "part": "글꼴·크기",
+  "mode": "규칙 요약",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "f1",
+    "role": "ladder",
+    "text": "주제목 28pt",
+    "pt": 28.0,
+    "label": "주제목"
+   },
+   {
+    "id": "f2",
+    "role": "ladder",
+    "text": "기관명 24pt",
+    "pt": 24.0,
+    "label": "기관명"
+   },
+   {
+    "id": "f3",
+    "role": "ladder",
+    "text": "부서명 20pt",
+    "pt": 20.0,
+    "label": "부서명"
+   },
+   {
+    "id": "f4",
+    "role": "ladder",
+    "text": "장제목 17pt",
+    "pt": 17.0,
+    "label": "장제목"
+   },
+   {
+    "id": "f5",
+    "role": "ladder",
+    "text": "부제 14pt",
+    "pt": 14.0,
+    "label": "부제"
+   }
+  ]
+ },
+ "fullreport-20": {
+  "card_id": "fullreport-20",
+  "genre": "풀버전 보고서",
+  "part": "글꼴·크기",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "청사 에너지 절감 3개년 추진계획",
+    "role_label": "제목"
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "추진 개요",
+    "role_label": "소제목"
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "청사 전력 사용량이 3년 연속 늘어 '25년 연간 412만kWh, 전기요금 6.2억 원 지출",
+    "level": 1,
+    "role_label": "본문"
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "냉방·조명이 전체 사용량의 61%를 차지하는 구조",
+    "level": 2,
+    "role_label": "본문"
+   }
+  ]
+ },
+ "fullreport-21": {
+  "card_id": "fullreport-21",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-22": {
+  "card_id": "fullreport-22",
+  "genre": "풀버전 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "청사 에너지 절감 3개년 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "청사 전력 사용량이 3년 연속 늘어 '25년 연간 412만kWh, 전기요금 6.2억 원 지출",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "냉방·조명이 전체 사용량의 61%를 차지하는 구조",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item1",
+    "text": "공공기관 에너지이용 합리화 추진에 관한 규정에 따른 감축 목표 이행 필요",
+    "level": 1
+   }
+  ]
+ },
+ "fullreport-23": {
+  "card_id": "fullreport-23",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "fullreport-24": {
+  "card_id": "fullreport-24",
+  "genre": "풀버전 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cover_title",
+    "role": "cover_title",
+    "text": "청사 에너지 절감 3개년 추진계획"
+   },
+   {
+    "id": "cover_sub",
+    "role": "cover_sub",
+    "text": "탄소중립 청사 운영"
+   },
+   {
+    "id": "ch1",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 1
+   },
+   {
+    "id": "ch2",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 2
+   },
+   {
+    "id": "ch3",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 3
+   },
+   {
+    "id": "ch4",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 4
+   },
+   {
+    "id": "ch5",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 5
+   }
+  ]
+ },
+ "fullreport-25": {
+  "card_id": "fullreport-25",
+  "genre": "풀버전 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "청사 에너지 절감 3개년 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "추진 개요",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "현황 및 문제점",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "추진 방안",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "추진 일정 및 소요 예산",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "기대효과 및 협조사항",
+    "n": 7
+   }
+  ]
+ },
+ "gongmun-01": {
+  "card_id": "gongmun-01",
+  "genre": "시행문(공문)",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "두문(기관명·수신·제목)",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "본문",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "붙임",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "발신명의",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "수신자란",
+    "n": 5
+   }
+  ]
+ },
+ "gongmun-02": {
+  "card_id": "gongmun-02",
+  "genre": "시행문(공문)",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "작성 대상: 부서별 냉방·조명·사무기기 절전 실천 과제(3개 이상)",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "작성 방법: 붙임 양식에 과제명·실천 방법·점검 주기를 적고 부서장 확인 후 제출",
+    "level": 2
+   }
+  ]
+ },
+ "gongmun-03": {
+  "card_id": "gongmun-03",
+  "genre": "시행문(공문)",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "작성 대상: 부서별 냉방·조명·사무기기 절전 실천 과제(3개 이상)",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "작성 방법: 붙임 양식에 과제명·실천 방법·점검 주기를 적고 부서장 확인 후 제출",
+    "level": 2
+   }
+  ]
+ },
+ "gongmun-04": {
+  "card_id": "gongmun-04",
+  "genre": "시행문(공문)",
+  "part": "붙임·별첨",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "last",
+    "role": "item1",
+    "text": "문의: 시설관리처 에너지 담당",
+    "faded": true,
+    "level": 1
+   },
+   {
+    "id": "at1",
+    "role": "attach",
+    "text": "붙임 1. 하절기 청사 냉방·조명 운영 기준 1부."
+   },
+   {
+    "id": "at2",
+    "role": "attach",
+    "text": "2. 부서별 에너지 절약 실천계획 양식 1부."
+   },
+   {
+    "id": "end",
+    "role": "endmark",
+    "text": "끝."
+   }
+  ]
+ },
+ "gongmun-05": {
+  "card_id": "gongmun-05",
+  "genre": "시행문(공문)",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "gongmun-06": {
+  "card_id": "gongmun-06",
+  "genre": "시행문(공문)",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "두문(기관명·수신·제목)",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "본문",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "붙임",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "발신명의",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "수신자란",
+    "n": 5
+   }
+  ]
+ },
+ "gongmun-07": {
+  "card_id": "gongmun-07",
+  "genre": "시행문(공문)",
+  "part": "수신·발신·결재선",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "via",
+    "role": "row",
+    "text": "",
+    "label": "(경유)"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "sig",
+    "role": "sig",
+    "text": "시설관리처장"
+   },
+   {
+    "id": "cc",
+    "role": "row",
+    "text": "전 부서장",
+    "label": "수신자"
+   }
+  ]
+ },
+ "gongmun-08": {
+  "card_id": "gongmun-08",
+  "genre": "시행문(공문)",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   }
+  ]
+ },
+ "gongmun-09": {
+  "card_id": "gongmun-09",
+  "genre": "시행문(공문)",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   }
+  ]
+ },
+ "gongmun-10": {
+  "card_id": "gongmun-10",
+  "genre": "시행문(공문)",
+  "part": "여백·판면",
+  "mode": "규칙 요약",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "위 여백",
+    "side": "top",
+    "mm": null
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "아래 여백",
+    "side": "bottom",
+    "mm": null
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "왼 여백",
+    "side": "left",
+    "mm": null
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "오른 여백",
+    "side": "right",
+    "mm": null
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "gongmun-11": {
+  "card_id": "gongmun-11",
+  "genre": "시행문(공문)",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "상 20mm",
+    "side": "top",
+    "mm": 20.0
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "하 10mm",
+    "side": "bottom",
+    "mm": 10.0
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "좌 20mm",
+    "side": "left",
+    "mm": 20.0
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "우 20mm",
+    "side": "right",
+    "mm": 20.0
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "gongmun-12": {
+  "card_id": "gongmun-12",
+  "genre": "시행문(공문)",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "via",
+    "role": "row",
+    "text": "",
+    "label": "(경유)"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "sig",
+    "role": "sig",
+    "text": "시설관리처장"
+   },
+   {
+    "id": "cc",
+    "role": "row",
+    "text": "전 부서장",
+    "label": "수신자"
+   }
+  ],
+  "part_note": "두문·결문"
+ },
+ "gongmun-13": {
+  "card_id": "gongmun-13",
+  "genre": "시행문(공문)",
+  "part": "글꼴·크기",
+  "mode": "규칙 요약",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "f1",
+    "role": "ladder",
+    "text": "크기 12pt",
+    "pt": 12.0,
+    "label": "크기"
+   },
+   {
+    "id": "f2",
+    "role": "ladder",
+    "text": "11pt",
+    "pt": 11.0,
+    "label": ""
+   }
+  ]
+ },
+ "gongmun-14": {
+  "card_id": "gongmun-14",
+  "genre": "시행문(공문)",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "via",
+    "role": "row",
+    "text": "",
+    "label": "(경유)"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "sig",
+    "role": "sig",
+    "text": "시설관리처장"
+   },
+   {
+    "id": "cc",
+    "role": "row",
+    "text": "전 부서장",
+    "label": "수신자"
+   }
+  ],
+  "part_note": "두문·결문"
+ },
+ "gongmun-15": {
+  "card_id": "gongmun-15",
+  "genre": "시행문(공문)",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "via",
+    "role": "row",
+    "text": "",
+    "label": "(경유)"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "sig",
+    "role": "sig",
+    "text": "시설관리처장"
+   },
+   {
+    "id": "cc",
+    "role": "row",
+    "text": "전 부서장",
+    "label": "수신자"
+   }
+  ],
+  "part_note": "두문·결문"
+ },
+ "gongmun-16": {
+  "card_id": "gongmun-16",
+  "genre": "시행문(공문)",
+  "part": "글꼴·크기",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "role_label": "제목"
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "붙임",
+    "role_label": "소제목"
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1,
+    "role_label": "본문"
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1,
+    "role_label": "본문"
+   }
+  ]
+ },
+ "gongmun-17": {
+  "card_id": "gongmun-17",
+  "genre": "시행문(공문)",
+  "part": "수신·발신·결재선",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "via",
+    "role": "row",
+    "text": "",
+    "label": "(경유)"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "sig",
+    "role": "sig",
+    "text": "시설관리처장"
+   },
+   {
+    "id": "cc",
+    "role": "row",
+    "text": "전 부서장",
+    "label": "수신자"
+   }
+  ]
+ },
+ "gongmun-18": {
+  "card_id": "gongmun-18",
+  "genre": "시행문(공문)",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "두문(기관명·수신·제목)",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "본문",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "붙임",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "발신명의",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "수신자란",
+    "n": 5
+   }
+  ]
+ },
+ "gongmun-19": {
+  "card_id": "gongmun-19",
+  "genre": "시행문(공문)",
+  "part": "수신·발신·결재선",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "via",
+    "role": "row",
+    "text": "",
+    "label": "(경유)"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "sig",
+    "role": "sig",
+    "text": "시설관리처장"
+   },
+   {
+    "id": "cc",
+    "role": "row",
+    "text": "전 부서장",
+    "label": "수신자"
+   }
+  ]
+ },
+ "gongmun-20": {
+  "card_id": "gongmun-20",
+  "genre": "시행문(공문)",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "작성 대상: 부서별 냉방·조명·사무기기 절전 실천 과제(3개 이상)",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-01": {
+  "card_id": "onepage-A-01",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-02": {
+  "card_id": "onepage-A-02",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-03": {
+  "card_id": "onepage-A-03",
+  "genre": "한 장 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "faded": true
+   }
+  ]
+ },
+ "onepage-A-04": {
+  "card_id": "onepage-A-04",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "onepage-A-05": {
+  "card_id": "onepage-A-05",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "onepage-A-06": {
+  "card_id": "onepage-A-06",
+  "genre": "한 장 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "faded": true
+   }
+  ]
+ },
+ "onepage-A-07": {
+  "card_id": "onepage-A-07",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "절 제목: '보고요지'(요약박스와 중복)",
+  "after": "절 제목: '보고배경'(왜 이 보고가 필요한지)"
+ },
+ "onepage-A-08": {
+  "card_id": "onepage-A-08",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "구버전 표준시퀀스: '검토결과'(결론)를 첫 절에 배치",
+  "after": "정본 표준시퀀스: 검토배경→대안검토→검토의견→향후계획(결론은 '검토의견' 절에서 제시)"
+ },
+ "onepage-A-09": {
+  "card_id": "onepage-A-09",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-10": {
+  "card_id": "onepage-A-10",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-11": {
+  "card_id": "onepage-A-11",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-12": {
+  "card_id": "onepage-A-12",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-13": {
+  "card_id": "onepage-A-13",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-14": {
+  "card_id": "onepage-A-14",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-15": {
+  "card_id": "onepage-A-15",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-16": {
+  "card_id": "onepage-A-16",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-17": {
+  "card_id": "onepage-A-17",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-18": {
+  "card_id": "onepage-A-18",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-19": {
+  "card_id": "onepage-A-19",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-20": {
+  "card_id": "onepage-A-20",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-21": {
+  "card_id": "onepage-A-21",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-22": {
+  "card_id": "onepage-A-22",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-23": {
+  "card_id": "onepage-A-23",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-24": {
+  "card_id": "onepage-A-24",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "onepage-A-25": {
+  "card_id": "onepage-A-25",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "onepage-A-26": {
+  "card_id": "onepage-A-26",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "onepage-A-27": {
+  "card_id": "onepage-A-27",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-28": {
+  "card_id": "onepage-A-28",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "onepage-A-29": {
+  "card_id": "onepage-A-29",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-A-30": {
+  "card_id": "onepage-A-30",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "onepage-A-31": {
+  "card_id": "onepage-A-31",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "압축형 절 이름을 새로 지음: '주요현황', '시사점', '향후관리'",
+  "after": "표준형과 같은 이름 사용: '주요현황·동향', '영향·시사점', '향후관리'"
+ },
+ "onepage-A-32": {
+  "card_id": "onepage-A-32",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "onepage-A-33": {
+  "card_id": "onepage-A-33",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "원문 R구-40④ 기준: ○ 항목 7개부터(우리 배선 이전 원문 값)",
+  "after": "정본 기준: ○ 항목 5개부터 경고(막지 않음)"
+ },
+ "onepage-A-34": {
+  "card_id": "onepage-A-34",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-01": {
+  "card_id": "onepage-B-01",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-02": {
+  "card_id": "onepage-B-02",
+  "genre": "한 장 보고서",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "faded": true
+   }
+  ]
+ },
+ "onepage-B-03": {
+  "card_id": "onepage-B-03",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-04": {
+  "card_id": "onepage-B-04",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-05": {
+  "card_id": "onepage-B-05",
+  "genre": "한 장 보고서",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": false
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "h1i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   },
+   {
+    "id": "h2",
+    "role": "heading",
+    "text": "대안비교"
+   },
+   {
+    "id": "h2i1",
+    "role": "item2",
+    "text": "직접 설치(6기): 초기 2.4억원, 연 수익 0.5억원",
+    "level": 2
+   },
+   {
+    "id": "h2i2",
+    "role": "item2",
+    "text": "외부 유치: 초기 0원, 연 임대료 0.12억원",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-06": {
+  "card_id": "onepage-B-06",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-07": {
+  "card_id": "onepage-B-07",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-08": {
+  "card_id": "onepage-B-08",
+  "genre": "한 장 보고서",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "상 25mm",
+    "side": "top",
+    "mm": 25.0
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "하 20mm",
+    "side": "bottom",
+    "mm": 20.0
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "좌 25mm",
+    "side": "left",
+    "mm": 25.0
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "우 25mm",
+    "side": "right",
+    "mm": 25.0
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "onepage-B-09": {
+  "card_id": "onepage-B-09",
+  "genre": "한 장 보고서",
+  "part": "글꼴·크기",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "role_label": "제목"
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "검토배경",
+    "role_label": "소제목"
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2,
+    "role_label": "본문"
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2,
+    "role_label": "본문"
+   }
+  ]
+ },
+ "onepage-B-10": {
+  "card_id": "onepage-B-10",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-11": {
+  "card_id": "onepage-B-11",
+  "genre": "한 장 보고서",
+  "part": "표",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": "발표 슬라이드",
+  "elements": [
+   {
+    "id": "head",
+    "role": "heading",
+    "text": "부지 방식별 조성비 비교"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 신규 매입 | 주차장 전환",
+    "cells": [
+     "구분",
+     "신규 매입",
+     "주차장 전환"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "부지 확보 | 12.4억 | 0억",
+    "cells": [
+     "부지 확보",
+     "12.4억",
+     "0억"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "조성 공사 | 6.1억 | 5.8억",
+    "cells": [
+     "조성 공사",
+     "6.1억",
+     "5.8억"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "전력 인입 | 2.3억 | 1.1억",
+    "cells": [
+     "전력 인입",
+     "2.3억",
+     "1.1억"
+    ]
+   },
+   {
+    "id": "r4",
+    "role": "td",
+    "text": "합계 | 20.8억 | 6.9억",
+    "cells": [
+     "합계",
+     "20.8억",
+     "6.9억"
+    ]
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 재정과 검토('26. 7.)"
+   }
+  ]
+ },
+ "onepage-B-12": {
+  "card_id": "onepage-B-12",
+  "genre": "한 장 보고서",
+  "part": "여백·판면",
+  "mode": "규칙 요약",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "위 여백",
+    "side": "top",
+    "mm": null
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "아래 여백",
+    "side": "bottom",
+    "mm": null
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "왼 여백",
+    "side": "left",
+    "mm": null
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "오른 여백",
+    "side": "right",
+    "mm": null
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "onepage-B-13": {
+  "card_id": "onepage-B-13",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "onepage-B-14": {
+  "card_id": "onepage-B-14",
+  "genre": "한 장 보고서",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "요약박스",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "검토배경",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "대안비교",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "검토의견",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "향후계획",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "붙임",
+    "n": 7
+   }
+  ]
+ },
+ "press-01": {
+  "card_id": "press-01",
+  "genre": "보도자료",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "부제",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "리드",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "요지만 넣으면 기관 서식에 맞는 초안이 나온다",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "사람이 고친 내용은 다시 규칙으로 쌓인다",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "9월 시범 운영을 거쳐 12월 전면 시행한다",
+    "n": 6
+   }
+  ]
+ },
+ "press-02": {
+  "card_id": "press-02",
+  "genre": "보도자료",
+  "part": "제목·표지",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "보도일시",
+  "after": "보도시점"
+ },
+ "press-03": {
+  "card_id": "press-03",
+  "genre": "보도자료",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "kicker",
+    "role": "kicker",
+    "text": "보도자료 · ○○공사"
+   },
+   {
+    "id": "headline",
+    "role": "headline",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다"
+   },
+   {
+    "id": "subhead",
+    "role": "subhead",
+    "text": "- ○○공사, 문서 작성 지원 서비스 9월 개시… 연간 4만 시간 절감 기대 -"
+   }
+  ]
+ },
+ "press-04": {
+  "card_id": "press-04",
+  "genre": "보도자료",
+  "part": "제목·표지",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "- ~ -",
+  "after": "- ~"
+ },
+ "press-05": {
+  "card_id": "press-05",
+  "genre": "보도자료",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제목",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "부제",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "리드",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "요지만 넣으면 기관 서식에 맞는 초안이 나온다",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "사람이 고친 내용은 다시 규칙으로 쌓인다",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "9월 시범 운영을 거쳐 12월 전면 시행한다",
+    "n": 6
+   }
+  ]
+ },
+ "press-06": {
+  "card_id": "press-06",
+  "genre": "보도자료",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "요지만 넣으면 기관 서식에 맞는 초안이 나온다",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "1페이지 보고서·시행문·규정·보도자료 네 가지 서식을 지원하며, 부서별 표준 서식을 그대로 따른다",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "초안이 나오기 전에 어떤 구성으로 쓸지 먼저 보여 주고 담당자가 승인한 뒤 작성한다",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item3",
+    "text": "승인 화면에서 목차·분량·표 사용 여부를 바꿀 수 있다",
+    "level": 3
+   }
+  ]
+ },
+ "press-07": {
+  "card_id": "press-07",
+  "genre": "보도자료",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "kicker",
+    "role": "kicker",
+    "text": "보도자료 · ○○공사"
+   },
+   {
+    "id": "headline",
+    "role": "headline",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다"
+   },
+   {
+    "id": "subhead",
+    "role": "subhead",
+    "text": "- ○○공사, 문서 작성 지원 서비스 9월 개시… 연간 4만 시간 절감 기대 -"
+   }
+  ]
+ },
+ "press-08": {
+  "card_id": "press-08",
+  "genre": "보도자료",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "요지만 넣으면 기관 서식에 맞는 초안이 나온다",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "1페이지 보고서·시행문·규정·보도자료 네 가지 서식을 지원하며, 부서별 표준 서식을 그대로 따른다",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "초안이 나오기 전에 어떤 구성으로 쓸지 먼저 보여 주고 담당자가 승인한 뒤 작성한다",
+    "level": 2
+   }
+  ]
+ },
+ "press-09": {
+  "card_id": "press-09",
+  "genre": "보도자료",
+  "part": "글꼴·크기",
+  "mode": "규칙 요약",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "f1",
+    "role": "ladder",
+    "text": "크기는 15pt",
+    "pt": 15.0,
+    "label": "크기는"
+   },
+   {
+    "id": "f2",
+    "role": "ladder",
+    "text": "선택지 15pt",
+    "pt": 15.0,
+    "label": "선택지"
+   },
+   {
+    "id": "f3",
+    "role": "ladder",
+    "text": "크기는 14pt",
+    "pt": 14.0,
+    "label": "크기는"
+   }
+  ]
+ },
+ "press-10": {
+  "card_id": "press-10",
+  "genre": "보도자료",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "요지만 넣으면 기관 서식에 맞는 초안이 나온다",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "1페이지 보고서·시행문·규정·보도자료 네 가지 서식을 지원하며, 부서별 표준 서식을 그대로 따른다",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "초안이 나오기 전에 어떤 구성으로 쓸지 먼저 보여 주고 담당자가 승인한 뒤 작성한다",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item3",
+    "text": "승인 화면에서 목차·분량·표 사용 여부를 바꿀 수 있다",
+    "level": 3
+   }
+  ]
+ },
+ "regulation-01": {
+  "card_id": "regulation-01",
+  "genre": "규정·내규",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제명",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "제N장 총칙",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "제N장 활용 기준",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "제N장 관리 및 교육",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "부칙",
+    "n": 5
+   }
+  ]
+ },
+ "regulation-02": {
+  "card_id": "regulation-02",
+  "genre": "규정·내규",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "“업무자료”란 직무와 관련하여 작성하거나 취득한 문서·데이터로서 공개되지 아니한 것을 말한다.",
+    "level": 2
+   }
+  ]
+ },
+ "regulation-03": {
+  "card_id": "regulation-03",
+  "genre": "규정·내규",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제명",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "제N장 총칙",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "제N장 활용 기준",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "제N장 관리 및 교육",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "부칙",
+    "n": 5
+   }
+  ]
+ },
+ "regulation-04": {
+  "card_id": "regulation-04",
+  "genre": "규정·내규",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제명",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "제N장 총칙",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "제N장 활용 기준",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "제N장 관리 및 교육",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "부칙",
+    "n": 5
+   }
+  ]
+ },
+ "regulation-05": {
+  "card_id": "regulation-05",
+  "genre": "규정·내규",
+  "part": "표",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "[별표 1] 입력 금지 정보 판단 기준"
+   },
+   {
+    "id": "th",
+    "role": "th",
+    "text": "구분 | 입력 가능 | 입력 금지",
+    "cells": [
+     "구분",
+     "입력 가능",
+     "입력 금지"
+    ]
+   },
+   {
+    "id": "r1",
+    "role": "td",
+    "text": "개인정보 | 완전히 식별 정보를 지운 통계 | 성명·연락처·주민등록번호",
+    "cells": [
+     "개인정보",
+     "완전히 식별 정보를 지운 통계",
+     "성명·연락처·주민등록번호"
+    ]
+   },
+   {
+    "id": "r2",
+    "role": "td",
+    "text": "계약자료 | 공개된 입찰 공고문 | 제안서·견적서 원문",
+    "cells": [
+     "계약자료",
+     "공개된 입찰 공고문",
+     "제안서·견적서 원문"
+    ]
+   },
+   {
+    "id": "r3",
+    "role": "td",
+    "text": "내부자료 | 이미 공개한 보도자료 | 결재 전 검토 문서",
+    "cells": [
+     "내부자료",
+     "이미 공개한 보도자료",
+     "결재 전 검토 문서"
+    ]
+   }
+  ]
+ },
+ "regulation-06": {
+  "card_id": "regulation-06",
+  "genre": "규정·내규",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   }
+  ]
+ },
+ "regulation-07": {
+  "card_id": "regulation-07",
+  "genre": "규정·내규",
+  "part": "글꼴·크기",
+  "mode": "규칙 요약",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "f1",
+    "role": "ladder",
+    "text": "크기는 14pt",
+    "pt": 14.0,
+    "label": "크기는"
+   }
+  ]
+ },
+ "regulation-08": {
+  "card_id": "regulation-08",
+  "genre": "규정·내규",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "“업무자료”란 직무와 관련하여 작성하거나 취득한 문서·데이터로서 공개되지 아니한 것을 말한다.",
+    "level": 2
+   }
+  ],
+  "part_note": "조문 들여쓰기"
+ },
+ "regulation-09": {
+  "card_id": "regulation-09",
+  "genre": "규정·내규",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "“업무자료”란 직무와 관련하여 작성하거나 취득한 문서·데이터로서 공개되지 아니한 것을 말한다.",
+    "level": 2
+   }
+  ]
+ },
+ "shared-01": {
+  "card_id": "shared-01",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-02": {
+  "card_id": "shared-02",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-03": {
+  "card_id": "shared-03",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-04": {
+  "card_id": "shared-04",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-05": {
+  "card_id": "shared-05",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-06": {
+  "card_id": "shared-06",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-07": {
+  "card_id": "shared-07",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-08": {
+  "card_id": "shared-08",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-09": {
+  "card_id": "shared-09",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-10": {
+  "card_id": "shared-10",
+  "genre": "한 장 보고서",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "shared-11": {
+  "card_id": "shared-11",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "shared-12": {
+  "card_id": "shared-12",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "shared-13": {
+  "card_id": "shared-13",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "shared-14": {
+  "card_id": "shared-14",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "shared-15": {
+  "card_id": "shared-15",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "shared-16": {
+  "card_id": "shared-16",
+  "genre": "한 장 보고서",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토"
+   },
+   {
+    "id": "byline",
+    "role": "byline",
+    "text": "<시설관리처, '26. 8. 5.>"
+   },
+   {
+    "id": "summary",
+    "role": "summary",
+    "text": "직접 설치가 외부 유치보다 회수 기간이 짧아 직접 설치안 결재를 요청드림",
+    "faded": true
+   }
+  ]
+ },
+ "shared-17": {
+  "card_id": "shared-17",
+  "genre": "한 장 보고서",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "위 여백",
+    "side": "top",
+    "mm": null
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "아래 여백",
+    "side": "bottom",
+    "mm": null
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "좌 25mm",
+    "side": "left",
+    "mm": 25.0
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "우 25mm",
+    "side": "right",
+    "mm": 25.0
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "slides-01": {
+  "card_id": "slides-01",
+  "genre": "발표 슬라이드",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "head",
+    "role": "slide_head",
+    "text": "충전소 민원 3건 중 2건은 대기시간과 접근거리에서 나온다"
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "'26년 상반기 충전 민원 214건 — 대기시간 41%·접근거리 27%",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "피크 시간대(18~21시) 평균 대기 18분",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "반경 1km 내 급속기 없는 행정동 6곳",
+    "level": 2
+   }
+  ]
+ },
+ "slides-02": {
+  "card_id": "slides-02",
+  "genre": "발표 슬라이드",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "전기차 충전소 확충 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "'26년 상반기 충전 민원 214건 — 대기시간 41%·접근거리 27%",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "피크 시간대(18~21시) 평균 대기 18분",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "반경 1km 내 급속기 없는 행정동 6곳",
+    "level": 2
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 민원 통계('26. 6.)"
+   }
+  ]
+ },
+ "slides-03": {
+  "card_id": "slides-03",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-04": {
+  "card_id": "slides-04",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-05": {
+  "card_id": "slides-05",
+  "genre": "발표 슬라이드",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "head",
+    "role": "slide_head",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "slides-06": {
+  "card_id": "slides-06",
+  "genre": "발표 슬라이드",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "head",
+    "role": "slide_head",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "slides-07": {
+  "card_id": "slides-07",
+  "genre": "발표 슬라이드",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "head",
+    "role": "slide_head",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "slides-08": {
+  "card_id": "slides-08",
+  "genre": "발표 슬라이드",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "head",
+    "role": "slide_head",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "slides-09": {
+  "card_id": "slides-09",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-10": {
+  "card_id": "slides-10",
+  "genre": "발표 슬라이드",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "전기차 충전소 확충 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "'26년 상반기 충전 민원 214건 — 대기시간 41%·접근거리 27%",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "피크 시간대(18~21시) 평균 대기 18분",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "반경 1km 내 급속기 없는 행정동 6곳",
+    "level": 2
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 민원 통계('26. 6.)"
+   }
+  ]
+ },
+ "slides-11": {
+  "card_id": "slides-11",
+  "genre": "발표 슬라이드",
+  "part": "그림·도식·차트",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "2024 매출",
+  "after": "매출 17% 증가"
+ },
+ "slides-12": {
+  "card_id": "slides-12",
+  "genre": "발표 슬라이드",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "전기차 충전소 확충 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "'26년 상반기 충전 민원 214건 — 대기시간 41%·접근거리 27%",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "피크 시간대(18~21시) 평균 대기 18분",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "반경 1km 내 급속기 없는 행정동 6곳",
+    "level": 2
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 민원 통계('26. 6.)"
+   }
+  ]
+ },
+ "slides-13": {
+  "card_id": "slides-13",
+  "genre": "발표 슬라이드",
+  "part": "여백·판면",
+  "mode": "예시",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "상 12mm",
+    "side": "top",
+    "mm": 12.0
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "하 18mm",
+    "side": "bottom",
+    "mm": 18.0
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "좌 16mm",
+    "side": "left",
+    "mm": 16.0
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "우 16mm",
+    "side": "right",
+    "mm": 16.0
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "slides-14": {
+  "card_id": "slides-14",
+  "genre": "발표 슬라이드",
+  "part": "글꼴·크기",
+  "mode": "규칙 요약",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "f1",
+    "role": "ladder",
+    "text": "헤드메시지 30pt",
+    "pt": 30.0,
+    "label": "헤드메시지"
+   },
+   {
+    "id": "f2",
+    "role": "ladder",
+    "text": "본문 18pt",
+    "pt": 18.0,
+    "label": "본문"
+   },
+   {
+    "id": "f3",
+    "role": "ladder",
+    "text": "출처·쪽번호 12pt",
+    "pt": 12.0,
+    "label": "출처·쪽번호"
+   }
+  ]
+ },
+ "slides-15": {
+  "card_id": "slides-15",
+  "genre": "발표 슬라이드",
+  "part": "여백·판면",
+  "mode": "규칙 요약",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "위 여백",
+    "side": "top",
+    "mm": null
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "아래 여백",
+    "side": "bottom",
+    "mm": null
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "왼 여백",
+    "side": "left",
+    "mm": null
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "오른 여백",
+    "side": "right",
+    "mm": null
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "slides-16": {
+  "card_id": "slides-16",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-17": {
+  "card_id": "slides-17",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-18": {
+  "card_id": "slides-18",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-19": {
+  "card_id": "slides-19",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-20": {
+  "card_id": "slides-20",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-21": {
+  "card_id": "slides-21",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "slides-22": {
+  "card_id": "slides-22",
+  "genre": "발표 슬라이드",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "전기차 충전소 확충 추진계획",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "'26년 상반기 충전 민원 214건 — 대기시간 41%·접근거리 27%",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "피크 시간대(18~21시) 평균 대기 18분",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "반경 1km 내 급속기 없는 행정동 6곳",
+    "level": 2
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 민원 통계('26. 6.)"
+   }
+  ]
+ },
+ "slides-23": {
+  "card_id": "slides-23",
+  "genre": "발표 슬라이드",
+  "part": "여백·판면",
+  "mode": "규칙 요약",
+  "sample": null,
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "m_top",
+    "role": "margin",
+    "text": "위 여백",
+    "side": "top",
+    "mm": null
+   },
+   {
+    "id": "m_bottom",
+    "role": "margin",
+    "text": "아래 여백",
+    "side": "bottom",
+    "mm": null
+   },
+   {
+    "id": "m_left",
+    "role": "margin",
+    "text": "왼 여백",
+    "side": "left",
+    "mm": null
+   },
+   {
+    "id": "m_right",
+    "role": "margin",
+    "text": "오른 여백",
+    "side": "right",
+    "mm": null
+   },
+   {
+    "id": "body",
+    "role": "bodyarea",
+    "text": "본문 판면"
+   }
+  ]
+ },
+ "slides-24": {
+  "card_id": "slides-24",
+  "genre": "발표 슬라이드",
+  "part": "그림·도식·차트",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "head",
+    "role": "slide_head",
+    "text": "증설은 2단계로 나눠 대기와 공백을 함께 푼다"
+   },
+   {
+    "id": "cap",
+    "role": "caption",
+    "text": "충전소 확충 단계"
+   },
+   {
+    "id": "b1",
+    "role": "box",
+    "text": "주차장 전환 3곳",
+    "sub": "1단계 '26.10",
+    "edge": "급속 8기"
+   },
+   {
+    "id": "b2",
+    "role": "box",
+    "text": "공백 행정동 2곳",
+    "sub": "2단계 '27.3",
+    "edge": "급속 4기"
+   },
+   {
+    "id": "b3",
+    "role": "box",
+    "text": "수요 모니터링",
+    "sub": "상시",
+    "edge": ""
+   },
+   {
+    "id": "impl",
+    "role": "note",
+    "text": "1단계로 피크 대기를, 2단계로 접근거리 공백을 순차 해소한다."
+   },
+   {
+    "id": "src",
+    "role": "source",
+    "text": "출처: 공단 수요 모형('26. 7.)"
+   }
+  ]
+ },
+ "slides-25": {
+  "card_id": "slides-25",
+  "genre": "발표 슬라이드",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "전기차 충전소 확충 추진계획",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "표지",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "픽토그램",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "본문",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "표",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "도식",
+    "n": 5
+   },
+   {
+    "id": "s6",
+    "role": "step",
+    "text": "본문",
+    "n": 6
+   },
+   {
+    "id": "s7",
+    "role": "step",
+    "text": "마무리",
+    "n": 7
+   }
+  ]
+ },
+ "writing-01": {
+  "card_id": "writing-01",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "writing-02": {
+  "card_id": "writing-02",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "writing-03": {
+  "card_id": "writing-03",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "writing-04": {
+  "card_id": "writing-04",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "writing-05": {
+  "card_id": "writing-05",
+  "genre": "한 장 보고서",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "사옥 주차장 전기차 충전기 설치 방안 검토",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "사옥 주차장 전기차 충전기 설치 방안 검토",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item2",
+    "text": "임직원 전기차 '25년 40대→'26년 71대, 충전 대기 민원 월 12건",
+    "level": 2
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "주차장 B2 유휴부지 320㎡ 활용 가능",
+    "level": 2
+   }
+  ]
+ },
+ "writing-06": {
+  "card_id": "writing-06",
+  "genre": "보도자료",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "headline",
+    "role": "headline",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다"
+   },
+   {
+    "id": "subhead",
+    "role": "subhead",
+    "text": "- ○○공사, 문서 작성 지원 서비스 9월 개시… 연간 4만 시간 절감 기대 -"
+   },
+   {
+    "id": "lead",
+    "role": "lead",
+    "text": "○○공사는 보고서·공문 초안을 자동으로 만들어 주는 문서 작성 지원 서비스를 9월 1일부터 전 부서에 개시한다고 3일 밝혔다. 담당자가 요지만 입력하면 기관 서식에 맞춘 초안이 나오고, 사람은 사실 확인과 다듬기에만 집중하는 방식이다."
+   }
+  ]
+ },
+ "writing-07": {
+  "card_id": "writing-07",
+  "genre": "시행문(공문)",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "작성 대상: 부서별 냉방·조명·사무기기 절전 실천 과제(3개 이상)",
+    "level": 2
+   }
+  ]
+ },
+ "writing-08": {
+  "card_id": "writing-08",
+  "genre": "시행문(공문)",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "작성 대상: 부서별 냉방·조명·사무기기 절전 실천 과제(3개 이상)",
+    "level": 2
+   }
+  ]
+ },
+ "writing-09": {
+  "card_id": "writing-09",
+  "genre": "시행문(공문)",
+  "part": "수신·발신·결재선",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "to",
+    "role": "row",
+    "text": "수신자 참조",
+    "label": "수신"
+   },
+   {
+    "id": "via",
+    "role": "row",
+    "text": "",
+    "label": "(경유)"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "sig",
+    "role": "sig",
+    "text": "시설관리처장"
+   },
+   {
+    "id": "cc",
+    "role": "row",
+    "text": "전 부서장",
+    "label": "수신자"
+   }
+  ]
+ },
+ "writing-10": {
+  "card_id": "writing-10",
+  "genre": "시행문(공문)",
+  "part": "문장 표현",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "검사 바랍니다",
+  "after": "검사를 받으시기 바랍니다"
+ },
+ "writing-11": {
+  "card_id": "writing-11",
+  "genre": "시행문(공문)",
+  "part": "문장 표현",
+  "mode": "전후",
+  "sample": null,
+  "borrowed": null,
+  "elements": [],
+  "before": "조속히 / 수령 / 송부 / 기(旣) / 익일",
+  "after": "되도록 빨리 / 받음 / 보냄 / 이미 / 다음 날"
+ },
+ "writing-12": {
+  "card_id": "writing-12",
+  "genre": "시행문(공문)",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "하절기 청사 에너지 절약 실천계획 제출 요청",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "org",
+    "role": "org",
+    "text": "○○공사"
+   },
+   {
+    "id": "subject",
+    "role": "row",
+    "text": "하절기 청사 에너지 절약 실천계획 제출 요청",
+    "label": "제목"
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "우리 공사는 하절기 전력 수요가 몰리는 7~8월에 대비하여 청사 냉방·조명 운영 기준을 정하고 부서별 에너지 절약 실천 과제를 모으기로 하였습니다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "각 부서에서는 아래 사항을 참고하여 부서별 실천계획을 작성하고 2026. 6. 26.(금)까지 시설관리처로 제출하여 주시기 바랍니다.",
+    "level": 1
+   }
+  ]
+ },
+ "writing-13": {
+  "card_id": "writing-13",
+  "genre": "규정·내규",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   }
+  ]
+ },
+ "writing-14": {
+  "card_id": "writing-14",
+  "genre": "규정·내규",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "“업무자료”란 직무와 관련하여 작성하거나 취득한 문서·데이터로서 공개되지 아니한 것을 말한다.",
+    "level": 2
+   }
+  ]
+ },
+ "writing-15": {
+  "card_id": "writing-15",
+  "genre": "규정·내규",
+  "part": "판정·유형",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정"
+   },
+   {
+    "id": "h1",
+    "role": "heading",
+    "text": "제1조(목적)"
+   },
+   {
+    "id": "h1i1",
+    "role": "item2",
+    "text": "이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 2
+   }
+  ]
+ },
+ "writing-16": {
+  "card_id": "writing-16",
+  "genre": "규정·내규",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "“업무자료”란 직무와 관련하여 작성하거나 취득한 문서·데이터로서 공개되지 아니한 것을 말한다.",
+    "level": 2
+   }
+  ]
+ },
+ "writing-17": {
+  "card_id": "writing-17",
+  "genre": "규정·내규",
+  "part": "문서 전체 구성",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "s1",
+    "role": "step",
+    "text": "제명",
+    "n": 1
+   },
+   {
+    "id": "s2",
+    "role": "step",
+    "text": "제N장 총칙",
+    "n": 2
+   },
+   {
+    "id": "s3",
+    "role": "step",
+    "text": "제N장 활용 기준",
+    "n": 3
+   },
+   {
+    "id": "s4",
+    "role": "step",
+    "text": "제N장 관리 및 교육",
+    "n": 4
+   },
+   {
+    "id": "s5",
+    "role": "step",
+    "text": "부칙",
+    "n": 5
+   }
+  ]
+ },
+ "writing-18": {
+  "card_id": "writing-18",
+  "genre": "규정·내규",
+  "part": "본문 글머리·위계",
+  "mode": "예시",
+  "sample": "생성형 인공지능 업무활용 규정",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "생성형 인공지능 업무활용 규정",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "제N조(목적) 이 규정은 임직원이 생성형 인공지능을 업무에 활용할 때 지켜야 할 기준과 절차를 정하여 업무 효율을 높이고 정보 유출과 오작성의 위험을 줄이는 것을 목적으로 한다.",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item1",
+    "text": "제N조(정의) 이 규정에서 사용하는 용어의 뜻은 다음과 같다.",
+    "level": 1
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "“생성형 인공지능”이란 이용자의 입력에 따라 글·그림·소리·프로그램 코드 등을 새로 만들어 내는 인공지능 서비스를 말한다.",
+    "level": 2
+   },
+   {
+    "id": "i4",
+    "role": "item2",
+    "text": "“업무자료”란 직무와 관련하여 작성하거나 취득한 문서·데이터로서 공개되지 아니한 것을 말한다.",
+    "level": 2
+   }
+  ]
+ },
+ "writing-19": {
+  "card_id": "writing-19",
+  "genre": "보도자료",
+  "part": "문장 표현",
+  "mode": "표본 문장",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "title",
+    "role": "title",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+    "faded": true
+   },
+   {
+    "id": "i1",
+    "role": "item1",
+    "text": "요지만 넣으면 기관 서식에 맞는 초안이 나온다",
+    "level": 1
+   },
+   {
+    "id": "i2",
+    "role": "item2",
+    "text": "1페이지 보고서·시행문·규정·보도자료 네 가지 서식을 지원하며, 부서별 표준 서식을 그대로 따른다",
+    "level": 2
+   },
+   {
+    "id": "i3",
+    "role": "item2",
+    "text": "초안이 나오기 전에 어떤 구성으로 쓸지 먼저 보여 주고 담당자가 승인한 뒤 작성한다",
+    "level": 2
+   }
+  ]
+ },
+ "writing-20": {
+  "card_id": "writing-20",
+  "genre": "보도자료",
+  "part": "요약(두괄)",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "headline",
+    "role": "headline",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다"
+   },
+   {
+    "id": "lead",
+    "role": "lead",
+    "text": "○○공사는 보고서·공문 초안을 자동으로 만들어 주는 문서 작성 지원 서비스를 9월 1일부터 전 부서에 개시한다고 3일 밝혔다. 담당자가 요지만 입력하면 기관 서식에 맞춘 초안이 나오고, 사람은 사실 확인과 다듬기에만 집중하는 방식이다."
+   }
+  ]
+ },
+ "writing-21": {
+  "card_id": "writing-21",
+  "genre": "보도자료",
+  "part": "제목·표지",
+  "mode": "예시",
+  "sample": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다",
+  "borrowed": null,
+  "elements": [
+   {
+    "id": "kicker",
+    "role": "kicker",
+    "text": "보도자료 · ○○공사"
+   },
+   {
+    "id": "headline",
+    "role": "headline",
+    "text": "공공문서 초안을 AI가 쓰고 담당자가 다듬는다"
+   },
+   {
+    "id": "subhead",
+    "role": "subhead",
+    "text": "- ○○공사, 문서 작성 지원 서비스 9월 개시… 연간 4만 시간 절감 기대 -"
+   }
+  ]
+ }
+}

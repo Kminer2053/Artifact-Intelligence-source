@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>문서지능 규칙마당</title>
+<meta name="description" content="문서지능이 공공문서를 만들 때 쓰는 작성 규칙 227장을 공개합니다. 규칙마다 표본 문서의 적용 자리를 보여 주고, 현장의 의견과 노하우를 받아 규칙에 반영합니다.">
+<link rel="icon" href="/workspace/brand/brand-mark.png">
+<link rel="stylesheet" href="/workspace/ui-tokens.css">
+<style>
+  /* 규칙마당 — 웹앱(app.html)·약관·랜딩과 같은 브랜드킷 화이트 테마.
+   * 색·글꼴·간격·반경은 전부 ui-tokens.css 의 --ai-* 토큰에서만 온다(hex·rgb·이름색 0 —
+   * build/verify_all.py check_app_no_raw_hex 가 이 파일도 잰다). 다크 모드는 없다(웹앱이 뺐다).
+   * 헤더·버튼·탭·카드 치수는 app.html 의 header·.주단추·.탭·.단계를 그대로 옮겼다. */
+  /* 작은 배지 글자 전용 파생 색 — 토큰을 잉크와 섞어 흰·옅은 바탕 위 대비를 4.5:1 이상으로 올린다
+     (실측: signal/signal-tint 4.44 → 5.38, review-ink/review-tint 3.32 → 5.30). 새 hex 없음. */
+  :root { --마당-signal-글자: color-mix(in srgb, var(--ai-color-signal) 85%, var(--ai-color-ink));
+          --마당-review-글자: color-mix(in srgb, var(--ai-color-review-ink) 70%, var(--ai-color-ink)); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(var(--ai-topbar-h) + 12px); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+  body { margin: 0; background: var(--ai-color-bg); color: var(--ai-color-ink); font: 15px/1.65 var(--ai-font-sans); }
+  a { color: inherit; }
+  h1, h2, h3, .eyebrow, .kicker, .주단추, .곁단추, .문서탭, .브랜드 b { font-family: var(--ai-font-heading); }
+  .속 { max-width: 1120px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 64px); }
+  :focus-visible { outline: 2px solid var(--ai-color-signal); outline-offset: 2px; }
+
+  /* 헤더 — app.html header 그대로(높이·블러·브랜드 잠금) + 오른쪽 이동 */
+  header { background: color-mix(in srgb, var(--ai-color-bg) 88%, transparent); backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--ai-color-line); height: var(--ai-topbar-h); position: sticky; top: 0; z-index: 20; }
+  header .속 { height: 100%; display: flex; align-items: center; gap: 11px; }
+  .브랜드 { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+  .브랜드 .마크 { width: 38px; height: 38px; flex: none; border-radius: 10px; display: block;
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--ai-color-ink) 18%, transparent); }
+  .브랜드 .워드마크 { display: flex; flex-direction: column; line-height: 1.12; }
+  .브랜드 .워드마크 b { font-weight: 800; font-size: 17px; letter-spacing: -.3px; }
+  .브랜드 .워드마크 small { font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--ai-color-muted); font-weight: 700; }
+  .마당표 { font-family: var(--ai-font-heading); font-weight: 800; font-size: 13px; color: var(--마당-signal-글자);
+    background: var(--ai-color-signal-tint); border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
+  header .틈 { flex: 1; }
+  header nav { display: flex; align-items: center; gap: 22px; font-family: var(--ai-font-heading); font-weight: 700; font-size: 14px; }
+  header nav a { text-decoration: none; color: var(--ai-color-muted); }
+  header nav a:hover { color: var(--ai-color-signal); }
+  .곁단추 { border: 1.5px solid var(--ai-color-ink); color: var(--ai-color-ink); background: transparent;
+    border-radius: var(--ai-radius-sm); padding: 8px 14px; font-weight: 700; font-size: 13.5px; text-decoration: none;
+    cursor: pointer; white-space: nowrap; transition: background var(--ai-motion-fast); }
+  .곁단추:hover { background: var(--ai-color-signal-tint); }
+  .주단추 { display: inline-flex; align-items: center; gap: 8px; background: var(--ai-color-ink); color: var(--ai-color-white);
+    border: 0; border-radius: var(--ai-radius-sm); padding: 10px 20px; font-size: 14px; font-weight: 700;
+    text-decoration: none; cursor: pointer; white-space: nowrap; transition: background var(--ai-motion-fast); }
+  .주단추:hover { background: var(--ai-color-ink-hover); }
+  .주단추.파랑 { background: var(--ai-color-signal); box-shadow: 0 10px 24px -10px var(--ai-color-signal); }
+  .주단추.파랑:hover { background: color-mix(in srgb, var(--ai-color-signal) 88%, var(--ai-color-ink)); }
+  .주단추.큰 { padding: 13px 22px; font-size: 15px; border-radius: 11px; }
+  .곁단추.큰 { padding: 12px 21px; font-size: 15px; border-radius: 11px; border-color: var(--ai-color-line); background: var(--ai-color-white); }
+  .곁단추.큰:hover { border-color: var(--ai-color-signal); color: var(--ai-color-signal); background: var(--ai-color-white); }
+  @media (max-width: 860px) { header nav a:not(.곁단추) { display: none; } }
+  @media (max-width: 560px) { header .속 { gap: 8px; } .브랜드 .워드마크 small, .마당표 { display: none; } .브랜드 .마크 { width: 34px; height: 34px; } header .곁단추 { padding: 7px 11px; font-size: 13px; } }
+
+  /* 히어로 — app.html .소개 / 랜딩 .hero 와 같은 결: 흰 바탕, 옅은 시그널·민트 빛, eyebrow, 800 헤딩 */
+  .히어로 { position: relative; overflow: hidden; }
+  .히어로::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(115% 80% at 84% -6%, var(--ai-color-signal-tint) 0%, transparent 56%); }
+  .히어로::after { content: ""; position: absolute; right: -140px; top: -120px; width: 420px; height: 420px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle, color-mix(in srgb, var(--ai-color-agent) 22%, transparent) 0%, transparent 62%); }
+  .히어로 .속 { position: relative; display: grid; grid-template-columns: 1fr 1.02fr; gap: clamp(28px, 4vw, 56px); align-items: center;
+    padding-top: clamp(44px, 6vw, 84px); padding-bottom: clamp(36px, 5vw, 64px); }
+  @media (max-width: 940px) { .히어로 .속 { grid-template-columns: 1fr; } }
+  .eyebrow { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 11px; letter-spacing: .18em;
+    color: var(--ai-color-signal); text-transform: uppercase; }
+  .eyebrow .tick { width: 30px; height: 3px; background: var(--ai-color-agent); flex: none; }
+  h1 { font-weight: 800; font-size: clamp(32px, 4.6vw, 54px); margin: 16px 0 0; letter-spacing: -.04em; line-height: 1.14; text-wrap: balance; }
+  h1 em { font-style: normal; color: var(--ai-color-signal); }
+  .히어로 .글 { margin: 18px 0 0; max-width: 58ch; font-size: 16.5px; line-height: 1.65; color: var(--ai-color-muted-hero); }
+  .강조들 { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 12px; max-width: 600px; }
+  .강조들 li { display: grid; grid-template-columns: 22px 1fr; column-gap: 12px; align-items: start; }
+  .강조들 .점 { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: var(--ai-color-signal-tint);
+    color: var(--ai-color-signal); margin-top: 1px; font-family: var(--ai-font-heading); font-weight: 800; font-size: 11px; }
+  .강조들 p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--ai-color-muted-hero); font-weight: 500; }
+  .강조들 b { color: var(--ai-color-ink); font-weight: 700; }
+  .단추줄 { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+
+  /* 히어로 예시 — 실제 규칙 카드 예시(SVG)를 돌려 보여 준다(랜딩 캐러셀과 같은 틀) */
+  .예시틀 { position: relative; }
+  .예시판 { position: relative; aspect-ratio: 16 / 9; border-radius: var(--ai-radius-md); overflow: hidden; background: var(--ai-color-white);
+    border: 1px solid var(--ai-color-line); box-shadow: 0 30px 60px -28px color-mix(in srgb, var(--ai-color-ink) 30%, transparent), 0 6px 16px -8px color-mix(in srgb, var(--ai-color-ink) 20%, transparent); }
+  .예시판 figure { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity .6s ease; }
+  .예시판 figure.지금 { opacity: 1; }
+  .예시판 figure svg { display: block; width: 100%; height: auto; }
+  .예시알약 { display: inline-flex; align-items: center; gap: 7px; margin-top: 14px; background: color-mix(in srgb, var(--ai-color-ink) 92%, transparent);
+    color: var(--ai-color-white); font-family: var(--ai-font-heading); font-weight: 700; font-size: 12.5px; padding: 7px 12px; border-radius: 999px; }
+  .예시알약 i { width: 7px; height: 7px; border-radius: 50%; background: var(--ai-color-agent); flex: none; }
+  .점줄 { display: flex; gap: 7px; margin-top: 12px; }
+  .점단추 { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%; background: color-mix(in srgb, var(--ai-color-line) 40%, var(--ai-color-muted)); cursor: pointer; transition: width .2s, background .2s; }
+  .점단추.지금 { background: var(--ai-color-signal); width: 22px; border-radius: 5px; }
+  .예시설명 { margin: 8px 0 0; font-size: 12.5px; color: var(--ai-color-muted); }
+
+  /* 숫자 띠 — 랜딩 .strip 결 */
+  .띠 { border-top: 1px solid var(--ai-color-line); border-bottom: 1px solid var(--ai-color-line); background: var(--ai-color-agent-panel); }
+  .띠 .속 { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(18px, 4vw, 52px); padding-top: 22px; padding-bottom: 22px; }
+  .수 { text-align: center; }
+  .수 b { display: block; font-family: var(--ai-font-heading); font-weight: 800; font-size: clamp(20px, 2.4vw, 26px); letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .수 span { font-size: 12.5px; color: var(--ai-color-muted); }
+
+  /* 구역 틀 */
+  section.구역 { padding: clamp(52px, 7vw, 92px) 0; }
+  .kicker { font-size: 12px; letter-spacing: .15em; text-transform: uppercase; color: var(--ai-color-signal); font-weight: 700; }
+  h2 { font-size: clamp(24px, 3.2vw, 36px); line-height: 1.18; letter-spacing: -.03em; font-weight: 800; margin: .3em 0 0; text-wrap: balance; }
+  .리드 { color: var(--ai-color-muted); font-size: 16.5px; max-width: 64ch; margin: 14px 0 0; line-height: 1.65; }
+
+  /* 흐름 세 걸음 */
+  .걸음들 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 36px; }
+  @media (max-width: 760px) { .걸음들 { grid-template-columns: 1fr; } }
+  .걸음 { background: var(--ai-color-white); border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md); padding: 22px 22px 20px; }
+  .걸음 .n { font-family: var(--ai-font-heading); font-weight: 800; font-size: 12px; color: var(--ai-color-signal); letter-spacing: .06em; }
+  .걸음 h3 { font-size: 17px; font-weight: 800; margin: 8px 0 6px; letter-spacing: -.01em; }
+  .걸음 p { margin: 0; color: var(--ai-color-muted); font-size: 14px; line-height: 1.6; }
+
+  /* 규칙 카드 둘러보기 */
+  .규칙구역 { background: var(--ai-color-agent-panel); border-top: 1px solid var(--ai-color-line); border-bottom: 1px solid var(--ai-color-line); }
+  .문서탭줄 { display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--ai-color-line); margin: 30px 0 16px; }
+  .문서탭 { background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; cursor: pointer; padding: 12px 14px;
+    font-size: 14.5px; font-weight: 700; color: var(--ai-color-muted); white-space: nowrap; display: flex; gap: 6px; align-items: baseline; }
+  .문서탭 .n { font-family: var(--ai-font-sans); font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; }
+  .문서탭[aria-selected="true"] { color: var(--ai-color-signal); border-bottom-color: var(--ai-color-signal); }
+  .찾기줄 { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  input[type=search], input[type=text], textarea, select { width: 100%; border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-sm);
+    padding: 11px 13px; font: inherit; color: inherit; background: var(--ai-color-white); }
+  input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--ai-color-signal); outline-offset: 1px; border-color: var(--ai-color-signal); }
+  .찾기줄 input[type=search] { flex: 1; min-width: 220px; width: auto; }
+  .더거르기 { width: 100%; }
+  .더거르기 > summary { list-style: none; cursor: pointer; font-size: 13px; color: var(--ai-color-muted); font-weight: 500; display: inline-flex; gap: 6px; }
+  .더거르기 > summary::-webkit-details-marker { display: none; }
+  .더거르기 > summary::before { content: "▸"; color: var(--ai-color-signal); }
+  .더거르기[open] > summary::before { content: "▾"; }
+  .거름줄 { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0 0; }
+  .거름줄 .라벨 { font-size: 12.5px; color: var(--ai-color-muted); min-width: 72px; }
+  .칩 { background: var(--ai-color-white); border: 1px solid var(--ai-color-line); border-radius: 999px; padding: 4px 12px; font: inherit;
+    font-size: 13px; cursor: pointer; color: var(--ai-color-ink-soft); transition: all var(--ai-motion-fast); }
+  .칩:hover { border-color: var(--ai-color-signal); color: var(--ai-color-signal); }
+  .칩[aria-pressed="true"] { background: var(--ai-color-ink); border-color: var(--ai-color-ink); color: var(--ai-color-white); }
+  .셈 { font-size: 13px; color: var(--ai-color-muted); margin: 16px 0 10px; }
+  .부분들 { display: flex; flex-direction: column; gap: 10px; }
+  .부분 { background: var(--ai-color-white); border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md); overflow: hidden; }
+  .부분[open] { box-shadow: var(--ai-shadow-card); }
+  .부분 > summary { list-style: none; cursor: pointer; padding: 14px 18px; display: flex; align-items: center; gap: 12px;
+    font-family: var(--ai-font-heading); font-weight: 800; font-size: 16px; }
+  .부분 > summary::-webkit-details-marker { display: none; }
+  .부분 > summary::before { content: "▸"; color: var(--ai-color-signal); font-size: 12px; width: 10px; }
+  .부분[open] > summary::before { content: "▾"; }
+  .부분 > summary .n { margin-left: auto; font-family: var(--ai-font-sans); font-weight: 500; font-size: 12.5px; color: var(--ai-color-muted); font-variant-numeric: tabular-nums; }
+  .항목들 { padding: 0 12px 12px; display: flex; flex-direction: column; gap: 8px; }
+  .규칙 { border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-sm); background: var(--ai-color-white); }
+  .규칙 > summary { list-style: none; cursor: pointer; padding: 10px 14px; display: flex; gap: 10px; align-items: center; font-size: 14.5px; }
+  .규칙 > summary::-webkit-details-marker { display: none; }
+  .규칙 > summary:hover { background: var(--ai-color-signal-soft); }
+  .규칙[open] > summary { background: var(--ai-color-signal-tint); border-bottom: 1px solid var(--ai-color-line); }
+  .규칙 > summary .제목 { flex: 1; font-weight: 500; }
+  .종류표 { font-size: 11.5px; font-weight: 700; white-space: nowrap; border-radius: 999px; padding: 1px 9px; background: var(--ai-color-signal-tint); color: var(--마당-signal-글자); }
+  .종류표.사례 { background: var(--ai-color-status-bg); color: var(--ai-color-status-fg); }
+  .공통표 { font-size: 11.5px; color: var(--ai-color-muted); white-space: nowrap; }
+  .반영표 { font-size: 11.5px; font-weight: 700; white-space: nowrap; border-radius: 999px; padding: 1px 9px; background: var(--ai-color-status-bg); color: var(--ai-color-status-fg); }
+  .반영표.예정 { background: var(--ai-color-review-tint); color: var(--마당-review-글자); }
+  .종류표.노하우 { background: var(--ai-color-status-bg); color: var(--ai-color-status-fg); }
+  .답변 { margin: 5px 0 0; padding: 6px 10px; border-left: 3px solid var(--ai-color-signal); background: var(--ai-color-white); border-radius: 0 6px 6px 0; font-size: 12.5px; color: var(--ai-color-ink-soft); }
+  .답변 b { color: var(--마당-signal-글자); margin-right: 5px; }
+  .처리표 { font-size: 11px; font-weight: 700; border-radius: 999px; padding: 0 8px; margin-left: 6px; background: var(--ai-color-review-tint); color: var(--마당-review-글자); }
+  .처리표.끝 { background: var(--ai-color-status-bg); color: var(--ai-color-status-fg); }
+  .몸 { padding: 16px 18px 18px; display: grid; gap: 14px; }
+  /* 그리드 항목은 min-width:auto 라 인라인 SVG(width=800) 가 칸을 800px 로 밀어낸다 — 0 으로 풀어 칸 폭을 따르게 한다 */
+  .몸 > *, .히어로 .속 > *, .스킬판 > * { min-width: 0; }
+  /* 사람이 적은 글(의견·노하우·규칙 원문)은 띄어쓰기 없이 길어도 칸을 밀어내지 않게, 넘칠 때만 끊는다 */
+  .몸, .사례몸, .노하우목록, .의견목록 { overflow-wrap: anywhere; }
+  .의견 > * { min-width: 0; }
+  @media (max-width: 560px) { .몸 { padding: 12px 12px 14px; } .항목들 { padding: 0 8px 8px; } }
+  .예시칸 { max-width: 860px; margin: 0; }
+  .예시칸 .크게 { color: var(--ai-color-signal); font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .예시칸 .그림 { width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-sm); background: var(--ai-color-white); overflow: hidden; }
+  .예시칸 .그림 svg { display: block; width: 100%; height: auto; }
+  .예시칸 figcaption { font-size: 12px; color: var(--ai-color-muted); margin-top: 7px; line-height: 1.55; }
+  .본문글 { display: grid; gap: 9px; max-width: 860px; }
+  .규칙글 { margin: 0; font-size: 15px; line-height: 1.7; }
+  .왜 { margin: 0; font-size: 14px; color: var(--ai-color-muted); line-height: 1.65; }
+  .왜 b { color: var(--ai-color-ink-soft); }
+  .꼬리표들 { display: flex; flex-wrap: wrap; gap: 6px; }
+  .꼬리표 { display: inline-block; background: var(--ai-color-agent-panel); border: 1px solid var(--ai-color-line); color: var(--ai-color-ink-soft); border-radius: 999px; padding: 1px 10px; font-size: 12px; }
+  .전후 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  @media (max-width: 560px) { .전후 { grid-template-columns: 1fr; } }
+  .전후 > div { border-radius: var(--ai-radius-sm); padding: 9px 12px; font-size: 13.5px; line-height: 1.55; }
+  .전후 .전 { background: var(--ai-color-issue-tint); border: 1px solid var(--ai-color-issue-line); }
+  .전후 .후 { background: var(--ai-color-status-bg); border: 1px solid var(--ai-color-status-line); }
+  .전후 .표 { display: block; font-size: 11.5px; font-weight: 700; margin-bottom: 3px; }
+  .전후 .전 .표 { color: var(--ai-color-issue-ink); } .전후 .후 .표 { color: var(--ai-color-status-fg); }
+  .근거 { margin: 0; padding-left: 18px; font-size: 13px; color: var(--ai-color-muted); }
+  .원문 > summary { cursor: pointer; font-size: 13px; font-weight: 700; color: var(--ai-color-signal); list-style: none; }
+  .원문 > summary::-webkit-details-marker { display: none; }
+  .원문 pre { white-space: pre-wrap; font: 12px/1.6 ui-monospace, "SF Mono", Menlo, monospace; background: var(--ai-color-agent-panel);
+    border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-sm); padding: 10px 12px; margin: 8px 0 0; max-height: 220px; overflow: auto; }
+  .써보기 { font-family: var(--ai-font-heading); font-weight: 700; font-size: 13.5px; color: var(--ai-color-signal); text-decoration: none; }
+  .써보기:hover { text-decoration: underline; }
+  .의견 { border-top: 1px dashed var(--ai-color-line); padding-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .의견 .물음 { font-family: var(--ai-font-heading); font-weight: 700; font-size: 13.5px; margin-right: 4px; }
+  .의견 .집계 { font-size: 12.5px; color: var(--ai-color-muted); font-variant-numeric: tabular-nums; margin-right: auto; }
+  .판정단추 { border: 1.5px solid var(--ai-color-line-strong); background: var(--ai-color-white); color: var(--ai-color-ink-soft); border-radius: var(--ai-radius-sm);
+    padding: 6px 12px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; transition: all var(--ai-motion-fast); }
+  .판정단추:hover, .판정단추.지금 { background: var(--ai-color-ink); border-color: var(--ai-color-ink); color: var(--ai-color-white); }
+  .의견글 { display: none; width: 100%; gap: 8px; flex-direction: column; margin-top: 4px; }
+  .의견글.열림 { display: flex; }
+  .줄 { display: flex; gap: 8px; flex-wrap: wrap; }
+  .줄 > * { flex: 1; min-width: 140px; }
+  .줄 > button { flex: none; min-width: 0; }
+  .알림글 { font-size: 12px; color: var(--ai-color-muted); margin: 0; }
+  .의견목록 { list-style: none; margin: 4px 0 0; padding: 0; width: 100%; display: grid; gap: 6px; }
+  .의견목록 li { background: var(--ai-color-agent-panel); border-radius: var(--ai-radius-sm); padding: 7px 11px; font-size: 13px; }
+  .의견목록 .판 { font-weight: 700; margin-right: 6px; }
+  .판-동의 { color: var(--ai-color-status-fg); } .판-조건부 { color: var(--마당-review-글자); } .판-반대 { color: var(--ai-color-issue-ink); }
+  .의견목록 .누구 { color: var(--ai-color-muted); font-size: 12px; }
+  .사례몸 { padding: 14px 18px 16px; display: grid; gap: 9px; max-width: 860px; }
+  .사례몸 .답 { margin: 0; font-size: 14.5px; line-height: 1.7; }
+  .사례몸 .출처 { font-size: 12.5px; color: var(--ai-color-muted); }
+  .빈 { color: var(--ai-color-muted); padding: 28px 0; text-align: center; }
+
+  /* 경량 스킬 */
+  .스킬판 { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(20px, 3vw, 36px); margin-top: 34px; align-items: start; }
+  @media (max-width: 900px) { .스킬판 { grid-template-columns: 1fr; } }
+  .받기카드 { background: var(--ai-color-white); border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-lg); padding: 26px 26px 24px; box-shadow: var(--ai-shadow-card); }
+  .받기카드 .파일 { display: flex; gap: 14px; align-items: center; }
+  .받기카드 .파일아이콘 { width: 46px; height: 46px; border-radius: 12px; background: var(--ai-color-signal-tint); color: var(--ai-color-signal); display: grid; place-items: center; flex: none; }
+  .받기카드 .파일 b { display: block; font-family: var(--ai-font-heading); font-weight: 800; font-size: 16px; word-break: break-all; }
+  .받기카드 .파일 span { font-size: 13px; color: var(--ai-color-muted); }
+  .받기카드 .주단추 { width: 100%; justify-content: center; margin-top: 20px; }
+  .담긴것 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 22px; }
+  @media (max-width: 520px) { .담긴것 { grid-template-columns: 1fr; } }
+  .담긴것 h3 { font-size: 14px; font-weight: 800; margin: 0 0 6px; }
+  .담긴것 ul { margin: 0; padding-left: 17px; font-size: 13.5px; color: var(--ai-color-ink-soft); line-height: 1.6; }
+  .담긴것 .없음 h3 { color: var(--ai-color-muted); }
+  .담긴것 .없음 ul { color: var(--ai-color-muted); }
+  .담긴것 .없음 a { color: var(--ai-color-signal); font-weight: 700; text-decoration: none; }
+  .설치들 { display: grid; gap: 10px; }
+  .설치 { background: var(--ai-color-white); border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md); padding: 16px 18px; }
+  .설치 h3 { font-size: 15.5px; font-weight: 800; margin: 0 0 4px; display: flex; gap: 8px; align-items: center; }
+  .설치 h3 .자동 { font-family: var(--ai-font-sans); font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 1px 9px; background: var(--ai-color-status-bg); color: var(--ai-color-status-fg); }
+  .설치 h3 .자동.손 { background: var(--ai-color-review-tint); color: var(--마당-review-글자); }
+  .설치 p { margin: 0; font-size: 13.5px; color: var(--ai-color-ink-soft); line-height: 1.6; }
+  .설치 code { font: 12.5px ui-monospace, "SF Mono", Menlo, monospace; background: var(--ai-color-agent-panel); border: 1px solid var(--ai-color-line); border-radius: 6px; padding: 1px 6px; white-space: nowrap; }
+  .주의 { margin: 14px 0 0; background: var(--ai-color-review-tint); border-left: 3px solid var(--ai-color-review); border-radius: 0 var(--ai-radius-sm) var(--ai-radius-sm) 0;
+    padding: 12px 14px; font-size: 13.5px; line-height: 1.65; color: var(--ai-color-ink-soft); }
+
+  /* 올라온 노하우 */
+  .노하우목록 { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 10px; }
+  .노하우목록 li { background: var(--ai-color-white); border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-md); padding: 14px 16px; }
+  .노하우목록 .자리 { font-size: 12px; color: var(--ai-color-signal); font-weight: 700; }
+  .노하우목록 .요령 { margin: 4px 0 0; font-size: 15px; font-weight: 500; }
+  .노하우목록 .덧 { margin: 4px 0 0; font-size: 13px; color: var(--ai-color-muted); }
+  .상태표 { font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 1px 9px; background: var(--ai-color-review-tint); color: var(--마당-review-글자); margin-left: 6px; }
+
+  /* 노하우 올리기 대화상자 — app.html #시작안내 결 */
+  dialog { border: 1px solid var(--ai-color-line); border-radius: var(--ai-radius-lg); padding: 0; width: min(640px, calc(100% - 32px)); color: var(--ai-color-ink);
+    background: var(--ai-color-white); box-shadow: var(--ai-shadow-card); }
+  dialog::backdrop { background: color-mix(in srgb, var(--ai-color-ink) 38%, transparent); }
+  .올리기 { display: grid; gap: 10px; padding: 22px 24px 20px; }
+  .올리기 h2 { font-size: 21px; margin: 0; }
+  .올리기 label { font-size: 13px; font-weight: 700; color: var(--ai-color-ink-soft); }
+  .올리기 .동의줄 { display: flex; gap: 8px; align-items: flex-start; font-weight: 500; }
+  .올리기 .동의줄 input { width: auto; margin-top: 4px; }
+
+  /* 바닥 — app.html .바닥 결 */
+  footer { border-top: 1px solid var(--ai-color-line); }
+  footer .속 { padding-top: 24px; padding-bottom: 44px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; font-size: 12.5px; color: var(--ai-color-muted); }
+  footer nav { display: flex; gap: 16px; flex-wrap: wrap; }
+  footer a { text-decoration: none; } footer a:hover { color: var(--ai-color-signal); }
+
+  .토스트 { position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; background: var(--ai-color-ink);
+    color: var(--ai-color-white); border-radius: 999px; padding: 10px 18px; font-size: 14px; transition: all var(--ai-motion-normal); z-index: 50; max-width: calc(100% - 32px); }
+  .토스트.보임 { opacity: 1; transform: translate(-50%, 0); }
+</style>
+</head>
+<body>
+
+<header><div class="속">
+  <a class="브랜드" href="/promo/landing.html" aria-label="문서지능 소개로">
+    <img class="마크" src="/workspace/brand/brand-mark.png" alt="">
+    <span class="워드마크"><b>문서지능</b><small>Artifact Intelligence</small></span>
+  </a>
+  <span class="마당표">규칙마당</span>
+  <span class="틈"></span>
+  <nav aria-label="규칙마당 둘러보기">
+    <a href="#rules">규칙 카드</a>
+    <a href="#skill">경량 스킬</a>
+    <a href="#knowhow">올라온 노하우</a>
+    <a class="곁단추" href="/workspace/app.html">웹앱으로</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="히어로" id="top"><div class="속">
+  <div>
+    <div class="eyebrow"><span class="tick"></span>Rules Commons</div>
+    <h1>공공문서 작성 규칙을 <em>함께</em> 다듬습니다</h1>
+    <p class="글">문서지능이 문서를 만들 때 따르는 작성 규칙을 모두 공개했습니다. 읽어 보시고 현장 관행과 다르면 알려 주세요.</p>
+    <ul class="강조들">
+      <li><span class="점">1</span><p><b>규칙 <span data-n="cards">227</span>장</b>을 문서 종류와 부분별로 나눠 두었습니다.</p></li>
+      <li><span class="점">2</span><p>카드를 펼치면 <b>규칙이 적용된 자리</b>에 번호를 매기고 이유를 달아 보여 드립니다.</p></li>
+      <li><span class="점">3</span><p>현장과 다르면 <b>의견과 노하우</b>를 남겨 주세요. 검토를 거쳐 규칙에 반영합니다.</p></li>
+    </ul>
+    <div class="단추줄">
+      <a class="주단추 파랑 큰" href="#rules">규칙 둘러보기</a>
+      <a class="곁단추 큰" href="#skill">경량 스킬 내려받기</a>
+    </div>
+  </div>
+  <div class="예시틀">
+    <div class="예시판" id="예시판" aria-live="off"></div>
+    <div class="예시알약" id="예시알약"><i></i><span>규칙 카드 예시</span></div>
+    <div class="점줄" id="점줄"></div>
+    <p class="예시설명">표본 문서 위에 규칙이 적용된 자리를 번호로 짚었습니다.</p>
+  </div>
+</div></section>
+
+<div class="띠"><div class="속">
+  <div class="수"><b data-n="cards">227</b><span>규칙 카드</span></div>
+  <div class="수"><b data-n="cases">20</b><span>현장 사례</span></div>
+  <div class="수"><b>6</b><span>문서 종류</span></div>
+  <div class="수"><b>12</b><span>문서 부분</span></div>
+  <div class="수"><b data-n="opinions">–</b><span>남긴 의견</span></div>
+</div></div>
+
+<section class="구역"><div class="속">
+  <div class="kicker">이렇게 다듬습니다</div>
+  <h2>읽고 의견을 남기면 규칙이 바뀝니다</h2>
+  <div class="걸음들">
+    <div class="걸음"><div class="n">01 · 읽기</div><h3>규칙과 적용 자리를 봅니다</h3><p>문서 종류를 고르고 부분을 펼치면 규칙과 그 이유, 표본 문서에서 적용된 자리가 나옵니다.</p></div>
+    <div class="걸음"><div class="n">02 · 의견</div><h3>현장과 맞는지 알려 줍니다</h3><p>동의·조건부·현장은 다릅니다 가운데 하나를 고르고 사유를 한두 줄 남깁니다. 규칙에 없는 요령은 노하우로 올립니다.</p></div>
+    <div class="걸음"><div class="n">03 · 반영</div><h3>검토를 거쳐 규칙이 됩니다</h3><p>모인 의견은 근거와 함께 검토해 규칙에 반영합니다. 바뀐 규칙은 웹앱과 경량 스킬에도 실립니다.</p></div>
+  </div>
+</div></section>
+
+<section class="구역 규칙구역" id="rules"><div class="속">
+  <div class="kicker">규칙 카드</div>
+  <h2>문서를 고르고, 부분을 펼쳐 보세요</h2>
+  <p class="리드">규칙은 문서 종류 → 부분 → 규칙 순서로 정리돼 있습니다. 카드를 펼치면 규칙 내용과 이유, 표본 문서에서 적용된 자리가 함께 나옵니다.</p>
+  <nav class="문서탭줄" id="문서탭줄" role="tablist" aria-label="문서 종류"></nav>
+  <div class="찾기줄">
+    <input id="찾기" type="search" placeholder="이 문서 안에서 찾기 — 예: 요약박스, 글머리, 표 제목, 여백" aria-label="규칙 찾기">
+    <button class="곁단추" type="button" id="올리기열기">노하우 올리기</button>
+    <details class="더거르기"><summary>상황·고민 유형으로 더 거르기</summary>
+      <div class="거름줄" id="거름상황"><span class="라벨">어떤 상황</span></div>
+      <div class="거름줄" id="거름고민"><span class="라벨">고민 유형</span></div>
+    </details>
+  </div>
+  <div class="셈" id="셈" aria-live="polite"></div>
+  <div class="부분들" id="부분들"><div class="빈">규칙을 불러오는 중입니다…</div></div>
+</div></section>
+
+<section class="구역" id="skill"><div class="속">
+  <div class="kicker">경량 스킬</div>
+  <h2>규칙만 내려받아 쓰던 AI에 붙이세요</h2>
+  <p class="리드">웹앱이나 플러그인 없이 평소 쓰는 AI에 규칙만 알려 주고 싶을 때 쓰는 묶음입니다. 마크다운 파일 14개라 가볍습니다. 문서를 쓸 일이 생기면 AI가 필요한 규칙 파일만 골라 읽습니다.</p>
+  <div class="스킬판">
+    <div class="받기카드">
+      <div class="파일">
+        <span class="파일아이콘" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 12v6"/><path d="m9 15 3 3 3-3"/></svg></span>
+        <div><b>artifact-intelligence-rules.zip</b><span id="스킬정보">규칙 227장 · 마크다운 14개</span></div>
+      </div>
+      <a class="주단추 파랑 큰" id="스킬받기" href="/rules/artifact-intelligence-rules.zip" download>경량 스킬 내려받기</a>
+      <div class="담긴것">
+        <div>
+          <h3>들어 있는 것</h3>
+          <ul>
+            <li>문서 종류별 규칙 여섯 파일과 공통 규칙</li>
+            <li>쓰고 나서 스스로 검사하는 체크리스트</li>
+            <li>문서 종류를 가리는 판정 요령</li>
+          </ul>
+        </div>
+        <div class="없음">
+          <h3>들어 있지 않은 것</h3>
+          <ul>
+            <li>HTML·PDF·한글(HWPX)·PPTX 파일 만들기</li>
+            <li>1쪽 넘침·어절 분리 같은 자동 검사</li>
+            <li>편집기와 수정 이력</li>
+          </ul>
+          <p class="알림글" style="margin-top:8px">이 기능은 <a href="/workspace/app.html">웹앱</a>에서 씁니다.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="설치들">
+        <div class="설치"><h3>Claude Code <span class="자동">알아서 켜짐</span></h3>
+          <p>압축을 풀어 나온 <code>artifact-intelligence-rules</code> 폴더를 <code>~/.claude/skills/</code> 아래에 그대로 둡니다. 스킬 폴더를 처음 만들었다면 Claude Code를 한 번 다시 시작하세요.</p></div>
+        <div class="설치"><h3>claude.ai <span class="자동">알아서 켜짐</span></h3>
+          <p>사용자 지정(Customize) → 스킬(Skills)에서 내려받은 zip 파일을 풀지 말고 그대로 올립니다.</p></div>
+        <div class="설치"><h3>Codex · OpenClaw <span class="자동">알아서 켜짐</span></h3>
+          <p>압축을 풀어 나온 폴더를 <code>~/.agents/skills/</code> 아래에 둡니다. 두 도구 모두 이 폴더를 읽습니다. 새 스킬이 보이지 않으면 Codex를 다시 시작하세요.</p></div>
+        <div class="설치"><h3>ChatGPT · Gemini <span class="자동 손">직접 불러 씀</span></h3>
+          <p>스킬이 저절로 켜지지는 않습니다. <code>references</code> 폴더의 md 파일을 프로젝트나 Gem의 지식 파일로 올리고, 지시문에 “문서를 쓸 때 이 규칙을 따르라”고 적어 두세요.</p></div>
+      </div>
+      <p class="주의">스킬은 AI에게 지시를 건네는 파일입니다. 받으신 뒤 내용을 한 번 훑어보고 쓰세요. 이 묶음에는 실행 코드가 없습니다. 업무용 PC에 설치할 때는 기관 정보보안 지침을 먼저 확인하세요.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="구역 규칙구역" id="knowhow"><div class="속">
+  <div class="kicker">올라온 노하우</div>
+  <h2>규칙에 아직 없는 현장의 요령</h2>
+  <p class="리드">실무자가 올린 요령입니다. 검토 전이라 지금 규칙과 다를 수 있습니다. 쓸 만하다고 확인되면 규칙 카드가 됩니다.</p>
+  <div class="단추줄" style="margin-top:20px"><button class="주단추" type="button" id="올리기열기2">노하우 올리기</button></div>
+  <ul class="노하우목록" id="노하우목록"><li class="빈">아직 올라온 노하우가 없습니다. 첫 요령을 남겨 주세요.</li></ul>
+</div></section>
+</main>
+
+<footer><div class="속">
+  <span>문서지능 규칙마당 · 남기신 의견과 노하우는 이 페이지에 공개됩니다</span>
+  <nav aria-label="바닥 링크">
+    <a href="/promo/landing.html">문서지능 소개</a>
+    <a href="/workspace/app.html">웹앱</a>
+    <a href="/workspace/약관.html">이용약관 · 개인정보 처리방침</a>
+  </nav>
+  <span>제작 · <b>코유AX</b>(빡형) · © 2026</span>
+</div></footer>
+
+<dialog id="올리기창" aria-labelledby="올리기제목">
+  <form class="올리기" id="올리기폼" method="dialog">
+    <h2 id="올리기제목">이럴 때 이렇게 합니다</h2>
+    <p class="알림글">규칙에 없는 요령을 올리는 곳입니다. 문서 통째가 아니라 문장이나 표 한 조각만 적어 주세요. 기관명·사람 이름·수치는 ○○처럼 가려 주세요.</p>
+    <label for="p문서">어떤 문서 · 어느 부분 · 어떤 상황</label>
+    <div class="줄"><select id="p문서" required aria-label="어떤 문서"></select><select id="p부분" required aria-label="어느 부분"></select><select id="p상황" aria-label="상황 (선택)"><option value="">상황(선택)</option></select></div>
+    <label for="p요령">한 줄 요령</label>
+    <input type="text" id="p요령" required maxlength="120" placeholder="예: 국감 답변자료 표 제목 앞에는 질문 번호를 붙인다">
+    <label for="p왜">왜 그런가요 (지침·관행·읽기 편함 가운데 근거)</label>
+    <textarea id="p왜" rows="2" maxlength="400"></textarea>
+    <label for="p전">고치기 전 / 고친 뒤 (조각만)</label>
+    <div class="줄"><textarea id="p전" rows="2" maxlength="300" aria-label="고치기 전" placeholder="고치기 전"></textarea><textarea id="p후" rows="2" maxlength="300" aria-label="고친 뒤" placeholder="고친 뒤"></textarea></div>
+    <label for="p이름">이름 · 소속 (적으면 그대로 표기됩니다, 선택)</label>
+    <div class="줄"><input type="text" id="p이름" maxlength="30" aria-label="이름 (선택)" placeholder="이름"><input type="text" id="p소속" maxlength="40" aria-label="소속 (선택)" placeholder="소속 (예: ○○시청 총무과)"></div>
+    <label class="동의줄"><input type="checkbox" id="p동의" required> 제가 쓴 조각이며 개인정보가 없습니다. 이 페이지에 공개하고 규칙으로 다듬는 데 동의합니다.</label>
+    <div class="줄"><button class="주단추" type="submit" id="p올리기">올리기</button><button class="곁단추" type="button" id="p닫기">닫기</button></div>
+  </form>
+</dialog>
+<div class="토스트" id="토스트" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  'use strict';
+  var DOCS = ['한 장 보고서', '풀버전 보고서', '시행문(공문)', '규정·내규', '보도자료', '발표 슬라이드'];
+  var PARTS = ['제목·표지', '요약(두괄)', '본문 글머리·위계', '표', '그림·도식·차트', '글꼴·크기', '여백·판면', '붙임·별첨', '수신·발신·결재선', '문장 표현', '문서 전체 구성', '판정·유형'];
+  var SITS = ['결재 상신', '상급기관 보고', '국감·감사 대응', '예산 요구', '보도·홍보', '회의·협의', '민원 회신', '대외 공문', '발표·브리핑'];
+  var CONCERNS = ['어떻게 써야', '어떻게 꾸며야', '이럴 땐 어느 쪽'];
+  var KIND = { '값': '값', '판단': '판단', '구조': '구조', '문구': '문구' };
+  var FEATURED = ['entities-01', 'data_elements-01', 'entities-16', 'writing-07'];
+  var $ = function (s) { return document.querySelector(s); };
+  var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  var state = { doc: DOCS[0], q: '', sit: {}, concern: {} };
+  var CARDS = [], CASES = [], 의견 = {}, 제안 = [];
+  var svgCache = {};
+
+  function toast(m) { var t = $('#토스트'); t.textContent = m; t.classList.add('보임'); clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove('보임'); }, 2600); }
+  function has(o) { return Object.keys(o).length > 0; }
+  function forDoc(c, d) { return c.doc_types.indexOf(d) >= 0 || c.doc_types.indexOf('공통') >= 0; }
+  function hasQ(h) { if (!state.q) return true; var H = h.toLowerCase(); return state.q.toLowerCase().split(/\s+/).every(function (w) { return H.indexOf(w) >= 0; }); }
+  function matchRule(c) {
+    if (!forDoc(c, state.doc)) return false;
+    if (has(state.sit) && !(c.situations || []).some(function (s) { return state.sit[s]; })) return false;
+    if (has(state.concern) && !state.concern[c.concern]) return false;
+    return hasQ([c.title, c.rule, c.why, c.part].join(' '));
+  }
+  function matchCase(k) {
+    if (!(k.doc_type === state.doc || k.doc_type === '공통')) return false;
+    if (has(state.sit) && !(k.situations || []).some(function (s) { return state.sit[s]; })) return false;
+    if (has(state.concern)) return false;
+    return hasQ([k.question, k.answer, k.part].join(' '));
+  }
+  function relatedCases(c) {
+    var ps = c.ontology_paths || [];
+    return CASES.filter(function (k) { return (k.related_paths || []).some(function (p) { return ps.some(function (x) { return p === x || p.indexOf(x) === 0 || x.indexOf(p) === 0; }); }); });
+  }
+  // 예시 그림이 고른 표본 문서 — research/rules-commons/v3/frag.py 의 genre_of 와 같은 우선순위
+  function genreOf(c) { var o = ['발표 슬라이드', '시행문(공문)', '보도자료', '규정·내규', '풀버전 보고서', '한 장 보고서']; for (var j = 0; j < o.length; j++) if (c.doc_types.indexOf(o[j]) >= 0) return o[j]; return '한 장 보고서'; }
+  function svgInto(host, id) {
+    if (svgCache[id]) { host.innerHTML = svgCache[id]; return; }
+    fetch('/rules/img/' + encodeURIComponent(id) + '.svg').then(function (r) { if (!r.ok) throw 0; return r.text(); })
+      .then(function (t) { svgCache[id] = t; host.innerHTML = t; })
+      .catch(function () { host.textContent = '예시를 불러오지 못했습니다.'; });
+  }
+
+  function ruleHTML(c) {
+    var op = 의견[c.card_id] || { 동의: 0, 조건부: 0, 반대: 0, 최근: [] };
+    var rel = relatedCases(c);
+    return '<details class="규칙" id="card-' + esc(c.card_id) + '" data-id="' + esc(c.card_id) + '"' + (state.q ? ' open' : '') + '><summary>'
+      + '<span class="종류표">' + esc(KIND[c.value_kind] || c.value_kind) + '</span><span class="제목">' + esc(c.title) + '</span>'
+      + (c.doc_types.indexOf('공통') >= 0 ? '<span class="공통표">모든 문서 공통</span>' : '')
+      + (op.반영 === '반영 완료' ? '<span class="반영표">현장 의견 반영됨</span>' : op.반영 === '반영 예정' ? '<span class="반영표 예정">현장 의견 반영 예정</span>' : '') + '</summary>'
+      + '<div class="몸">'
+      + '<figure class="예시칸"><div class="그림" data-svg="' + esc(c.card_id) + '" role="img" aria-label="' + esc(c.title) + ' — 표본 문서 예시"></div>'
+      + '<figcaption>문서지능 표본 문서의 해당 부분입니다. 번호가 붙은 곳이 규칙이 적용된 자리이고, 오른쪽에 그 자리에서 살핀 점을 적었습니다. <a class="크게" href="/rules/img/' + esc(c.card_id) + '.svg" target="_blank" rel="noopener">그림 크게 보기 ↗</a></figcaption></figure>'
+      + '<div class="본문글"><p class="규칙글">' + esc(c.rule) + '</p>'
+      + (c.why ? '<p class="왜"><b>이유</b> ' + esc(c.why) + '</p>' : '')
+      + '<div class="꼬리표들">' + (c.situations || []).map(function (s) { return '<span class="꼬리표">' + esc(s) + '</span>'; }).join('')
+      + (c.concern ? '<span class="꼬리표">' + esc(c.concern) + '</span>' : '') + (c.org_scope && c.org_scope !== '공통' ? '<span class="꼬리표">' + esc(c.org_scope) + '</span>' : '') + '</div>'
+      + ((c.before || c.after) ? '<div class="전후"><div class="전"><span class="표">고치기 전</span>' + esc(c.before || '—') + '</div><div class="후"><span class="표">고친 뒤</span>' + esc(c.after || '—') + '</div></div>' : '')
+      + ((c.evidence && c.evidence.length) ? '<ul class="근거">' + c.evidence.slice(0, 3).map(function (e) { return '<li>' + esc(e) + '</li>'; }).join('') + '</ul>' : '')
+      + (rel.length ? '<div class="꼬리표들"><span class="꼬리표">관련 사례</span>' + rel.map(function (k) { return '<span class="꼬리표">' + esc(k.question) + '</span>'; }).join('') + '</div>' : '')
+      + '<details class="원문"><summary>문서지능이 쓰는 원문 보기</summary><pre>' + esc((c.ontology_paths || []).join('\n')) + '\n\n' + esc(c.source_excerpt) + '</pre></details>'
+      + '<a class="써보기" href="/workspace/app.html">웹앱에서 문서 만들기 →</a></div>'
+      + '<div class="의견"><span class="물음">이 규칙, 현장과 맞나요?</span><span class="집계">동의 ' + op.동의 + ' · 조건부 ' + op.조건부 + ' · 반대 ' + op.반대 + '</span>'
+      + '<button type="button" class="판정단추" data-v="동의">동의</button><button type="button" class="판정단추" data-v="조건부">조건부</button><button type="button" class="판정단추" data-v="반대">현장은 다릅니다</button>'
+      + '<form class="의견글"><textarea rows="2" maxlength="300" aria-label="사유" placeholder="사유나 반례를 한두 줄로 적어 주세요 (우리 기관은 이렇게 한다 등)" required></textarea>'
+      + '<div class="줄"><input type="text" maxlength="30" aria-label="이름 (선택)" placeholder="이름 (선택)"><input type="text" maxlength="40" aria-label="소속 (선택)" placeholder="소속 (선택)"></div>'
+      + '<p class="알림글">남기신 글과 이름·소속은 이 페이지에 공개됩니다. 연락처는 적지 마세요.</p>'
+      + '<div class="줄"><button class="주단추" type="submit">남기기</button><button class="곁단추" type="button" data-cancel>취소</button></div></form>'
+      + (op.최근.length ? '<ul class="의견목록">' + op.최근.map(function (o) { return '<li><span class="판 판-' + esc(o.판정) + '">' + esc(o.판정 === '반대' ? '현장은 다릅니다' : o.판정) + '</span>' + esc(o.사유) + ' <span class="누구">— ' + esc(o.이름 || '익명') + (o.소속 ? ' · ' + esc(o.소속) : '') + (o.날짜 ? ' · ' + esc(o.날짜) : '') + '</span>' + stateBadge(o.상태) + (o.답변 ? '<p class="답변"><b>운영자 답변</b>' + esc(o.답변) + '</p>' : '') + '</li>'; }).join('') + '</ul>' : '')
+      + '</div></div></details>';
+  }
+  function stateBadge(st, always) {
+    if (!st || (st === '수집' && !always)) return '';
+    return '<span class="처리표' + (st === '반영 완료' ? ' 끝' : '') + '">' + esc(st) + '</span>';
+  }
+  var 노하우 = [];
+  function matchKnowhow(p) {
+    if (p.문서 !== state.doc) return false;
+    if (has(state.sit) && !(p.상황 && state.sit[p.상황])) return false;
+    if (has(state.concern)) return false;
+    return hasQ([p.요령, p.왜, p.부분, p.전, p.후].join(' '));
+  }
+  function knowhowHTML(p) {
+    return '<details class="규칙"' + (state.q ? ' open' : '') + '><summary><span class="종류표 노하우">현장 노하우</span><span class="제목">' + esc(p.요령) + '</span>' + stateBadge(p.상태) + '</summary>'
+      + '<div class="사례몸">' + (p.왜 ? '<p class="답">' + esc(p.왜) + '</p>' : '')
+      + ((p.전 || p.후) ? '<div class="전후"><div class="전"><span class="표">고치기 전</span>' + esc(p.전 || '—') + '</div><div class="후"><span class="표">고친 뒤</span>' + esc(p.후 || '—') + '</div></div>' : '')
+      + '<div class="출처">올린 분: ' + esc(p.이름 || '익명') + (p.소속 ? ' · ' + esc(p.소속) : '') + (p.날짜 ? ' · ' + esc(p.날짜) : '') + (p.상태 === '반영 예정' ? ' · 온톨로지 반영 전이라 웹앱에는 아직 적용되지 않았습니다' : '') + '</div>'
+      + (p.답변 ? '<p class="답변"><b>운영자 답변</b>' + esc(p.답변) + '</p>' : '') + '</div></details>';
+  }
+  function caseHTML(k) {
+    return '<details class="규칙"' + (state.q ? ' open' : '') + '><summary><span class="종류표 사례">사례</span><span class="제목">' + esc(k.question) + '</span></summary>'
+      + '<div class="사례몸"><p class="답">' + esc(k.answer) + '</p>'
+      + ((k.before || k.after) ? '<div class="전후"><div class="전"><span class="표">고치기 전</span>' + esc(k.before || '—') + '</div><div class="후"><span class="표">고친 뒤</span>' + esc(k.after || '—') + '</div></div>' : '')
+      + (k.source ? '<div class="출처">근거: ' + esc(k.source) + '</div>' : '') + '</div></details>';
+  }
+  function render() {
+    var rules = CARDS.filter(matchRule), cases = CASES.filter(matchCase), kh = 노하우.filter(matchKnowhow);
+    var filtering = !!(state.q || has(state.sit) || has(state.concern));
+    $('#셈').textContent = state.doc + ' — 규칙 ' + rules.length + '장' + (cases.length ? ' · 사례 ' + cases.length + '건' : '') + (kh.length ? ' · 현장 노하우 ' + kh.length + '건' : '');
+    var groups = PARTS.map(function (p) { return { p: p, r: rules.filter(function (c) { return c.part === p; }), k: cases.filter(function (k) { return k.part === p; }), h: kh.filter(function (x) { return x.부분 === p; }) }; })
+      .filter(function (g) { return g.r.length || g.k.length || g.h.length; });
+    $('#부분들').innerHTML = groups.length ? groups.map(function (g) {
+      return '<details class="부분"' + (filtering ? ' open' : '') + '><summary>' + esc(g.p) + '<span class="n">규칙 ' + g.r.length + (g.k.length ? ' · 사례 ' + g.k.length : '') + (g.h.length ? ' · 노하우 ' + g.h.length : '') + '</span></summary>'
+        + '<div class="항목들">' + g.k.map(caseHTML).join('') + g.h.map(knowhowHTML).join('') + g.r.map(ruleHTML).join('') + '</div></details>';
+    }).join('') : '<div class="빈">조건에 맞는 규칙이 없습니다. 찾는 말을 줄이거나 거르기를 풀어 보세요.</div>';
+    $$('#문서탭줄 .문서탭').forEach(function (b) { b.setAttribute('aria-selected', String(b.dataset.doc === state.doc)); });
+    if (filtering) $$('#부분들 .규칙[open] .그림[data-svg]').forEach(function (h) { svgInto(h, h.getAttribute('data-svg')); h.removeAttribute('data-svg'); });
+  }
+  function renderKnowhow() {
+    var list = 제안.slice().reverse();
+    $('#노하우목록').innerHTML = list.length ? list.map(function (p) {
+      return '<li><div class="자리">' + esc(p.문서) + ' · ' + esc(p.부분) + (p.상황 ? ' · ' + esc(p.상황) : '') + stateBadge(p.상태 || '수집', true) + '</div>'
+        + '<p class="요령">' + esc(p.요령) + '</p>' + (p.왜 ? '<p class="덧">' + esc(p.왜) + '</p>' : '')
+        + ((p.전 || p.후) ? '<div class="전후" style="margin-top:8px"><div class="전"><span class="표">고치기 전</span>' + esc(p.전 || '—') + '</div><div class="후"><span class="표">고친 뒤</span>' + esc(p.후 || '—') + '</div></div>' : '')
+        + '<p class="덧">— ' + esc(p.이름 || '익명') + (p.소속 ? ' · ' + esc(p.소속) : '') + (p.날짜 ? ' · ' + esc(p.날짜) : '') + '</p>'
+        + (p.답변 ? '<p class="답변"><b>운영자 답변</b>' + esc(p.답변) + '</p>' : '') + '</li>';
+    }).join('') : '<li class="빈">아직 올라온 노하우가 없습니다. 첫 요령을 남겨 주세요.</li>';
+  }
+
+  // 문서 탭·거르기
+  DOCS.forEach(function (d) {
+    var b = document.createElement('button'); b.className = '문서탭'; b.type = 'button'; b.setAttribute('role', 'tab'); b.dataset.doc = d;
+    b.innerHTML = esc(d) + '<span class="n"></span>'; b.addEventListener('click', function () { state.doc = d; render(); });
+    $('#문서탭줄').appendChild(b);
+  });
+  function chips(host, items, key) {
+    items.forEach(function (v) {
+      var b = document.createElement('button'); b.className = '칩'; b.type = 'button'; b.textContent = v; b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function () { var s = state[key]; if (s[v]) delete s[v]; else s[v] = 1; b.setAttribute('aria-pressed', String(!!s[v])); render(); });
+      host.appendChild(b);
+    });
+  }
+  chips($('#거름상황'), SITS, 'sit'); chips($('#거름고민'), CONCERNS, 'concern');
+  var qT; $('#찾기').addEventListener('input', function (e) { clearTimeout(qT); var v = e.target.value.trim(); qT = setTimeout(function () { state.q = v; render(); }, 160); });
+
+  // 카드를 펼치면 예시를 그때 불러온다
+  document.addEventListener('toggle', function (e) {
+    var d = e.target; if (!(d instanceof HTMLDetailsElement) || !d.open) return;
+    d.querySelectorAll('.그림[data-svg]').forEach(function (h) { var id = h.getAttribute('data-svg'); h.removeAttribute('data-svg'); svgInto(h, id); });
+  }, true);
+
+  // 의견
+  function api(name, body) {
+    return fetch('/api/' + name, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), credentials: 'same-origin' } : { credentials: 'same-origin' })
+      .then(function (r) { return r.json().catch(function () { return { ok: false, 로그: '응답을 읽지 못했습니다' }; }); });
+  }
+  function loadCommons() {
+    return api('commons').then(function (r) {
+      if (!r || !r.ok) return;
+      의견 = (r.값 && r.값.의견) || {}; 제안 = (r.값 && r.값.제안) || []; 노하우 = (r.값 && r.값.노하우) || [];
+      var n = (r.값 && r.값.합계 && r.값.합계.의견) || 0;
+      $$('[data-n="opinions"]').forEach(function (x) { x.textContent = n; });
+      renderKnowhow();
+    }).catch(function () {});
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.판정단추');
+    if (b) { var box = b.parentElement, f = box.querySelector('.의견글'); box.querySelectorAll('.판정단추').forEach(function (x) { x.classList.toggle('지금', x === b); });
+      f.dataset.v = b.dataset.v; f.classList.add('열림'); f.querySelector('textarea').focus(); return; }
+    var c = e.target.closest('[data-cancel]');
+    if (c) { var f2 = c.closest('.의견글'); f2.classList.remove('열림'); f2.parentElement.querySelectorAll('.판정단추').forEach(function (x) { x.classList.remove('지금'); }); }
+  });
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (f.classList.contains('의견글')) {
+      e.preventDefault();
+      var id = f.closest('[data-id]').dataset.id, ins = f.querySelectorAll('input');
+      var 항목 = { 카드: id, 판정: f.dataset.v, 사유: f.querySelector('textarea').value.trim(), 이름: ins[0].value.trim(), 소속: ins[1].value.trim() };
+      var btn = f.querySelector('button[type=submit]'); btn.disabled = true;
+      api('commons_post', { 종류: '의견', 항목: 항목 }).then(function (r) {
+        btn.disabled = false;
+        if (!r.ok) { toast(r.로그 || '남기지 못했습니다'); return; }
+        toast('의견을 남겼습니다. 고맙습니다.');
+        return loadCommons().then(function () {
+          var d = document.querySelector('.규칙[data-id="' + CSS.escape(id) + '"]'); if (!d) return;
+          var c = CARDS.filter(function (x) { return x.card_id === id; })[0]; if (!c) return;
+          var tmp = document.createElement('div'); tmp.innerHTML = ruleHTML(c); var nd = tmp.firstChild; nd.open = true; d.replaceWith(nd);
+          nd.querySelectorAll('.그림[data-svg]').forEach(function (h) { var sid = h.getAttribute('data-svg'); h.removeAttribute('data-svg'); svgInto(h, sid); });
+        });
+      }).catch(function () { btn.disabled = false; toast('저장하지 못했습니다 — 잠시 뒤 다시 시도해 주세요'); });
+      return;
+    }
+    if (f.id === '올리기폼') {
+      e.preventDefault();
+      var 항목2 = { 문서: $('#p문서').value, 부분: $('#p부분').value, 상황: $('#p상황').value, 요령: $('#p요령').value.trim(), 왜: $('#p왜').value.trim(),
+        전: $('#p전').value.trim(), 후: $('#p후').value.trim(), 이름: $('#p이름').value.trim(), 소속: $('#p소속').value.trim(), 동의: $('#p동의').checked };
+      if (!항목2.요령 || !항목2.동의) return;
+      var b2 = $('#p올리기'); b2.disabled = true;
+      api('commons_post', { 종류: '제안', 항목: 항목2 }).then(function (r) {
+        b2.disabled = false;
+        if (!r.ok) { toast(r.로그 || '올리지 못했습니다'); return; }
+        f.reset(); $('#올리기창').close(); toast('노하우를 올렸습니다. 검토 뒤 규칙에 반영합니다.'); loadCommons();
+      }).catch(function () { b2.disabled = false; toast('저장하지 못했습니다 — 잠시 뒤 다시 시도해 주세요'); });
+    }
+  });
+  DOCS.forEach(function (d) { $('#p문서').insertAdjacentHTML('beforeend', '<option>' + esc(d) + '</option>'); });
+  PARTS.forEach(function (d) { $('#p부분').insertAdjacentHTML('beforeend', '<option>' + esc(d) + '</option>'); });
+  SITS.forEach(function (d) { $('#p상황').insertAdjacentHTML('beforeend', '<option>' + esc(d) + '</option>'); });
+  function openPropose() {
+    $('#p문서').value = state.doc; var op = $('#부분들 .부분[open] > summary');
+    if (op) $('#p부분').value = op.firstChild.textContent.trim();
+    $('#올리기창').showModal(); $('#p요령').focus();
+  }
+  $('#올리기열기').addEventListener('click', openPropose); $('#올리기열기2').addEventListener('click', openPropose);
+  $('#p닫기').addEventListener('click', function () { $('#올리기창').close(); });
+
+  // 히어로 예시 — 실제 카드 넷을 돌린다(움직임 줄이기 설정이면 멈춘다)
+  function hero() {
+    var box = $('#예시판'), dots = $('#점줄'), pill = $('#예시알약 span'), i = 0, timer = null;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var picks = FEATURED.map(function (id) { return CARDS.filter(function (c) { return c.card_id === id; })[0]; }).filter(Boolean);
+    picks.forEach(function (c, n) {
+      var fg = document.createElement('figure'); if (n === 0) fg.className = '지금'; box.appendChild(fg); svgInto(fg, c.card_id);
+      var d = document.createElement('button'); d.type = 'button'; d.className = '점단추' + (n === 0 ? ' 지금' : ''); d.setAttribute('aria-label', c.part + ' 예시');
+      d.addEventListener('click', function () { stop(); go(n); play(); }); dots.appendChild(d);
+    });
+    function go(n) {
+      var f = box.children, ds = dots.children; if (!f.length) return;
+      f[i].classList.remove('지금'); ds[i].classList.remove('지금'); i = (n + f.length) % f.length; f[i].classList.add('지금'); ds[i].classList.add('지금');
+      var c = picks[i]; pill.textContent = c.part + ' · ' + genreOf(c);
+    }
+    function play() { if (reduce || picks.length < 2) return; stop(); timer = setInterval(function () { go(i + 1); }, 4200); }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    box.addEventListener('mouseenter', stop); box.addEventListener('mouseleave', play);
+    if (picks.length) go(0); play();
+  }
+
+  // #card-<id> — 관리 화면에서 카드로 바로 온다: 그 카드가 속한 문서 탭을 열고 부분·카드를 펼친다
+  function goHash() {
+    var m = /^#card-([A-Za-z0-9_-]+)$/.exec(location.hash || ''); if (!m) return;
+    var c = CARDS.filter(function (x) { return x.card_id === m[1]; })[0]; if (!c) return;
+    if (c.doc_types.indexOf(state.doc) < 0 && c.doc_types.indexOf('공통') < 0) { state.doc = c.doc_types[0] === '공통' ? DOCS[0] : c.doc_types[0]; render(); }
+    var d = document.getElementById('card-' + c.card_id); if (!d) return;
+    d.closest('.부분').open = true; d.open = true;
+    setTimeout(function () { d.scrollIntoView({ block: 'start' }); }, 60);
+  }
+  window.addEventListener('hashchange', goHash);
+  function load() {
+    // 카드·사례·의견을 함께 받은 뒤 그린다 — 의견이 늦게 오면 집계가 0으로 그려진 채 남는다.
+    Promise.all([fetch('/rules/cards.json').then(function (r) { return r.json(); }), fetch('/rules/cases.json').then(function (r) { return r.json(); }), loadCommons()])
+      .then(function (a) {
+        CARDS = a[0]; CASES = a[1];
+        $$('[data-n="cards"]').forEach(function (x) { x.textContent = CARDS.length; });
+        $$('[data-n="cases"]').forEach(function (x) { x.textContent = CASES.length; });
+        DOCS.forEach(function (d) { var el = document.querySelector('.문서탭[data-doc="' + CSS.escape(d) + '"] .n'); if (el) el.textContent = CARDS.filter(function (c) { return forDoc(c, d); }).length; });
+        hero(); render(); goHash();
+      })
+      .catch(function () { $('#부분들').innerHTML = '<div class="빈">규칙을 불러오지 못했습니다. 새로고침해 주세요.</div>'; });
+    fetch('/rules/artifact-intelligence-rules.zip', { method: 'HEAD' }).then(function (r) {
+      var n = +r.headers.get('Content-Length'); if (n) $('#스킬정보').textContent = '규칙 ' + (CARDS.length || 227) + '장 · 마크다운 14개 · ' + Math.round(n / 1024) + 'KB';
+    }).catch(function () {});
+  }
+  load();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,4967 @@
+{
+ "gongmun-15": {
+  "card_id": "gongmun-15",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "subject",
+    "span": "",
+    "label": "두문 마지막 줄 아래 검정선",
+    "mark": "underline"
+   },
+   {
+    "element_id": "cc",
+    "span": "",
+    "label": "수신자란-결재선 사이 회색띠",
+    "mark": "circle"
+   }
+  ],
+  "caption": "두문 아래엔 검정 실선(0.12mm), 결문의 수신자란·결재선 사이엔 회색 띠(1.3mm)만 긋고 나머지 표선은 격자로만 잡는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-16": {
+  "card_id": "gongmun-16",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "소제목도 같은 서체(Pretendard)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "제목부터 Pretendard로 통일",
+    "mark": "underline"
+   }
+  ],
+  "caption": "제목·소제목·본문 모두 관행 서체 대신 Pretendard 한 가지로 렌더링한다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-17": {
+  "card_id": "gongmun-17",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "via",
+    "span": "",
+    "label": "경유란처럼 빈칸으로 둔다",
+    "mark": "circle"
+   }
+  ],
+  "caption": "시행번호·서명·접수처럼 처리 중 채워지는 칸은 이 예시엔 없고, 경유란만 빈칸 형태를 보여준다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-18": {
+  "card_id": "gongmun-18",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "본문—산출물의 핵심",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "두문—전자결재가 자동생성",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s5",
+    "span": "",
+    "label": "수신자란—자동생성 부분",
+    "mark": "circle"
+   }
+  ],
+  "caption": "문서 5단계 중 본문(2)의 텍스트 정확도가 우선이고, 두문·수신자란은 전자결재가 자동으로 채운다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-19": {
+  "card_id": "gongmun-19",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "sig",
+    "span": "장",
+    "label": "관인이 겹치는 마지막 글자",
+    "mark": "circle"
+   }
+  ],
+  "caption": "발신명의 시설관리처장의 마지막 글자 장 위에 관인이 겹쳐 찍힌다(도장 이미지는 별도 배치).",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-20": {
+  "card_id": "gongmun-20",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "하였습니다",
+    "label": "82자 문장도 서술어로 완결",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "주시기 바랍니다",
+    "label": "요청도 명사형 대신 완결",
+    "mark": "circle"
+   }
+  ],
+  "caption": "82자·74자짜리 긴 문장도 명사형으로 줄이지 않고 하였습니다/바랍니다로 서술어까지 완결한다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "writing-07": {
+  "card_id": "writing-07",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "제목만 명사형 허용(예외)",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "주시기 바랍니다",
+    "label": "요청은 바랍니다로 완결",
+    "mark": "circle"
+   }
+  ],
+  "caption": "본문은 모두 하십시오체(-습니다·바랍니다)로 끝나고, 제목만 명사형 예외다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "writing-08": {
+  "card_id": "writing-08",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i2",
+    "span": "주시기 바랍니다",
+    "label": "요청 화행의 정형구",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 문서는 요청 화행이라 주시기 바랍니다로 끝맺는다(공지·통보·제재는 다른 정형구를 쓴다).",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "writing-09": {
+  "card_id": "writing-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "cc",
+    "span": "",
+    "label": "수신자 급이 맺음말을 정함",
+    "mark": "circle"
+   },
+   {
+    "element_id": "sig",
+    "span": "",
+    "label": "발신자(처)와 급 비교",
+    "mark": "circle"
+   }
+  ],
+  "caption": "수신자 전 부서장과 발신자 시설관리처장의 상하 관계로 맺음말이 갈리는데, 본문 문장은 이 조각엔 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "writing-12": {
+  "card_id": "writing-12",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "82자 문장—45자 제한 없음",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "74자 문장—개조식 아님",
+    "mark": "underline"
+   }
+  ],
+  "caption": "본문이 82자·74자 완결문으로 이어져, 1p 보고서의 45자 항목 제한·개조식 압축이 적용되지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-02": {
+  "card_id": "gongmun-02",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "1단계 항목 위치",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "2단계 항목, 안쪽 위치",
+    "mark": "circle"
+   }
+  ],
+  "caption": "번호 기호(1./가.)는 문면에 없고, 레벨1·레벨2 항목의 위치만 표본에서 확인된다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-03": {
+  "card_id": "gongmun-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "서술식 문장(근거 설명)",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i3",
+    "span": "작성 대상:",
+    "label": "개조식 나열 시작",
+    "mark": "circle"
+   }
+  ],
+  "caption": "앞부분은 서술식 문장으로 배경을 풀고, '작성 대상:'부터는 개조식으로 나눴다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-04": {
+  "card_id": "gongmun-04",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "at1",
+    "span": "",
+    "label": "붙임 번호+부수 '1.'…1부.",
+    "mark": "underline"
+   },
+   {
+    "element_id": "at2",
+    "span": "",
+    "label": "이어지는 붙임 '2.'",
+    "mark": "underline"
+   },
+   {
+    "element_id": "end",
+    "span": "",
+    "label": "본문 뒤 '끝.' 표시",
+    "mark": "circle"
+   }
+  ],
+  "caption": "붙임 두 건에 번호·부수를 붙이고 마지막에 '끝.'을 적어 세 부분을 갖췄다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-06": {
+  "card_id": "gongmun-06",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "본문 마지막 글자 뒤 위치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "붙임 있으면 그 뒤로 이동",
+    "mark": "circle"
+   }
+  ],
+  "caption": "붙임이 본문 다음에 온다는 순서만 보이고, '끝.' 앞 두 칸 간격은 이 조각에 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-07": {
+  "card_id": "gongmun-07",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "to",
+    "span": "",
+    "label": "받는 곳 여럿→수신자 참조",
+    "mark": "circle"
+   },
+   {
+    "element_id": "cc",
+    "span": "",
+    "label": "맺음말에 수신자 명단 별도",
+    "mark": "circle"
+   }
+  ],
+  "caption": "받는 부서가 여럿이라 '수신자 참조'라 적고, 수신자란에 '전 부서장'을 따로 적었다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-08": {
+  "card_id": "gongmun-08",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "subject",
+    "span": "",
+    "label": "제목 24자 — 25자 기준 안",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목이 공백 포함 24자로, 한 줄에 들어가는 25자 안팎 관행을 지켰다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-09": {
+  "card_id": "gongmun-09",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "하였습니다",
+    "label": "공손체 종결 '~하였습니다'",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "바랍니다",
+    "label": "공손체 종결 '~바랍니다'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "문장이 공손체로 끝나 명사형 종결 금지를 지켰고, 발신명의 여부는 이 조각 밖에 있다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-12": {
+  "card_id": "gongmun-12",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "org",
+    "span": "",
+    "label": "기관명이 수신보다 앞",
+    "mark": "circle"
+   },
+   {
+    "element_id": "to",
+    "span": "",
+    "label": "수신이 기관명 다음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "subject",
+    "span": "",
+    "label": "제목은 수신·경유 다음",
+    "mark": "circle"
+   }
+  ],
+  "caption": "기관명 다음 수신, 그다음 제목이 오는 순서만 확인되며, 슬로건·글자 크기·로고·간격·실선은 이 조각에 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-13": {
+  "card_id": "gongmun-13",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "f1",
+    "span": "",
+    "label": "본문 통일 크기 12pt",
+    "mark": "circle"
+   },
+   {
+    "element_id": "f2",
+    "span": "",
+    "label": "차등 값 11pt(비교 예시)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "12pt는 채택한 통일 값이고, 11pt는 실물에서 보였던 차등 값의 비교 예시다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-14": {
+  "card_id": "gongmun-14",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "sig",
+    "span": "",
+    "label": "발신명의, 결문 시작 위치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "cc",
+    "span": "",
+    "label": "수신자란, 발신명의 다음",
+    "mark": "circle"
+   }
+  ],
+  "caption": "발신명의 다음 수신자란이 오는 순서만 보이고, 결재선·협조자 등은 이 조각에 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-15": {
+  "card_id": "fullreport-15",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지 1쪽 자리",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "요약 1쪽 자리",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "본문 5개 장 시작",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지·요약 각 1쪽, 본문 5개 장 배분의 자리는 보이지만 실제 쪽수는 이 목차만으론 알 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-16": {
+  "card_id": "fullreport-16",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "판형 미표시(A4 가정)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 목차만으론 A4인지 책 판형인지 알 수 없어 쪽수 환산 규칙을 조각으로 보여줄 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-19": {
+  "card_id": "fullreport-19",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "f1",
+    "span": "",
+    "label": "주제목 28pt — 최상위",
+    "mark": "circle"
+   },
+   {
+    "element_id": "f3",
+    "span": "",
+    "label": "부서명 20pt — 중간 위계",
+    "mark": "circle"
+   },
+   {
+    "element_id": "f5",
+    "span": "",
+    "label": "부제 14pt — 하위 위계",
+    "mark": "circle"
+   }
+  ],
+  "caption": "28→20→14pt로 표지 위계가 규칙대로 차례로 작아진다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-20": {
+  "card_id": "fullreport-20",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "소제목 자리(음영 여부 불명)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "장(소)제목이 앉는 자리는 보이지만, 폰트 통일과 음영 박스 여부는 텍스트만으론 확인할 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-21": {
+  "card_id": "fullreport-21",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "장 제목 8자 — 20자 이내",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s6",
+    "span": "",
+    "label": "장 제목 13자 — 20자 이내",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "다섯째 장에서 끝 — 초과 없음",
+    "mark": "circle"
+   }
+  ],
+  "caption": "본문 5개 장, 제목 길이 모두 20자 이내라 경고 없이 통과하는 예다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-22": {
+  "card_id": "fullreport-22",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "문서 표제 18자(장 제목 아님)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 조각엔 장·절 제목이 없어 길이 규칙을 직접 보여주지 못한다(표제 18자).",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-23": {
+  "card_id": "fullreport-23",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "장 자리(소제목 수 불명)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "장은 보이지만 HTML/PDF 정본이나 HWPX 소제목 제약은 이 목차 조각만으론 확인할 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-24": {
+  "card_id": "fullreport-24",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "cover_title",
+    "span": "",
+    "label": "표지 자리(결재협조 불명)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "ch1",
+    "span": "",
+    "label": "장 자리(음영 박스 불명)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지와 장 이름은 보이지만 결재협조·문서메타·음영 박스·쪽번호는 텍스트 조각만으론 확인할 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-25": {
+  "card_id": "fullreport-25",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지 자리(그라데이션 바 불명)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "장 표제 자리(로마숫자 불명)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "장 이름은 보이지만 절 항목은 이 목차에 없고, 그라데이션 바·로마숫자·배지 같은 정부부처형 디자인도 텍스트만으론 알 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-01": {
+  "card_id": "gongmun-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "두문 — 기관명·수신·제목",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "본문 — 자유 서술 구간",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "결문 — 발신명의로 마감",
+    "mark": "circle"
+   }
+  ],
+  "caption": "두문(s1)→본문(s2)→발신명의(결문) 순서가 규칙대로 유지된다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-05": {
+  "card_id": "fullreport-05",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "첫 항목—쪽 나눔 방지 대상",
+    "mark": "underline"
+   }
+  ],
+  "caption": "절 제목 바로 다음 첫 항목의 자리다. 로마숫자 장 표시·쪽 나눔 방지는 이 조각만으론 보이지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-06": {
+  "card_id": "fullreport-06",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "1단계 항목",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "2단계 하위 항목",
+    "mark": "underline"
+   }
+  ],
+  "caption": "레벨1·레벨2로 나뉜 자리만 보여줄 뿐, 실제 기호(도형·번호·비서실)는 표본에 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-07": {
+  "card_id": "fullreport-07",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "at1",
+    "span": "",
+    "label": "붙임 1—제목만",
+    "mark": "underline"
+   },
+   {
+    "element_id": "at2",
+    "span": "",
+    "label": "붙임 2—제목만",
+    "mark": "underline"
+   }
+  ],
+  "caption": "시행문의 붙임 목록처럼 제목·부수만 적고, 상세 내용은 별도 문서로 넘겼다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-08": {
+  "card_id": "fullreport-08",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "첫 장 시작—간지 후보 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "장이 시작되는 자리를 보여줄 뿐, 간지 삽입 여부(예시양식·요청·경영평가)는 이 조각으론 알 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-09": {
+  "card_id": "fullreport-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "도입부(추진계획형 순서)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 표본은 추진계획형 순서라, 검토보고의 '배경·경과 선행' 여부는 이 조각으론 확인할 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-10": {
+  "card_id": "fullreport-10",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "평가 절 없음(추진계획형)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 표본은 추진계획형 순서라 평가 절이 없다 — 결과보고형이면 실적 다음에 들어간다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-11": {
+  "card_id": "fullreport-11",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "ch2",
+    "span": "",
+    "label": "2번째: 현황·문제점",
+    "mark": "circle"
+   },
+   {
+    "element_id": "ch3",
+    "span": "",
+    "label": "3번째: 추진 방안",
+    "mark": "circle"
+   },
+   {
+    "element_id": "ch5",
+    "span": "",
+    "label": "5번째: 건의·기대효과",
+    "mark": "circle"
+   }
+  ],
+  "caption": "개요→현황·문제점→방안→일정예산→기대효과 순 — 정책 추진 계획 시퀀스를 그대로 따른다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-12": {
+  "card_id": "fullreport-12",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "표제(명사형 마감)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표제가 명사형('계획')으로 끝난다는 점만 보여줄 뿐, 장·절 제목의 '및' 분리·빈 항목 삭제는 여기 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-13": {
+  "card_id": "fullreport-13",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "cover_title",
+    "span": "",
+    "label": "18자 — 33자 한도 안",
+    "mark": "underline"
+   },
+   {
+    "element_id": "cover_title",
+    "span": "절감",
+    "label": "방향어(성격어) 포함",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지 제목이 '절감'이라는 방향을 담고도 18자로 33자 한도 안에서 한 줄에 앉는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-14": {
+  "card_id": "fullreport-14",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "51자 — 45자 초과",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 항목이 51자로 45자를 넘지만, 풀버전 보고서는 하드 차단 없이 경고만 준다(쪽 예산 별도).",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-21": {
+  "card_id": "data_elements-21",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "표·그림 들어갈 본문 장",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s5",
+    "span": "",
+    "label": "추진방안도 표·그림 자리",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s6",
+    "span": "",
+    "label": "일정·예산 장도 표 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "목차만으로는 표 5개·그림 6개가 실제로 있는지 안 보이고, 어느 장에 들어갈지 자리만 보여준다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "detect-02": {
+  "card_id": "detect-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "subject",
+    "span": "요청",
+    "label": "명사 '요청'으로 끝맺음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "각 부서에서는",
+    "label": "수신 대상 '각 부서' 명시",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "주시기 바랍니다",
+    "label": "결문 '~바랍니다'로 마침",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목이 '요청'으로 끝나고 각 부서에 실천계획 제출을 '주시기 바랍니다'로 요청해 시행문 신호를 갖췄다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "detect-06": {
+  "card_id": "detect-06",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "ch2",
+    "span": "",
+    "label": "근거·현황 펼치는 장",
+    "mark": "circle"
+   },
+   {
+    "element_id": "ch3",
+    "span": "",
+    "label": "추진 방안 세부 펼치는 장",
+    "mark": "circle"
+   }
+  ],
+  "caption": "장별 제목만으론 5분 안에 판단 가능한지 안 보이고, 세부를 펼쳐야 할 장이 있다는 자리만 보여준다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "entities-04": {
+  "card_id": "entities-04",
+  "fit": "어긋남",
+  "targets": [
+   {
+    "element_id": "cover_info",
+    "span": "",
+    "label": "✗ 꺾쇠 없이 가운뎃점 사용",
+    "mark": "underline"
+   },
+   {
+    "element_id": "cover_info",
+    "span": "2026. 6. 10.",
+    "label": "✗ 연도 전체 '2026.'표기",
+    "mark": "circle"
+   }
+  ],
+  "caption": "부서명·일자를 꺾쇠 없이 가운뎃점으로만 나열해 규범 형식을 어겼다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "entities-16": {
+  "card_id": "entities-16",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "at1",
+    "span": "붙임",
+    "label": "'붙임' 머리말로 시작",
+    "mark": "circle"
+   },
+   {
+    "element_id": "at1",
+    "span": "1부.",
+    "label": "부수 '1부' 명시",
+    "mark": "circle"
+   },
+   {
+    "element_id": "at2",
+    "span": "1부.",
+    "label": "둘째 붙임도 부수 명시",
+    "mark": "circle"
+   }
+  ],
+  "caption": "두 붙임 항목 모두 '붙임 {내용} N부.' 형식대로 부수까지 적어 규칙을 지켰다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "entities-17": {
+  "card_id": "entities-17",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "end",
+    "span": "",
+    "label": "'끝.' 표기로 마감",
+    "mark": "circle"
+   }
+  ],
+  "caption": "시행문이라 문서 끝에 '끝.'을 반드시 표기해 규범을 지켰다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-01": {
+  "card_id": "fullreport-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지가 맨 앞",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "표지 다음 요약 배치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "요약 다음 본문 장 시작",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지 다음 요약, 그 다음 본문 장(추진 개요~기대효과) 순으로 이어지며 이 부분 순서는 규칙대로다(목차는 이 조각에 없다).",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-02": {
+  "card_id": "fullreport-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "cover_sub",
+    "span": "",
+    "label": "부제 10자로 짧게",
+    "mark": "circle"
+   },
+   {
+    "element_id": "cover_title",
+    "span": "",
+    "label": "제목 18자로 짧게",
+    "mark": "underline"
+   },
+   {
+    "element_id": "cover_info",
+    "span": "",
+    "label": "정보줄 27자로 짧게",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표지엔 부제 10자·제목 18자·정보줄 27자, 총 55자만 앉혀 제목·기관명 정도로 짧게 유지했다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-03": {
+  "card_id": "fullreport-03",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지 다음이 목차 자리",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "목차 없이 바로 요약",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지 다음 곧장 요약으로 넘어가 목차 빠진 자리는 보이지만, 본문이 4쪽 이하인지는 조각만으론 알 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-04": {
+  "card_id": "fullreport-04",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "대제목 먼저 제시",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "두괄식 첫 줄, 3줄 이내",
+    "mark": "underline"
+   }
+  ],
+  "caption": "대제목 아래 핵심 두 줄로 두괄식 요약해 3줄 이내 기준을 지켰다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "regulation-08": {
+  "card_id": "regulation-08",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "제N조 — 0칸 들여쓰기 자리",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "호 항목 — 안쪽 들여쓰기 자리",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "조 항목과 그 하위 항목의 자리만 보일 뿐, 정확한 들여쓰기 칸수와 내어쓰기 정렬은 조각에 나타나지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-04": {
+  "card_id": "data_elements-04",
+  "fit": "어긋남",
+  "targets": [
+   {
+    "element_id": "head",
+    "span": "비교",
+    "label": "✗ 캡션에 단위 표기 없음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "r4",
+    "span": "20.8억",
+    "label": "✗ 값은 억 단위인데 무표기",
+    "mark": "circle"
+   }
+  ],
+  "caption": "합계 20.8억 등 모든 값이 억 단위인데 캡션엔 단위 표기가 빠져 규칙을 어긴다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-19": {
+  "card_id": "data_elements-19",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "cap",
+    "span": "",
+    "label": "꺾쇠·가운데 정렬 자리(캡션)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "impl",
+    "span": "",
+    "label": "기호로 시작할 함의 문장 자리",
+    "mark": "underline"
+   }
+  ],
+  "caption": "도식 캡션과 함의 문장의 자리만 보인다 — 꺾쇠·가운데 정렬·앞 기호는 이 조각에 그려 넣지 않았다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-06": {
+  "card_id": "data_elements-06",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "r4",
+    "span": "",
+    "label": "합계 행 — 이중선 프리셋 대상",
+    "mark": "underline"
+   },
+   {
+    "element_id": "r2",
+    "span": "",
+    "label": "일반 항목 행 — 얇은 격자선",
+    "mark": "underline"
+   }
+  ],
+  "caption": "합계 행은 이중선 자리, 일반 항목 행 사이는 얇은 격자선 자리이나 실제 선은 확인 불가.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "entities-09": {
+  "card_id": "entities-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "○ 항목 — 전기차 대수 줄",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "○ 항목 — 유휴부지 줄",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "○ 항목 두 줄만 보이는 조각이라 □ 3~5개 아래 ○ 2~4개라는 전체 위계는 확인할 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "entities-13": {
+  "card_id": "entities-13",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "○ 항목 15pt 자리",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "○ 항목 — 같은 크기",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "○ 항목 두 줄만 있어 □16pt→○15pt→-15pt 크기 계단은 이 조각에서 보이지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "entities-14": {
+  "card_id": "entities-14",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "2단 항목 머리 ○ 마커",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "같은 단은 같은 ○ 마커",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "2단 항목 두 줄이 모두 ○ 마커로 찍혀 있다(◦ 대신 ○를 쓴 표본).",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "onepage-A-24": {
+  "card_id": "onepage-A-24",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "대제목 — 검토배경",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "대제목 — 대안비교",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s6",
+    "span": "",
+    "label": "대제목 — 향후계획",
+    "mark": "circle"
+   }
+  ],
+  "caption": "본문 대제목 박스 4개(검토배경~향후계획) 중 세 곳(검토배경·대안비교·향후계획)만 원으로 짚었다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "regulation-02": {
+  "card_id": "regulation-02",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "제N조(목적)",
+    "label": "조는 있으나 장·절은 없음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "호·목 기호 없는 정의 1",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i4",
+    "span": "",
+    "label": "호·목 기호 없는 정의 2",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "표본은 조 단위까지만 보이고, 장·절·항·호·목 전체 기호 순서는 두 정의 항목 모두에 나타나지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "regulation-09": {
+  "card_id": "regulation-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "위계 상위 항목(조)",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "위계 하위 항목(정의1)",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i4",
+    "span": "",
+    "label": "위계 하위 항목(정의2)",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "조 항목과 정의 항목 둘의 자리만 나뉠 뿐, 굵기 차등 값 자체는 조각에 나타나지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "shared-03": {
+  "card_id": "shared-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "40대",
+    "label": "본문 안에 단위 붙여쓰기",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "○ 마커는 CSS가 그림",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "40대·71대·12건·320㎡ 모두 문장 안에 단위를 붙였고, 줄 앞 ○는 텍스트가 아니라 CSS가 그린 마커다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "shared-04": {
+  "card_id": "shared-04",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "제목 다음 — 박스 없이 시작",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "둘째 항목도 박스 없이 이어짐",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "제목 바로 다음 두 항목이 박스 없이 곧장 이어져, 핵심메시지·총괄목표 박스는 나타나지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "shared-13": {
+  "card_id": "shared-13",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "제목 줄 부근 — 엠바고 표시 없음",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 표본엔 엠바고·안건 표시가 없으며, 밑줄은 제목 줄 위치를 참고로 짚을 뿐이다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "shared-15": {
+  "card_id": "shared-15",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "표지 제목(절 제목 아님)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 줄은 절 제목이 아니라 표지 제목이라, 절 제목 띠의 색상·서식 예시로 보면 안 된다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "slides-08": {
+  "card_id": "slides-08",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "1단계 상자",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "2단계 상자",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b3",
+    "span": "",
+    "label": "상시 모니터링 상자",
+    "mark": "circle"
+   }
+  ],
+  "caption": "1단계→2단계→상시 모니터링 순으로 이어지는 흐름이라 'process' 유형에 해당한다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "slides-24": {
+  "card_id": "slides-24",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "박스1 — 주차장 전환 3곳",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "박스2 — 공백 행정동 2곳",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b3",
+    "span": "",
+    "label": "박스3 — 수요 모니터링",
+    "mark": "circle"
+   }
+  ],
+  "caption": "박스 3개(주차장 전환·공백 행정동·수요 모니터링)로 이미지 요소를 갖춰 글자만 있는 장이 아니다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "writing-18": {
+  "card_id": "writing-18",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "제N조(정의) 시작",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "정의 항목 1(조 안)",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i4",
+    "span": "",
+    "label": "정의 항목 2 — 진짜 조 끝",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "제N조(정의)는 정의 항목 두 개까지 이어져 끝나며, '<개정 …>'은 정의 항목 2 뒤(조 끝)에 붙는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "slides-12": {
+  "card_id": "slides-12",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "214건",
+    "label": "구체적 수치 214건·41%·27%",
+    "mark": "circle"
+   },
+   {
+    "element_id": "src",
+    "span": "",
+    "label": "수치의 출처를 함께 밝힘",
+    "mark": "underline"
+   }
+  ],
+  "caption": "'대체로' 같은 애매한 말 대신 214건·41%·27% 수치를 쓰고 출처(공단 민원 통계)를 달았다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "onepage-B-08": {
+  "card_id": "onepage-B-08",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "m_top",
+    "span": "",
+    "label": "위 25mm, 규정과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "m_bottom",
+    "span": "",
+    "label": "아래 20mm, 규정과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "네 여백이 정한 본문 판면",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "위 25·아래 20·좌우 25mm 여백 값이 그대로 적용되어 본문 판면 테두리가 정해진다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "fullreport-17": {
+  "card_id": "fullreport-17",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "m_top",
+    "span": "",
+    "label": "상 25mm — 규칙 기본값과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "m_left",
+    "span": "",
+    "label": "좌 20mm — 규칙 기본값과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "예시 없이 기본값 그대로 적용",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "예시 양식 없이 상하 25mm·좌우 20mm 기본 여백을 그대로 쓴 사례다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "gongmun-11": {
+  "card_id": "gongmun-11",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "m_top",
+    "span": "",
+    "label": "상 20mm — 법정 기본값과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "m_bottom",
+    "span": "",
+    "label": "하 10mm — 법정 기본값과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "위·좌·우 20, 아래만 10mm",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "행정업무규칙 별표4의 위·좌·우 20mm, 아래 10mm 기본값을 그대로 쓴 사례다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "shared-17": {
+  "card_id": "shared-17",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "판면·줄간격 값은 안 보임",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "m_left",
+    "span": "",
+    "label": "좌 25mm만 확인 가능",
+    "mark": "circle"
+   },
+   {
+    "element_id": "m_right",
+    "span": "",
+    "label": "우 25mm만 확인 가능",
+    "mark": "circle"
+   }
+  ],
+  "caption": "좌우 25mm 여백만 보일 뿐 판면 170mm·줄간격 180%는 이 조각에 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "slides-13": {
+  "card_id": "slides-13",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "m_top",
+    "span": "",
+    "label": "상 12mm — 규칙과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "m_bottom",
+    "span": "",
+    "label": "하 18mm — 규칙과 일치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "상12·좌우16·하18mm 그대로",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "16:9 슬라이드에 상12·좌우16·하18mm 여백을 그대로 적용한 사례다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-01": {
+  "card_id": "data_elements-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "th",
+    "span": "신규 매입 | 주차장 전환",
+    "label": "대안 2가지 나란히: 매입·전환",
+    "mark": "circle"
+   },
+   {
+    "element_id": "r4",
+    "span": "20.8억 | 6.9억",
+    "label": "합계로 총비용 격차 확인",
+    "mark": "circle"
+   }
+  ],
+  "caption": "부지 방식 두 가지(신규 매입·주차장 전환)의 조성비 항목을 표로 나란히 대조해 근거로 삼았다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-02": {
+  "card_id": "data_elements-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "th",
+    "span": "",
+    "label": "열 3개 — 구분·매입·전환",
+    "mark": "underline"
+   },
+   {
+    "element_id": "r4",
+    "span": "",
+    "label": "본문 행 4개(확보~합계)",
+    "mark": "underline"
+   },
+   {
+    "element_id": "head",
+    "span": "",
+    "label": "제목 바로 뒤에 표 배치",
+    "mark": "circle"
+   }
+  ],
+  "caption": "열 3개·본문 행 4개로 규격 상한 안에 들고, 제목 바로 뒤에 붙여 배치했다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-03": {
+  "card_id": "data_elements-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "head",
+    "span": "비교",
+    "label": "제목에 '비교' 명시",
+    "mark": "circle"
+   },
+   {
+    "element_id": "th",
+    "span": "신규 매입 | 주차장 전환",
+    "label": "대안 2개 → 비교표 선택",
+    "mark": "circle"
+   }
+  ],
+  "caption": "부지 조성 방식 두 가지를 대조하는 데이터라서 비교표 유형을 골랐다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-05": {
+  "card_id": "data_elements-05",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "th",
+    "span": "",
+    "label": "머리글 아래 가는선 자리(0.12㎜)",
+    "mark": "underline"
+   },
+   {
+    "element_id": "r4",
+    "span": "",
+    "label": "표 하단 굵은 테두리 자리(0.4㎜)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "머리 아래선과 표 테두리가 있는 자리이나, 실제 선 굵기 값은 이 텍스트 조각으로는 확인할 수 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-07": {
+  "card_id": "data_elements-07",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "th",
+    "span": "",
+    "label": "머리글 셀 배경 적용 자리",
+    "mark": "underline"
+   }
+  ],
+  "caption": "머리글 셀에 배경색이 들어갈 자리이나, 실제 색상값과 진한 배경 여부는 이 조각으로 확인할 수 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-08": {
+  "card_id": "data_elements-08",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "th",
+    "span": "",
+    "label": "머리글 셀 — 배경색 적용 자리",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표 머리글 셀 배경이 정해지는 자리이나, 실제로 하늘색인지 회색인지는 이 텍스트 조각으로 확인할 수 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-09": {
+  "card_id": "data_elements-09",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "구축비용처럼 비교되는 속성을 불릿 나열 대신 표의 행으로 옮겨 대안 간 대조를 살렸다.",
+  "before_label": "비교 속성이 대안과 동급 불릿",
+  "before_span": "○ 불릿으로 1안·2안과 동일 레벨 처리",
+  "after_label": "표 세부항목으로 옮겨 비교",
+  "after_span": "표의 세부항목으로 넣어 비교되도록"
+ },
+ "data_elements-10": {
+  "card_id": "data_elements-10",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "head",
+    "span": "",
+    "label": "본문 결론 먼저 — 2단계 해소",
+    "mark": "underline"
+   },
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "노드별 위치·시기 다속성",
+    "mark": "circle"
+   }
+  ],
+  "caption": "본문 제목이 결론(2단계 해소)을 먼저 말하고, 위치·시기 등 다속성 단계는 도식으로 보조한다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-11": {
+  "card_id": "data_elements-11",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h1i2",
+    "span": "",
+    "label": "면적 수치도 표 없이 유지",
+    "mark": "underline"
+   },
+   {
+    "element_id": "h1i1",
+    "span": "'25년 40대→'26년 71대",
+    "label": "추이 수치도 문장 유지",
+    "mark": "underline"
+   }
+  ],
+  "caption": "임직원 수 추이(40→71대)와 유휴부지 면적(320㎡) 모두 단일 사실이라 표 없이 문장으로 남겼다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-12": {
+  "card_id": "data_elements-12",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "노드1 — 1단계(전환 3곳)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "노드2 — 2단계(공백 2곳)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b3",
+    "span": "",
+    "label": "노드3 — 상시 모니터링",
+    "mark": "circle"
+   }
+  ],
+  "caption": "박스 3개로 노드 수는 채우지만, 연결선이 3개 이상인지는 텍스트만으로 확인할 수 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "data_elements-13": {
+  "card_id": "data_elements-13",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "라벨 9자 — 10자 이내",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "1→2단계로 주체·시점 전환",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b3",
+    "span": "",
+    "label": "3번째 단계 '상시' 지속형",
+    "mark": "circle"
+   }
+  ],
+  "caption": "3단계 모두 라벨 10자 이내이고 시점·상태가 실제로 바뀌어 절차도 조건을 채운다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-14": {
+  "card_id": "data_elements-14",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "1단계 박스 — 절차형 배치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "2단계 박스 — 절차형 배치",
+    "mark": "circle"
+   }
+  ],
+  "caption": "절차 2단 박스 배치 자리는 보이나, '현행-개선' 대조 문구는 이 조각에 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-15": {
+  "card_id": "data_elements-15",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "3곳",
+    "label": "설치 수량 3곳 — 항목값",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "2곳",
+    "label": "설치 수량 2곳 — 항목값",
+    "mark": "circle"
+   }
+  ],
+  "caption": "수량 값은 있으나 전체 대비 몫(구성비)이 아니라 이 조각만으론 구성비 규칙을 보여주지 못한다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-16": {
+  "card_id": "data_elements-16",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "1단계 '26.10 — 추세어 없음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "2단계 '27.3 — 시점 2개뿐",
+    "mark": "circle"
+   }
+  ],
+  "caption": "시점이 둘뿐이고 추세를 나타내는 말이 없어 시계열 대신 절차 박스로 남았다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-17": {
+  "card_id": "data_elements-17",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "th",
+    "span": "",
+    "label": "표 헤더 3열 — 4W 아님",
+    "mark": "underline"
+   },
+   {
+    "element_id": "r4",
+    "span": "",
+    "label": "합계 행, 데이터 행 4개뿐",
+    "mark": "underline"
+   }
+  ],
+  "caption": "부지비용 비교표라 4W(과제·조치·일정·부서)가 아니고 행도 4개로 5행 기준에 못 미친다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-18": {
+  "card_id": "data_elements-18",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "impl",
+    "span": "",
+    "label": "인과는 도식 대신 개조식 문장",
+    "mark": "underline"
+   },
+   {
+    "element_id": "src",
+    "span": "",
+    "label": "출처는 각주 그대로, 미승격",
+    "mark": "underline"
+   }
+  ],
+  "caption": "1·2단계 인과는 note 문장으로 남고 출처 수치도 각주 크기 그대로 표·차트로 오르지 않았다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-20": {
+  "card_id": "data_elements-20",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "cap",
+    "span": "",
+    "label": "캡션·본체 동일 쪽 배치 대상",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "도식 본체 시작 박스",
+    "mark": "circle"
+   }
+  ],
+  "caption": "캡션과 본체가 붙어야 할 자리는 보이지만, 실제 쪽 배치·색 규칙은 텍스트만으론 확인 불가.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-22": {
+  "card_id": "data_elements-22",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "cap",
+    "span": "",
+    "label": "캡션 있는 도식 — 직접 그림",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "박스형 절차 — 코드로 그린 도식",
+    "mark": "circle"
+   }
+  ],
+  "caption": "충전소 확충 단계는 사진이 아니라 박스·캡션으로 직접 그린 도식이다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-23": {
+  "card_id": "data_elements-23",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "cap",
+    "span": "",
+    "label": "이미지 아닌 도식 캡션",
+    "mark": "circle"
+   },
+   {
+    "element_id": "src",
+    "span": "",
+    "label": "출처 표기 — AI 생성물 표기 아님",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 조각엔 AI 생성 이미지가 없어 'AI 생성물' 표기 규칙을 적용할 대상이 보이지 않는다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-24": {
+  "card_id": "data_elements-24",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "3곳·급속 8기 — 검증 가능 수치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "2곳·급속 4기 — 검증 가능 수치",
+    "mark": "circle"
+   }
+  ],
+  "caption": "설치 수·충전기 대수 같은 사실수치 도해라 로고·통계처럼 AI로 생성하지 않고 직접 그렸다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "data_elements-25": {
+  "card_id": "data_elements-25",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "박스 도식—테두리 규칙 무관",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "이 조각은 박스형 단계도식이라 차트 판 테두리·격자선 규칙이 적용될 자리만 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "data_elements-26": {
+  "card_id": "data_elements-26",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "막대 아님—값이 문구 안에",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "박스형 도식이라 막대·꺾은선 값라벨 배치 규칙이 적용되는 차트 자체가 없다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "data_elements-27": {
+  "card_id": "data_elements-27",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "b3",
+    "span": "",
+    "label": "원형 아님—단일 항목 박스",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "원형 차트가 없어 도넛·포인트색 규칙이 적용될 그림 자리만 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "data_elements-28": {
+  "card_id": "data_elements-28",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "cap",
+    "span": "",
+    "label": "축 없는 도식 표제",
+    "mark": "circle"
+   }
+  ],
+  "caption": "축이 없는 단계도식이라 눈금 배수·가로막대 전환 규칙을 직접 보여주지 못한다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "detect-01": {
+  "card_id": "detect-01",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "판정 끝난 결과물(1p 보고서)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "확정된 1p 보고서만 보여줄 뿐, 지정·양식·신호·확인의 판정 순서 자체는 나타나지 않는다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "detect-03": {
+  "card_id": "detect-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "제1조가 첫 조(목적조)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h1i1",
+    "span": "이 규정은",
+    "label": "규범 선언 '이 규정은'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "목적을 밝히는 제1조가 첫머리에 오고 '이 규정은'이 실측 그대로 나타난다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "detect-04": {
+  "card_id": "detect-04",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "lead",
+    "span": "3일 밝혔다",
+    "label": "서술형 결구 '~밝혔다'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "개조식이 아닌 서술형 문장과 결구 '~밝혔다'가 보도자료 특유의 문체를 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "detect-05": {
+  "card_id": "detect-05",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "cover_title",
+    "span": "",
+    "label": "표지 슬라이드 별도 구성",
+    "mark": "circle"
+   },
+   {
+    "element_id": "sl1",
+    "span": "",
+    "label": "슬라이드별 매체 지정(픽토그램)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표지와 매체별(픽토그램 등) 슬라이드 번호 구성이 화면 투영용 산출물임을 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "detect-07": {
+  "card_id": "detect-07",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "결과만 있음—권고 대화 없음",
+    "mark": "underline"
+   }
+  ],
+  "caption": "확정된 1p 보고서 결과만 보일 뿐, 압축·전환을 사람에게 권하는 과정은 나타나지 않는다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "entities-01": {
+  "card_id": "entities-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "검토",
+    "label": "동작성 명사 '검토'로 끝맺음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "title",
+    "span": "설치 방안 검토",
+    "label": "포괄어 아닌 구체적 소재",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목이 '설치 방안 검토'라는 구체적 명사구 한 줄로 동작성 명사 규칙을 지킨다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "entities-02": {
+  "card_id": "entities-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "제목 23자 — 30자 이내",
+    "mark": "underline"
+   }
+  ],
+  "caption": "제목이 23자로 30자 기준 안에 들어와 한 줄 제목부 디자인이 깨지지 않는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-03": {
+  "card_id": "entities-03",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "제목부 최상단 자리",
+    "mark": "underline"
+   }
+  ],
+  "caption": "제목이 놓이는 자리만 보이고, 위아래 파란 바·18pt·가운데정렬은 조각에 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-05": {
+  "card_id": "entities-05",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "결론이 본문보다 앞에 옴",
+    "mark": "underline"
+   },
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "본문(배경)은 요약 다음",
+    "mark": "circle"
+   }
+  ],
+  "caption": "요약박스가 제목 바로 아래서 결론을 먼저 밝히고, 본문(검토배경)은 그 뒤에 옴.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-06": {
+  "card_id": "entities-06",
+  "fit": "어긋남",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "✗ 40자 — 60~80자 미달",
+    "mark": "underline"
+   }
+  ],
+  "caption": "요약 문장이 40자로 60~80자 기준에 못 미쳐 이 표본은 규칙에 어긋난다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-07": {
+  "card_id": "entities-07",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "요청드림",
+    "label": "종결어미 '요청드림'=결재요청",
+    "mark": "circle"
+   }
+  ],
+  "caption": "결재를 구하는 보고라 요약을 '~요청드림'으로 맺어 규칙을 지킨다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-08": {
+  "card_id": "entities-08",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "마커 없이 문장으로 끝맺음",
+    "mark": "underline"
+   }
+  ],
+  "caption": "요약이 □○- 없이 문장형으로 쓰여 규칙을 지킨다(음영·크기는 조각에 없음).",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-10": {
+  "card_id": "entities-10",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "첫 절=배경(결론 아님)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s6",
+    "span": "",
+    "label": "마지막 절=향후계획",
+    "mark": "circle"
+   }
+  ],
+  "caption": "순서가 검토배경(첫 절)→…→향후계획(끝 절)으로 짜여 결론은 요약박스에만 둔다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-11": {
+  "card_id": "entities-11",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i2",
+    "span": "가능",
+    "label": "명사형 종결 '가능'",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i1",
+    "span": "12건",
+    "label": "수치로 끝맺음 '12건'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "항목이 '~가능', '~건'처럼 명사(수치)로 끝나 개조식 문체를 지킨다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-12": {
+  "card_id": "entities-12",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "41자 — 46자 미만 유지",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "22자 — 여유 있음",
+    "mark": "underline"
+   }
+  ],
+  "caption": "항목이 각각 41자·22자로 46자 미만이라 쪼개지 않아도 되는 범위를 보여준다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "entities-15": {
+  "card_id": "entities-15",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "문단이 짜이는 판면 영역",
+    "mark": "bracket"
+   }
+  ],
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": "",
+  "caption": "본문 판면 안에서 문단이 양쪽맞춤·내어쓰기로 짜이며, 자간 좁힘은 이 표본에 나타나지 않는다."
+ },
+ "fullreport-18": {
+  "card_id": "fullreport-18",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "m_bottom",
+    "span": "",
+    "label": "쪽번호가 앉을 하단 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "쪽번호는 이 아래 여백 중앙에 찍히는데, 조각엔 번호나 표지·목차 구분이 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "gongmun-05": {
+  "card_id": "gongmun-05",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "r4",
+    "span": "",
+    "label": "합계까지 모든 칸 값이 참",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "src",
+    "span": "",
+    "label": "출처만 있고 끝표시는 안 보임",
+    "mark": "circle"
+   }
+  ],
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "caption": "표 마지막 줄(합계)까지 칸이 다 찼지만, 표 뒤 '끝.'인지 '이하 빈칸'인지는 조각에 없다."
+ },
+ "gongmun-10": {
+  "card_id": "gongmun-10",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "m_top",
+    "span": "",
+    "label": "여백 값 자리(위)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "본문 판면 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "네 여백과 판면의 자리만 보여줄 뿐, 어느 값(지정·예시·기본)을 썼는지는 알 수 없다.",
+  "before_span": "",
+  "after_span": "",
+  "before_label": "",
+  "after_label": ""
+ },
+ "onepage-A-01": {
+  "card_id": "onepage-A-01",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "위계 1단계(□ 수준) 항목",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "위계 1단계(□ 수준) 항목",
+    "mark": "underline"
+   }
+  ],
+  "caption": "레벨 정보만 있고 부호(□○·) 자체는 텍스트로 보이지 않아 자리만 확인된다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-02": {
+  "card_id": "onepage-A-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "결재를 요청드림",
+    "label": "'결재를 요청드림'이 할 일",
+    "mark": "circle"
+   }
+  ],
+  "caption": "요약문 '결재를 요청드림'이 독자가 할 일(승인)을 못박아 목차를 정한다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-03": {
+  "card_id": "onepage-A-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "결론은 요약박스가 이미 전달",
+    "mark": "underline"
+   },
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "첫 절 제목은 '검토배경'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "결론은 요약박스에 있고, 본문 첫 절 제목은 결론 반복 없이 '검토배경'이다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-04": {
+  "card_id": "onepage-A-04",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "결론은 2번째 요약박스에",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "본문 첫 절: '검토배경'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목·요약박스 다음 첫 본문 절이 결론이 아니라 '검토배경'으로 시작한다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-05": {
+  "card_id": "onepage-A-05",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s6",
+    "span": "",
+    "label": "마지막 절: '향후계획'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "실제 마지막 절 제목이 '결정사항'이 아니라 '향후계획'으로 되어 있다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-06": {
+  "card_id": "onepage-A-06",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "결론은 이미 여기(요약박스)",
+    "mark": "underline"
+   },
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "배경부터(압축 여부 불명)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "결론은 요약박스에 있으나, 이 조각만으론 압축형 3절인지 표준형 4절인지 알 수 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-07": {
+  "card_id": "onepage-A-07",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "요약박스와 겹치는 '보고요지' 대신 취지를 담은 '보고배경'으로 절 제목을 바꿨다.",
+  "before_label": "구버전: '보고요지'(중복)",
+  "before_span": "보고요지",
+  "after_label": "정본: '보고배경'으로 교체",
+  "after_span": "보고배경"
+ },
+ "onepage-A-08": {
+  "card_id": "onepage-A-08",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "결론(검토결과) 선행 대신 배경→대안검토→검토의견 순으로 바꾸고 결론은 검토의견에 둔다.",
+  "before_label": "구버전: 결론 선행 배치",
+  "before_span": "검토결과",
+  "after_label": "정본: 배경→대안→의견 순",
+  "after_span": "검토배경→대안검토→검토의견→향후계획"
+ },
+ "onepage-A-09": {
+  "card_id": "onepage-A-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "배경 절 자리(추진배경 아님)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2",
+    "span": "",
+    "label": "내용 절 자리(주요내용 아님)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 예시는 검토형 표현(검토배경·대안비교)이라 추진계획 특유 명칭은 보이지 않는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-10": {
+  "card_id": "onepage-A-10",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "배경 절 자리(현황·문제점 아님)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2",
+    "span": "",
+    "label": "비교 절 자리(원인분석 아님)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표본은 검토형 헤딩이라 문제해결 특유의 '현황·문제점→원인분석' 명칭은 안 보인다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-11": {
+  "card_id": "onepage-A-11",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "요약이 두괄식 맨 앞 자리",
+    "mark": "underline"
+   }
+  ],
+  "caption": "제목 다음 요약이 맨 앞에 오지만, 사고·이슈 특유의 '상황요약' 표현은 아니다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "onepage-A-12": {
+  "card_id": "onepage-A-12",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "검토배경, 완료 확인 아님",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2",
+    "span": "",
+    "label": "대안비교—결과절 아님",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표본은 설치 여부를 검토 중인 문서라 이미 끝난 일의 결과·계획 순서를 보여줄 자리가 아니다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-13": {
+  "card_id": "onepage-A-13",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "회의·안건 언급 없음",
+    "mark": "underline"
+   },
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "결재 요청형—회의자료 아님",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표본에 회의·안건 관련 언급이 없어, 이 규칙이 적용될 유형판정 자리(제목·요약)만 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-14": {
+  "card_id": "onepage-A-14",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "회의 언급 없음—결재문",
+    "mark": "underline"
+   },
+   {
+    "element_id": "summary",
+    "span": "",
+    "label": "요청형 요약—회의결과 아님",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표본은 회의록이 아니라 설치안 결재를 구하는 문서라 개최 후 기록 순서를 보여줄 자리가 아니다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-15": {
+  "card_id": "onepage-A-15",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "행사·세미나 언급 없음",
+    "mark": "underline"
+   },
+   {
+    "element_id": "h1i2",
+    "span": "유휴부지",
+    "label": "행사장 아닌 유휴부지",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표본은 1회성 행사가 아니라 유휴부지를 활용한 시설 설치 검토라 행사계획 순서를 보여줄 자리가 아니다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-16": {
+  "card_id": "onepage-A-16",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "byline",
+    "span": "시설관리처",
+    "label": "발신 시설관리처—내부 부서",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2i2",
+    "span": "외부 유치",
+    "label": "외부 유치=사업방식(제휴 아님)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "발신이 내부 '시설관리처'이고 '외부 유치'는 사업방식 표현이라, 외부기관과의 제휴 검토 자리는 아니다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-17": {
+  "card_id": "onepage-A-17",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h2i1",
+    "span": "초기 2.4억원",
+    "label": "금액 있어도 대안1(설치)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2i2",
+    "span": "초기 0원",
+    "label": "대안2(유치)도 금액 제시",
+    "mark": "circle"
+   }
+  ],
+  "caption": "두 대안 모두 금액이 있어도 설치·유치 중 선택이 남아 있어 예산유형 대신 검토·의사결정으로 다룬다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-18": {
+  "card_id": "onepage-A-18",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "결재를 요청드림",
+    "label": "결재 요청—상급 승인 성격",
+    "mark": "circle"
+   }
+  ],
+  "caption": "요약이 '결재 요청'으로 끝나 상급자 승인 성격이라 의견조회 아닌 검토·의사결정 유형이 맞다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-19": {
+  "card_id": "onepage-A-19",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "유형은 사전 지정 여부부터",
+    "mark": "underline"
+   }
+  ],
+  "caption": "완성된 문서만으로는 작성자가 유형을 미리 지정했는지 확인할 수 없어, 판정 이전 단계의 규칙임을 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-20": {
+  "card_id": "onepage-A-20",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "설치 방안 검토",
+    "label": "'검토'—아직 미착수 단계",
+    "mark": "circle"
+   },
+   {
+    "element_id": "summary",
+    "span": "요청드림",
+    "label": "승인 대기—착수 전 신호",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목·요약 모두 '검토'·'요청드림'으로 착수 전임을 보여줘, 완료 후 유형과 다르게 다뤄야 함을 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-21": {
+  "card_id": "onepage-A-21",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "h2i1",
+    "span": "2.4억원",
+    "label": "금액 등장—핵심여부 별도판단",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2i2",
+    "span": "0.12억원",
+    "label": "임대료도 등장—우선순위 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "대안별 금액이 등장하는 자리이지만, 신호가 '핵심'인지는 문맥으로 따로 판단해야 해 조각만으론 못 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-22": {
+  "card_id": "onepage-A-22",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "검토",
+    "label": "소제목도 '검토'—판단형 신호",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2",
+    "span": "",
+    "label": "대안비교—선택형 기본구조",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목부터 대안비교까지 판단·선택이 핵심이라, 금액이 있어도 핵심 신호는 아니라 기본형인 검토·의사결정 구조를 그대로 쓴 예다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-23": {
+  "card_id": "onepage-A-23",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "유형 확정 후 완성본",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표본은 유형이 이미 정해진 완성본이라, 애매할 때 되묻는 과정 자체는 이 조각에 나타나지 않는다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-25": {
+  "card_id": "onepage-A-25",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "제목 슬롯은 오직 1개",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목부터 붙임까지 한 흐름으로 이어져 주제를 나눌 자리가 따로 없음",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-26": {
+  "card_id": "onepage-A-26",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "이 자리가 병합 대상 절",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 예시엔 '검토배경' 절만 있어 '현황·문제점' 병합 사례 자체는 나타나지 않음",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-27": {
+  "card_id": "onepage-A-27",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "대제목 1: 검토배경",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2",
+    "span": "",
+    "label": "대제목 2: 대안비교",
+    "mark": "circle"
+   }
+  ],
+  "caption": "대제목이 2개뿐이라 5개를 넘어 풀버전 전환을 검토할 상황은 보이지 않음",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-28": {
+  "card_id": "onepage-A-28",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "head",
+    "span": "",
+    "label": "표 사용 예시(비권장 유형 아님)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 표는 추진계획 문서용 예시로, 규칙이 막는 이슈·리스크·회의안건 유형 문서가 아님",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-29": {
+  "card_id": "onepage-A-29",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "검토",
+    "label": "제목 끝 '검토'는 키워드일 뿐",
+    "mark": "circle"
+   },
+   {
+    "element_id": "summary",
+    "span": "결재를 요청드림",
+    "label": "문맥은 결재 요청(승인형)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목은 '검토'로 끝나 검토 보고 같지만, 요약문은 결재를 요청하는 문맥임",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-30": {
+  "card_id": "onepage-A-30",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "이 예시엔 대제목 4개뿐",
+    "mark": "circle"
+   }
+  ],
+  "caption": "여기선 대제목이 4개(검토배경~향후계획)로, 5개 허용 상한은 보이지 않음",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-31": {
+  "card_id": "onepage-A-31",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "압축형에서도 절 이름을 표준형과 그대로 맞춰 핵심질문 연결을 지킴",
+  "before_label": "새로 지은 절 이름 3개",
+  "after_label": "표준형과 동일한 이름",
+  "before_span": "'주요현황', '시사점', '향후관리'",
+  "after_span": "'주요현황·동향', '영향·시사점', '향후관리'"
+ },
+ "onepage-A-32": {
+  "card_id": "onepage-A-32",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "head",
+    "span": "",
+    "label": "표 1개만 보이는 조각",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표 1개가 보이는 조각만으론 문서 전체에 표가 몇 개인지 알 수 없어, '2개부터 재검토'가 적용됐는지는 보이지 않음",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-A-33": {
+  "card_id": "onepage-A-33",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "항목 수 경고 기준을 7개에서 5개로 낮추되 금지는 아님을 명시",
+  "before_label": "옛 기준: 7개부터",
+  "after_label": "새 기준: 5개부터 경고",
+  "before_span": "7개부터",
+  "after_span": "5개부터 경고"
+ },
+ "onepage-A-34": {
+  "card_id": "onepage-A-34",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h1i1",
+    "span": "",
+    "label": "수치 3개를 한 줄에 압축",
+    "mark": "underline"
+   }
+  ],
+  "caption": "증가폭·민원건수까지 한 줄에 압축해 적어 1p 특유의 축약 밀도를 보여줌",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-01": {
+  "card_id": "onepage-B-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "12건",
+    "label": "명사(건)로 종결",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "가능",
+    "label": "명사(가능)로 종결",
+    "mark": "circle"
+   }
+  ],
+  "caption": "두 항목 모두 '~습니다' 없이 명사(건·가능)로 끝맺어 개조식 규범을 지킴",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-02": {
+  "card_id": "onepage-B-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "요청드림",
+    "label": "결재 요청이라 '요청드림'",
+    "mark": "circle"
+   },
+   {
+    "element_id": "title",
+    "span": "검토",
+    "label": "제목은 명사형 '검토'로 끝남(대조)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "요약박스는 '결재를 요청드림'으로 서술형 종결해, 보고가 아니라 승인 요청임을 바로 알린다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-03": {
+  "card_id": "onepage-B-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "'40대→71대' 등 수치만 진술",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "'320㎡'로 사실만 제시",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 수치(40대→71대·320㎡)만 담아 과장 수식어나 이모지 없이 담백하게 썼다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-04": {
+  "card_id": "onepage-B-04",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "번역투 없이 직접 서술",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "'가능'으로 담백하게 종결",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 조사 붙은 연결어 없이 명사형으로 끝나 번역투가 들어설 자리가 없다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-05": {
+  "card_id": "onepage-B-05",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "summary",
+    "span": "회수 기간이 짧아",
+    "label": "결재 근거, 대안비교와 대조",
+    "mark": "circle"
+   },
+   {
+    "element_id": "h2i1",
+    "span": "",
+    "label": "직접 초기 2.4억·연 0.5억 수익",
+    "mark": "underline"
+   },
+   {
+    "element_id": "h2i2",
+    "span": "",
+    "label": "외부유치 초기 0원·임대 0.12억",
+    "mark": "underline"
+   }
+  ],
+  "caption": "요약의 '요청드림'이 대안비교(직접 2.4억·연0.5억 대 외부 0원)와 맞는지 사람이 대조해야 한다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-06": {
+  "card_id": "onepage-B-06",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "41자 — 한 줄에 거의 참",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "22자 — 한 줄에 여유",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 41자·22자로 40자 안팎에서 끊어 A4 판면 한 줄에 담긴다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-07": {
+  "card_id": "onepage-B-07",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "쉼표로 이어도 문장 1개",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "짧게 문장 1개로 완결",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 쉼표로 사실을 이어도 문장 1개로 완결돼, 3문장 상한에 여유 있게 든다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-09": {
+  "card_id": "onepage-B-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "제목 자리(역할 표시만)",
+    "mark": "underline"
+   },
+   {
+    "element_id": "h1",
+    "span": "",
+    "label": "소제목 자리(역할 표시만)",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "본문 자리(역할 표시만)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "제목·소제목·본문 역할만 표시돼, 이 조각으로는 실제 폰트(Pretendard 등) 적용은 보이지 않는다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-10": {
+  "card_id": "onepage-B-10",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "대제목(□) 자체가 없는 조각",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "본문 항목만 보이는 조각",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 조각은 본문 항목만 담아, 대제목 4개 표준·병합 규칙이 적용되는 문서 상단 자리만 짚는다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-11": {
+  "card_id": "onepage-B-11",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "th",
+    "span": "",
+    "label": "헤더 3열 표",
+    "mark": "underline"
+   },
+   {
+    "element_id": "r4",
+    "span": "20.8억",
+    "label": "합계행 20.8억까지 포함",
+    "mark": "circle"
+   },
+   {
+    "element_id": "src",
+    "span": "",
+    "label": "출처까지 붙어 자리 차지",
+    "mark": "underline"
+   }
+  ],
+  "caption": "머리글·데이터 3행·합계 1행·출처까지 갖춘 표 하나가 항목 3개 분량을 차지해, 상한이 18→16개로 준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-12": {
+  "card_id": "onepage-B-12",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "채움 정도는 본문 판면 크기",
+    "mark": "circle"
+   },
+   {
+    "element_id": "m_top",
+    "span": "",
+    "label": "여백은 고정, 채움엔 안 낌",
+    "mark": "circle"
+   }
+  ],
+  "caption": "여백·본문 판면 자리만 보여줄 뿐, 실제 채움비율 수치(0.72 미만이면 허전)는 이 조각에 없다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-13": {
+  "card_id": "onepage-B-13",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "41자 — 45자엔 못 미침",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "22자 — 한 줄로 충분",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 41자·22자로 45자에 못 미쳐, 두 줄로 넘어가 2개로 세는 사례는 이 조각에 없다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "onepage-B-14": {
+  "card_id": "onepage-B-14",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "요약박스는 두 번째 단계",
+    "mark": "circle"
+   }
+  ],
+  "caption": "요약박스가 제목 다음 두 번째 단계에 와, 2줄 이내로 압축돼야 하는 자리를 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-01": {
+  "card_id": "press-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "제목이 맨 앞",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "부제가 그다음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "리드가 이어짐",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목 다음 부제, 그다음 리드로 이어져 정해진 순서를 지킨다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-02": {
+  "card_id": "press-02",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "'보도일시'를 '보도시점'으로 고쳐 실물 다수 표기(89%)와 맞춘다.",
+  "before_label": "일시로 표기",
+  "after_label": "시점으로 표기",
+  "before_span": "보도일시",
+  "after_span": "보도시점"
+ },
+ "press-03": {
+  "card_id": "press-03",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "kicker",
+    "span": "",
+    "label": "바로 다음이 배포조건 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표본은 라벨(kicker)과 제목만 담아, 그 사이에 와야 할 배포조건(즉시·엠바고·시각) 문구는 보이지 않는다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-04": {
+  "card_id": "press-04",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "부제 앞에만 붙임표를 열고 뒤는 닫지 않아 실물 다수 관행(49%)을 따른다.",
+  "before_label": "앞뒤 모두 붙임표",
+  "after_label": "앞만 열고 안 닫음",
+  "before_span": "- ~ -",
+  "after_span": "- ~"
+ },
+ "press-05": {
+  "card_id": "press-05",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "본문 자리, 개수는 안 보임",
+    "mark": "underline"
+   }
+  ],
+  "caption": "표본은 단계 흐름만 보여줄 뿐 문단 79개·표 7개라는 실측 개수는 이 조각으로 볼 수 없다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-06": {
+  "card_id": "press-06",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "1단계(□)로 시작",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "2단계(○)로 하위 전개",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i4",
+    "span": "",
+    "label": "3단계(-)로 더 좁힘",
+    "mark": "underline"
+   }
+  ],
+  "caption": "요지→서식 지원→구성 확인 순으로 위계가 낮아지며 순서를 거스르지 않는다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-07": {
+  "card_id": "press-07",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "headline",
+    "span": "",
+    "label": "제목 25자 — 45자 이내",
+    "mark": "underline"
+   }
+  ],
+  "caption": "제목이 25자로 45자 상한 안에, 실측 중앙값 32자에 가까운 범위에 든다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-08": {
+  "card_id": "press-08",
+  "fit": "어긋남",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "✗ 개조식 아닌 서술형 종결",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "✗ '따른다'로 문장 종결",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "✗ '작성한다'로 종결",
+    "mark": "underline"
+   }
+  ],
+  "caption": "붙임 성격의 항목이 명사형 개조식 대신 서술형 '-ㄴ다'로 끝나 규칙과 어긋난다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-09": {
+  "card_id": "press-09",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "f3",
+    "span": "",
+    "label": "기본값 14pt",
+    "mark": "circle"
+   },
+   {
+    "element_id": "f2",
+    "span": "",
+    "label": "선택지는 15pt",
+    "mark": "circle"
+   }
+  ],
+  "caption": "기본값 14pt와 기관 선택지 15pt를 나란히 보여 준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "press-10": {
+  "card_id": "press-10",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "2단계 자리, 크기·굵기 안 보임",
+    "mark": "underline"
+   }
+  ],
+  "caption": "요소 텍스트만으로는 위계별 실제 pt·굵게 여부를 확인할 수 없어 자리만 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "regulation-01": {
+  "card_id": "regulation-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "제명이 맨 앞",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s5",
+    "span": "",
+    "label": "부칙이 맨 끝",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제명으로 시작해 장을 거쳐 부칙으로 끝나는 뼈대를 그대로 보여준다.",
+  "before_label": "",
+  "after_label": "",
+  "before_span": "",
+  "after_span": ""
+ },
+ "regulation-03": {
+  "card_id": "regulation-03",
+  "fit": "자리만",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "targets": [
+   {
+    "element_id": "s2",
+    "span": "",
+    "label": "장 1: 총칙",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "장 2: 활용 기준",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "장 3: 관리 및 교육",
+    "mark": "circle"
+   }
+  ],
+  "caption": "총칙·활용 기준·관리 3개 장을 두어 조문이 많을 때 장으로 나누는 구성 자리를 보여준다."
+ },
+ "regulation-04": {
+  "card_id": "regulation-04",
+  "fit": "지킴",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "targets": [
+   {
+    "element_id": "s5",
+    "span": "",
+    "label": "마지막 단계가 부칙",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제명부터 이어지는 구성의 맨 끝에 부칙이 빠짐없이 놓여 있다."
+ },
+ "regulation-05": {
+  "card_id": "regulation-05",
+  "fit": "지킴",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "targets": [
+   {
+    "element_id": "cap",
+    "span": "",
+    "label": "본문 아닌 별표로 분리",
+    "mark": "underline"
+   },
+   {
+    "element_id": "th",
+    "span": "",
+    "label": "표 형태로 구분 항목 정리",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "규정 본문 대신 [별표 1]로 개인정보·계약자료·내부자료 3개 항목을 표로 정리했다."
+ },
+ "regulation-06": {
+  "card_id": "regulation-06",
+  "fit": "지킴",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "목적으로 한다.",
+    "label": "'한다'로 목적 조항 종결",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "다음과 같다.",
+    "label": "'같다'로 정의 조항 종결",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i3",
+    "span": "서비스를 말한다.",
+    "label": "'말한다'로 용어설명 종결",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제N조 문장 세 개 모두 합니다체 없이 '~한다'류로 끝맺는다."
+ },
+ "regulation-07": {
+  "card_id": "regulation-07",
+  "fit": "자리만",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "targets": [
+   {
+    "element_id": "f1",
+    "span": "14pt",
+    "label": "크기 값만 확인(14pt)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 조각은 크기 14pt만 보여줄 뿐 글꼴·줄간격·정렬 값은 나타나지 않는다."
+ },
+ "shared-01": {
+  "card_id": "shared-01",
+  "fit": "자리만",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "40대",
+    "label": "△ 없는 증가 수치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i1",
+    "span": "71대",
+    "label": "△ 없는 증가 수치",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "320㎡",
+    "label": "면적 수치도 △ 없음",
+    "mark": "circle"
+   }
+  ],
+  "caption": "'25→'26 증가 수치와 면적 320㎡ 모두 △ 표시가 없어, 규칙대로면 검정 볼드지만 색 자체는 이 조각에 나타나지 않는다."
+ },
+ "shared-02": {
+  "card_id": "shared-02",
+  "fit": "자리만",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": "",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "'25년 40대→'26년 71대",
+    "label": "연도만 병기, 일자 형식 아님",
+    "mark": "underline"
+   }
+  ],
+  "caption": "서로 다른 두 연도('25·'26)를 병기했지만 일자·월 단위 날짜 표기 형식과는 다른 문맥이다."
+ },
+ "shared-05": {
+  "card_id": "shared-05",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "수치 근거 문장 — 통계근거감",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "마지막 사실 — 결론전환 자리",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 사실이 아직 박스 없이 나열돼, 통계근거·결론전환 박스가 붙을 자리만 보여준다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-06": {
+  "card_id": "shared-06",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "사실 1/2 — 절차 아님",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "사실 2/2 — 구분 2개뿐",
+    "mark": "underline"
+   }
+  ],
+  "caption": "항목이 절차가 아니라 사실 2개뿐이라 절차나열 대신 현황참고 박스 자리에 가깝다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-07": {
+  "card_id": "shared-07",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "수치 지표 1 — 박스 후보",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "수치 지표 2 — 같은 박스",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 수치를 한 덩어리로 묶는다면 테두리 없는 회색 채움 박스가 들어갈 자리다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-08": {
+  "card_id": "shared-08",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "묶음 후보 줄 1",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "묶음 후보 줄 2",
+    "mark": "underline"
+   }
+  ],
+  "caption": "i1·i2 두 줄을 안 끊고 묶으려면 위아래 가는 줄로 감싸는 자리다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-09": {
+  "card_id": "shared-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "A4 한 장 보고서 표본",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 표본은 A4 업무문서 장르라 점선 테두리를 고를 수 있는 자리다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-10": {
+  "card_id": "shared-10",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "쓰임 자리 — 수치 강조",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "쓰임 자리 — 여력 강조",
+    "mark": "underline"
+   }
+  ],
+  "caption": "박스로 꾸며질 자리이며, 옛 연노랑·▣ 마커는 이 표본에 쓰이지 않는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-11": {
+  "card_id": "shared-11",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "표지 제목(장 제목과 다름)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 표본은 표지 제목뿐이라, 장·절 제목 꾸밈은 본문에서 따로 나온다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-12": {
+  "card_id": "shared-12",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "제목 자리 — 색띠 아래",
+    "mark": "underline"
+   },
+   {
+    "element_id": "byline",
+    "span": "",
+    "label": "발행주체·날짜 자리",
+    "mark": "underline"
+   }
+  ],
+  "caption": "색띠 두께·간격은 그림 밖이고, 제목·발행주체가 놓일 자리만 짚는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-14": {
+  "card_id": "shared-14",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "",
+    "label": "표지 제목(목차 이전 자리)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "목차 페이지는 이 표본 밖에 있어, 표지 제목 위치만 짚는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "shared-16": {
+  "card_id": "shared-16",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "title",
+    "span": "검토",
+    "label": "체언 '검토'로 끝맺음",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목이 서술형 대신 명사 '검토'로 끝나 체언 종결을 그대로 보여준다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-01": {
+  "card_id": "slides-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "head",
+    "span": "",
+    "label": "헤드 32자 — 40자 이내",
+    "mark": "underline"
+   }
+  ],
+  "caption": "완결된 주장 문장으로 끝나 명사구 제목에 그치지 않고, 32자로 40자 기준 안에 든다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-02": {
+  "card_id": "slides-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "원인 두 갈래를 한 줄에",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "원인①만 세분화(18분)",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "원인②만 세분화(6곳)",
+    "mark": "underline"
+   }
+  ],
+  "caption": "세 항목 모두 대기시간·접근거리라는 한 주제만 다뤄 다른 내용으로 새지 않는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-03": {
+  "card_id": "slides-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "덱 시작 = 표지",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "덱 끝 = 마무리(7번째)",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지로 열고 7번째 마무리로 닫으며, 짧은 덱이라 20장 기준 간지 없이도 순서를 지킨다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-04": {
+  "card_id": "slides-04",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "정해진 이름 '본문'",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s6",
+    "span": "",
+    "label": "본문 재사용, 3연속 아님",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지·픽토그램·본문·표·도식·마무리 모두 정해진 이름이고, 본문이 두 번이어도 연속이 아니다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-05": {
+  "card_id": "slides-05",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "1단계 절차 상자",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "2단계 절차 상자",
+    "mark": "circle"
+   }
+  ],
+  "caption": "'26.10 1단계·'27.3 2단계처럼 순서 있는 내용이라 표·이미지 대신 절차형 도식을 썼다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-06": {
+  "card_id": "slides-06",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "cap",
+    "span": "",
+    "label": "제목뿐, 아이콘명 없음",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "박스 텍스트뿐, 아이콘 없음",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 조각은 절차형 도식이라 아이콘 이름 필드가 없어 라이브러리 일치 여부는 이 자리만으로 확인할 수 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-07": {
+  "card_id": "slides-07",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "b1",
+    "span": "",
+    "label": "일정 있는 1단계",
+    "mark": "circle"
+   },
+   {
+    "element_id": "b2",
+    "span": "",
+    "label": "일정 있는 2단계",
+    "mark": "circle"
+   }
+  ],
+  "caption": "'26.10·'27.3처럼 일정 있는 순서라 표·큰숫자 대신 도식(process)을 고른 자리에 맞는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-09": {
+  "card_id": "slides-09",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "목차 흐름의 시작",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "목차 흐름의 끝",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지부터 마무리까지 순서만 보일 뿐, 이 흐름이 1p 보고서 12유형 매핑에서 왔는지는 이 조각만으론 안 보인다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-10": {
+  "card_id": "slides-10",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "27%",
+    "label": "'27%'로 끝—명사형",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "18분",
+    "label": "'18분'으로 끝—명사형",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i3",
+    "span": "6곳",
+    "label": "'6곳'으로 끝—명사형",
+    "mark": "circle"
+   }
+  ],
+  "caption": "세 항목 모두 서술형 어미 없이 수치·단위 명사로 끝나 개조식 종결을 지킨다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "slides-11": {
+  "card_id": "slides-11",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "라벨형 '2024 매출'을 결론이 드러나는 '매출 17% 증가'로 고쳐 선언문 제목 원칙을 지켰다.",
+  "before_label": "항목명만 나열한 라벨형",
+  "before_span": "2024 매출",
+  "after_label": "결론(17%↑)을 담은 선언형",
+  "after_span": "매출 17% 증가"
+ },
+ "slides-14": {
+  "card_id": "slides-14",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "f1",
+    "span": "30pt",
+    "label": "헤드메시지 30pt로 확정",
+    "mark": "circle"
+   },
+   {
+    "element_id": "f2",
+    "span": "18pt",
+    "label": "본문 18pt로 확정",
+    "mark": "circle"
+   },
+   {
+    "element_id": "f3",
+    "span": "12pt",
+    "label": "출처·쪽번호 12pt로 확정",
+    "mark": "circle"
+   }
+  ],
+  "caption": "헤드 30pt·본문 18pt·출처 12pt 3단 스케일을 정확한 수치로 보여준다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-15": {
+  "card_id": "slides-15",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "본문 판면 자리 표시",
+    "mark": "circle"
+   }
+  ],
+  "caption": "여백 4변 안 본문 판면의 자리만 보일 뿐, 실제 좌측 정렬 여부는 본문 텍스트에서 확인해야 한다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-16": {
+  "card_id": "slides-16",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지부터 배색 적용",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "마무리까지 배색 적용",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지~마무리 전 장에 배색 규칙이 걸리지만, 이 조각엔 실제 강조색·데이터색 지정은 안 보인다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-17": {
+  "card_id": "slides-17",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지 배경 자리",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "마무리 배경 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지~마무리 전 장이 배경색 대상이지만, 이 조각엔 실제 화이트/변형 선택은 안 보인다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-18": {
+  "card_id": "slides-18",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지 — 테마 파생 시작",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "마무리 — 테마 파생 끝",
+    "mark": "circle"
+   }
+  ],
+  "caption": "테마가 표지~마무리까지 전부에 번지지만, 이 조각엔 언제·어느 색으로 정했는지는 안 보인다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-19": {
+  "card_id": "slides-19",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "표지 진입효과 자리",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "마무리 진입효과 자리",
+    "mark": "circle"
+   }
+  ],
+  "caption": "장마다 진입효과가 걸리지만, 이 조각엔 실제 효과 종류·속도는 안 보인다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-20": {
+  "card_id": "slides-20",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s3",
+    "span": "",
+    "label": "본문 — 흐름배치 대상",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s4",
+    "span": "",
+    "label": "표 — 흐름배치 대상",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s5",
+    "span": "",
+    "label": "도식 — 자유배치 후보",
+    "mark": "circle"
+   }
+  ],
+  "caption": "본문·표는 흐름 유지가 원칙이고 도식은 자유배치로 바꿀 수 있는 자리이나, 실제 선택은 이 조각엔 안 보인다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-21": {
+  "card_id": "slides-21",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "총 7장의 시작",
+    "mark": "circle"
+   },
+   {
+    "element_id": "s7",
+    "span": "",
+    "label": "총 7장 — 4~16장 범위 안",
+    "mark": "circle"
+   }
+  ],
+  "caption": "이 표본은 총 7장으로, 규칙이 정한 4~16장(10±6) 범위 안에 든다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-22": {
+  "card_id": "slides-22",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "대항목(레벨1) — 통계근거",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "하위항목(레벨2) — 세부근거",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "하위항목(레벨2) — 세부근거",
+    "mark": "underline"
+   }
+  ],
+  "caption": "이 장은 대항목 1개+하위 2개, 글머리 3줄로 짜여 상한 6개보다 한참 적다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-23": {
+  "card_id": "slides-23",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "body",
+    "span": "",
+    "label": "넘침 여부 확인할 판면",
+    "mark": "circle"
+   }
+  ],
+  "caption": "여백 4변 안 본문 판면의 자리만 보일 뿐, 실제 내용이 이 틀을 넘는지는 장별로 직접 재야 한다.",
+  "before_span": "",
+  "before_label": "",
+  "after_span": "",
+  "after_label": ""
+ },
+ "slides-25": {
+  "card_id": "slides-25",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s1",
+    "span": "",
+    "label": "발표 슬라이드 장르 표지",
+    "mark": "circle"
+   }
+  ],
+  "caption": "표지부터 마무리까지 슬라이드 구성 단계만 보여줄 뿐, 산출 포맷(HWPX 불가) 여부는 조각에 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-01": {
+  "card_id": "writing-01",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "수치 사실 나열, 과장 없음",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "유휴면적 명시, 과장 없음",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 수치 중심 개조식이고 과장·번역투·이모지 같은 흠이 없다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-02": {
+  "card_id": "writing-02",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "12건",
+    "label": "명사형 종결 '12건'",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "가능",
+    "label": "명사형 종결 '가능'",
+    "mark": "circle"
+   }
+  ],
+  "caption": "두 항목 모두 '~건', '~가능'처럼 명사형으로 끝나 하십시오체를 쓰지 않았다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-03": {
+  "card_id": "writing-03",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "41자 — 40자 기준 살짝 초과",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "22자 — 40자 안에 여유",
+    "mark": "underline"
+   }
+  ],
+  "caption": "i1은 41자로 40자 기준을 살짝 넘고, i2는 22자로 여유롭게 한 줄에 들어간다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-04": {
+  "card_id": "writing-04",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "41자 — 46자 기준 안",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "22자 — 압축 필요 없음",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 46자를 넘지 않아 이미 명사형으로 짧게 끝나 있다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-05": {
+  "card_id": "writing-05",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "쉼표로 이어진 한 문장",
+    "mark": "underline"
+   },
+   {
+    "element_id": "i2",
+    "span": "",
+    "label": "간결한 한 문장으로 구성",
+    "mark": "underline"
+   }
+  ],
+  "caption": "두 항목 모두 한 문장짜리 개조식으로, 3문장 상한에 크게 못 미친다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-06": {
+  "card_id": "writing-06",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "lead",
+    "span": "○○공사는 보고서·공문 초안을 자동으로 만들어 주는 문서 작성 지원 서비스를 9월 1일부터 전 부서에 개시한다고 3일 밝혔다.",
+    "label": "70자 문장 — 45자 제한 밖",
+    "mark": "underline"
+   },
+   {
+    "element_id": "lead",
+    "span": "담당자가 요지만 입력하면 기관 서식에 맞춘 초안이 나오고, 사람은 사실 확인과 다듬기에만 집중하는 방식이다.",
+    "label": "60자 문장도 그대로 허용",
+    "mark": "underline"
+   }
+  ],
+  "caption": "리드의 두 문장 모두 45자를 훌쩍 넘지만 보도자료라 문장 길이 제한에서 제외된다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-10": {
+  "card_id": "writing-10",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "'검사 바랍니다'에서 빠진 목적어와 조사를 '검사를 받으시기 바랍니다'로 채워 완비했다.",
+  "before_label": "목적어·조사 생략됨",
+  "before_span": "검사 바랍니다",
+  "after_label": "목적어 '~를' 성분 완비",
+  "after_span": "검사를 받으시기 바랍니다"
+ },
+ "writing-11": {
+  "card_id": "writing-11",
+  "fit": "지킴",
+  "targets": [],
+  "caption": "한자어 '조속히·수령·송부·기·익일'을 쉬운 말로 순화했다.",
+  "before_label": "상투 한자어 조속히",
+  "before_span": "조속히",
+  "after_label": "쉬운 말로 순화",
+  "after_span": "되도록 빨리"
+ },
+ "writing-13": {
+  "card_id": "writing-13",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "한다",
+    "label": "목적 조, '한다'로 평서 종결",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "같다",
+    "label": "'같다'로 열거 예고",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i3",
+    "span": "말한다",
+    "label": "'말한다'로 정의 조항 표시",
+    "mark": "circle"
+   }
+  ],
+  "caption": "목적 조는 '한다', 정의 조는 '말한다', 열거 예고는 '같다'로 어미를 가려 썼다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-14": {
+  "card_id": "writing-14",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "제N조(목적)",
+    "label": "조 뒤 괄호로 제목 표기",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "제N조(정의)",
+    "label": "둘째 조가 정의 조항",
+    "mark": "circle"
+   }
+  ],
+  "caption": "조 제목을 '제N조(목적)'처럼 괄호로 달았고, 둘째 조를 정의 조항으로 두었다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-15": {
+  "card_id": "writing-15",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "h1i1",
+    "span": "",
+    "label": "91자 — 45자 제한 미적용",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "h1i1",
+    "span": "목적으로 한다",
+    "label": "'한다'로 종결, 명사형 아님",
+    "mark": "circle"
+   }
+  ],
+  "caption": "조문이 91자로 길게 이어지고 '한다'로 끝나, 1페이지 보고서·업무보고 규칙을 옮기지 않았다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-16": {
+  "card_id": "writing-16",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "",
+    "label": "목적 조가 맨 앞(첫 조)",
+    "mark": "bracket"
+   },
+   {
+    "element_id": "i3",
+    "span": "",
+    "label": "정의 조 아래 항목이 들여씀",
+    "mark": "bracket"
+   }
+  ],
+  "caption": "목적 조가 맨 앞에 오고 정의 조 아래 항목이 들여써 있어, 위계의 자리를 보여 준다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-17": {
+  "card_id": "writing-17",
+  "fit": "자리만",
+  "targets": [
+   {
+    "element_id": "s5",
+    "span": "",
+    "label": "부칙은 마지막 단계",
+    "mark": "circle"
+   }
+  ],
+  "caption": "구성 순서상 부칙은 맨 끝 단계에 온다(정형구 문장 자체는 이 조각에 없음).",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-19": {
+  "card_id": "writing-19",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "i1",
+    "span": "나온다",
+    "label": "개조식 항목도 서술어로 끝남",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i2",
+    "span": "따른다",
+    "label": "'따른다'로 서술 완결",
+    "mark": "circle"
+   },
+   {
+    "element_id": "i3",
+    "span": "작성한다",
+    "label": "'작성한다'로 서술 완결",
+    "mark": "circle"
+   }
+  ],
+  "caption": "제목 아래 항목이 개조식이라도 '나온다·따른다·작성한다'처럼 서술체로 끝맺는다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-20": {
+  "card_id": "writing-20",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "lead",
+    "span": "9월 1일부터 전 부서에 개시한다고 3일 밝혔다",
+    "label": "첫 문장에 결론부터 담음",
+    "mark": "underline"
+   }
+  ],
+  "caption": "리드 첫 문장에 서비스 개시 사실을 먼저 담아 두괄식으로 썼다(직접 인용문은 이 조각에 없음).",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ },
+ "writing-21": {
+  "card_id": "writing-21",
+  "fit": "지킴",
+  "targets": [
+   {
+    "element_id": "headline",
+    "span": "",
+    "label": "제목 25자 — 45자 이내",
+    "mark": "underline"
+   }
+  ],
+  "caption": "제목이 25자로 45자 이내이며, 명사형·서술형 형식은 따로 강제되지 않았다.",
+  "before_label": "",
+  "before_span": "",
+  "after_label": "",
+  "after_span": ""
+ }
+}
