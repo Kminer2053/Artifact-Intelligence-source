@@ -41,7 +41,7 @@
 ```
 Artifact-Intelligence-source/
 ├─ .claude-plugin/marketplace.json   Claude Code 마켓플레이스 등록 정보
-├─ docs/promo/                       포스터
+├─ docs/promo/                       시연 영상·포스터
 └─ artifact-intelligence/            ── 본체 (웹앱 + 플러그인 + MCP 가 공유) ──
    ├─ SKILL.md                       스킬 진입 지침(Claude Code 가 읽는 사용설명)
    ├─ README.md                      플러그인 설치·사용 안내
